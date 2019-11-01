@@ -25,7 +25,7 @@ favicon: images/favicon.png
 
 # Site navigation - each item must have a title and a url.
 navigation:
-  - text: Home
+  - text: SharePoint REST Framework
     url: /
 
 # The shortname for your Disqus site to enable comments.
