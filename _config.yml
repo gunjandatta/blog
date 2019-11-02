@@ -18,7 +18,7 @@ description: "A blog site for SharePoint developers."
 baseurl: "/blog"
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://scriptor-jekyll.netlify.com"
+url: "https://dattabase.com"
 
 # Favicon
 favicon: images/favicon.png
