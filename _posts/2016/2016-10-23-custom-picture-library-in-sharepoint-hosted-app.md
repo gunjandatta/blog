@@ -4,7 +4,7 @@ title: "Custom Picture Library in SharePoint Hosted App"
 date: "2016-10-23"
 description: ""
 feature_image: ""
-tags: []
+tags: [picture library, add-in]
 ---
 
 This post will go over adding a custom picture library to a SharePoint Hosted app.
@@ -13,47 +13,47 @@ This post will go over adding a custom picture library to a SharePoint Hosted ap
 
 ### Create the Project
 
-[![Create the VS Project](https://dattabase.com/blog/wp-content/uploads/2016/10/CreateProject.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/CreateProject.png)
+[![Create the VS Project](images/PictureLibrary/CreateProject.png)](images/PictureLibrary/CreateProject.png)
 
 Set the SharePoint url to deploy the project to, and select "SharePoint Hosted" as the type.
 
 ### Add a New Project Item
 
-[![Add New List](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewList.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewList.png)
+[![Add New List](images/PictureLibrary/AddNewList.png)](images/PictureLibrary/AddNewList.png)
 
 Create a new folder called "Lists" at the root of the project. Right-click and add a new item to it.
 
 #### Add a New List
 
-[![Add New Project Item](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewItem-1.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewItem.png)
+[![Add New Project Item](images/PictureLibrary/AddNewItem.png)](images/PictureLibrary/AddNewItem.png)
 
 Select the "List" item type, and name the list accordingly. This demo will use "PictureLibrary" as the list name.
 
 #### List Configuration
 
-[![New List Configuration](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewListConfiguration.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewListConfiguration.png)
+[![New List Configuration](images/PictureLibrary/AddNewListConfiguration.png)](images/PictureLibrary/AddNewListConfiguration.png)
 
 Select the **Document Library** as the list template.
 
 ### Update Template Files
 
-This section will update the list template files. Since we created a "Document Library", we'll need to remove and replace them with the "Picture Library" template files. I've included a link to the OTB picture library template files, found in the 15 hive folder. Download the files [**here**](https://dattabase.com/blog/wp-content/uploads/2016/10/PictureLibrary.zip).
+This section will update the list template files. Since we created a "Document Library", we'll need to remove and replace them with the "Picture Library" template files. I've included a link to the OTB picture library template files, found in the 15 hive folder. Download the files [**here**](images/PictureLibrary/PictureLibrary.zip).
 
 #### Remove List Template Files
 
-[![Delete Template Files](https://dattabase.com/blog/wp-content/uploads/2016/10/DeleteFiles.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/DeleteFiles.png)
+[![Delete Template Files](images/PictureLibrary/DeleteFiles.png)](images/PictureLibrary/DeleteFiles.png)
 
 Select the list template files, and delete all of them, except for the **Elements.xml** and **Schema.xml** files.
 
 ### Add Picture Library Template Files
 
-[![Add Picture Library Template Files](https://dattabase.com/blog/wp-content/uploads/2016/10/AddPictureLibraryTemplateFiles.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddPictureLibraryTemplateFiles.png)
+[![Add Picture Library Template Files](images/PictureLibrary/AddPictureLibraryTemplateFiles.png)](images/PictureLibrary/AddPictureLibraryTemplateFiles.png)
 
-From the [**provided files**](https://dattabase.com/blog/wp-content/uploads/2016/10/PictureLibrary.zip), add them all except for the **Schema.xml** file to the list template folder.
+From the [**provided files**](images/PictureLibrary/PictureLibrary.zip), add them all except for the **Schema.xml** file to the list template folder.
 
 #### Update Template Files Deployment Type
 
-[![Update Deployment Type](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateFileDeploymentTypes.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateFileDeploymentTypes.png)
+[![Update Deployment Type](images/PictureLibrary/UpdateFileDeploymentTypes.png)](images/PictureLibrary/UpdateFileDeploymentTypes.png)
 
 Left-click on each new template file, and in the "Properties" pane update the "Deployment Type" to **ElementFile**.
 
@@ -63,7 +63,7 @@ This section will update the list template type from a "Document Library" to a "
 
 #### Update Schema.xml
 
-[![Update List Schema](https://dattabase.com/blog/wp-content/uploads/2016/10/ReplaceListSchemaMetaData.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/ReplaceListSchemaMetaData.png)
+[![Update List Schema](images/PictureLibrary/ReplaceListSchemaMetaData.png)](images/PictureLibrary/ReplaceListSchemaMetaData.png)
 
 Open the "Schema.xml" file, and remove the "MetaData". From the picture library OTB template files, open the associated "Schema.xml" and copy the "MetaData" to the new file.
 
@@ -78,15 +78,15 @@ ThumbnailSize="160" WebImageWidth="640" WebImageHeight="480"
 
 ##### Original Value
 
-[![List Schema Original Properties](https://dattabase.com/blog/wp-content/uploads/2016/10/ListSchemaOrigProperties.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/ListSchemaOrigProperties.png)
+[![List Schema Original Properties](images/PictureLibrary/ListSchemaOrigProperties.png)](images/PictureLibrary/ListSchemaOrigProperties.png)
 
 ##### New Value
 
-[![Update List Properties](https://dattabase.com/blog/wp-content/uploads/2016/10/ListSchemaProperties.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/ListSchemaProperties.png)
+[![Update List Properties](images/PictureLibrary/ListSchemaProperties.png)](images/PictureLibrary/ListSchemaProperties.png)
 
 #### Update Content Type
 
-[![Update Content Type](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateContentType.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateContentType.png)
+[![Update Content Type](images/PictureLibrary/UpdateContentType.png)](images/PictureLibrary/UpdateContentType.png)
 
 Using the "Create GUID" tool in visual studio, generate a new one and append it to the picture library's. Replace **ContentTypeRef** with **Content Type**. Next add the field links to the content type. Now that we have the Schema.xml updated, you can add your custom fields under the "Fields" tags and add the corresponding field links to this content type. Make sure **not** to include the ContentTypeRef, as shown in the image.
 
@@ -115,12 +115,12 @@ Using the "Create GUID" tool in visual studio, generate a new one and append it 
 
 #### Update List Template Elements.xml
 
-[![Update List Template Elements.xml](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateElements.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateElements)
+[![Update List Template Elements.xml](images/PictureLibrary/UpdateElements.png)](images/PictureLibrary/UpdateElements)
 
 Open the "Element.xml" file under the list template folder, and update the "Type" to **109**, which is the "Picture Library" list template type.
 
 #### Update List Instance Elements.xml
 
-[![Update List Instance Elements.xml](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateListInstance.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateListInstance.png)
+[![Update List Instance Elements.xml](images/PictureLibrary/UpdateListInstance.png)](images/PictureLibrary/UpdateListInstance.png)
 
 Open the "Elements.xml" file under the list instance folder, and update the "Type" to **109**, which is the "Picture Library" list template type.

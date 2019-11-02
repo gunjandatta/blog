@@ -4,7 +4,7 @@ title: "Site Custom Actions SharePoint Hosted App"
 date: "2016-11-05"
 description: ""
 feature_image: ""
-tags: []
+tags: [custom action, add-in]
 ---
 
 In this post, I'll go over a SharePoint Hosted App (Add-In) which adds/removes user custom actions at the site collection level. In Visual Studio, you are able to add custom actions, but they are scoped to the host web, not site collection. This app will also demo the new features of the gd-sprest library available on [github](https://github.com/gunjandatta/sprest) and [npm](https://www.npmjs.com/package/gd-sprest).
@@ -132,7 +132,7 @@ customActions.execute(() => {
 
 Finally, we execute the request. The execute method will wait until all requests have completed, and returns the responses to the callback method. We don't need to do anything with the responses, so we will refresh the page to see the custom banner being added to the page.
 
-![Custom Banner](https://dattabase.com/blog/wp-content/uploads/2016/11/customBanner.png)
+![Custom Banner](images/SiteCustomActions/customBanner.png)
 
 #### Remove Custom Action
 

@@ -4,7 +4,7 @@ title: "Enable NPM in a SharePoint Hosted App"
 date: "2016-10-21"
 description: ""
 feature_image: ""
-tags: [typescript "visual studio"]
+tags: [typescript, visual studio]
 ---
 
 In this post, I'll give step-by-step instructions of using Node Package Manager (NPM) in Visual Studio. This will require your environment to be configured for TypeScript. Refer to my previous post of Enabling TypeScript in a SharePoint Hosted App (Add-In).

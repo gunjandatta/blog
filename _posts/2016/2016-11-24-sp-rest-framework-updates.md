@@ -4,7 +4,7 @@ title: "SP REST Framework Updates"
 date: "2016-11-24"
 description: ""
 feature_image: ""
-tags: []
+tags: [gd-sprest]
 ---
 
 This post will go over the latest changes to the gd-sprest project. This framework is used to develop against the SharePoint 2013/Online REST api. It's available at [github](http://gunjandatta.github.io/sprest) and [npm](https://www.npmjs.com/package/gd-sprest).
@@ -37,7 +37,7 @@ A new feature of the framework is the ability to have full control of the reques
 
 #### execute() Method Logic
 
-[![Execute Method](https://dattabase.com/blog/wp-content/uploads/2016/11/executeMethod.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/executeMethod.png)
+[![Execute Method](images/FrameWorkUpdates/executeMethod.png)](images/FrameWorkUpdates/executeMethod.png)
 
 #### Server-Side Code Comparison
 
@@ -45,11 +45,11 @@ The new features allows for less code required to interact with SharePoint. I re
 
 ##### Server-Side Code Example
 
-[![Server Side Code Example](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)
+[![Server Side Code Example](images/FrameWorkUpdates/SSOMvsSPREST_1.png)](images/FrameWorkUpdates/SSOMvsSPREST_1.png)
 
 ##### TypeScript Code Example
 
-[![TypeScript Code Example](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)
+[![TypeScript Code Example](images/FrameWorkUpdates/SSOMvsSPREST_2.png)](images/FrameWorkUpdates/SSOMvsSPREST_2.png)
 
 ### Conclusion
 
