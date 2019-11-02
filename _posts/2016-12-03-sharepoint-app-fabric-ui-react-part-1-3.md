@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-In this post I will give a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. I will break this out into three sections: [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) (This Post) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3/)
+In this post I will give a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. I will break this out into three sections: [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) (This Post) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3)
 
 <!--more-->
 
@@ -22,10 +22,10 @@ I've updated this post to fix the issues with webpack. A sample project using th
 ### Software Requirements
 
 - [Visual Studio Code](https://code.visualstudio.com) Not required, but recommended to use for developing NodeJS projects.
-- [Visual Studio Community](https://www.visualstudio.com/vs/) Required to create the SharePoint Add-In.
-- [Office Developer Tools for Visual Studio](https://www.visualstudio.com/vs/office-tools/) This plugin is for Visual Studio. It will add the Office and SharePoint project templates. We will need it to create the SharePoint Add-In project.
-- [Node JS](https://nodejs.org/en/) Required to create NodeJS projects.
-- [Node JS Tools for Visual Studio](https://www.visualstudio.com/vs/node-js/) This plugin is for Visual Studio. It will add the NodeJS project templates. We will need it to create the NodeJS project in Visual Studio.
+- [Visual Studio Community](https://www.visualstudio.com/vs) Required to create the SharePoint Add-In.
+- [Office Developer Tools for Visual Studio](https://www.visualstudio.com/vs/office-tools) This plugin is for Visual Studio. It will add the Office and SharePoint project templates. We will need it to create the SharePoint Add-In project.
+- [Node JS](https://nodejs.org/en) Required to create NodeJS projects.
+- [Node JS Tools for Visual Studio](https://www.visualstudio.com/vs/node-js) This plugin is for Visual Studio. It will add the NodeJS project templates. We will need it to create the NodeJS project in Visual Studio.
 - [NPM Task Runner for Visual Studio](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner) This plugin is for Visual Studio. It will allow you to execute the "npm run \[config\]" commands from Visual Studio.
 
 ### Background Information
@@ -78,7 +78,7 @@ This section will go over the development tools to execute the following: \* Com
 
 ##### Compile and Package Solution
 
-We will be using [Babel](https://babeljs.io/) to compile the React code and [Webpack](https://webpack.github.io/) to bundle it together. Similar to the previous section, we will use npm to download the development libraries to do the following: \* @types/react - Required to compile the react code using the typescript compiler. \* @types/react-dom - Required to compile the react code using the typescript compiler. \* babel-core - Required to use "Babel" \* babel-loader - Compiles the JSX code to JavaScript. \* babel-preset-es2015 - Converts the JavaScript to ES2015 (The current web standard supported by browsers) \* react-hot-loader - Plugin for the webpack development server library to display code changes on-demand \* ts-loader - Compiles the TypeScript code to JSX. \* webpack - Used to compile, bundle and package the solution
+We will be using [Babel](https://babeljs.io) to compile the React code and [Webpack](https://webpack.github.io) to bundle it together. Similar to the previous section, we will use npm to download the development libraries to do the following: \* @types/react - Required to compile the react code using the typescript compiler. \* @types/react-dom - Required to compile the react code using the typescript compiler. \* babel-core - Required to use "Babel" \* babel-loader - Compiles the JSX code to JavaScript. \* babel-preset-es2015 - Converts the JavaScript to ES2015 (The current web standard supported by browsers) \* react-hot-loader - Plugin for the webpack development server library to display code changes on-demand \* ts-loader - Compiles the TypeScript code to JSX. \* webpack - Used to compile, bundle and package the solution
 
 To download these libraries, type the following command into powershell:
 

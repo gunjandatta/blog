@@ -59,4 +59,4 @@ Functions related to copying files and creating folder structures from the app w
 
 #### JSLink Helper
 
-I recently wrote a [blog post](https://dattabase.com/blog/js-links/) on JSLinks which has an overview of the JSLink helper methods.
+I recently wrote a [blog post](https://dattabase.com/blog/js-links) on JSLinks which has an overview of the JSLink helper methods.

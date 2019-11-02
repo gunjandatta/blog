@@ -7,22 +7,22 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) **(This Post)**
-- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/)
-- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/)
-- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4) **(This Post)**
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4)
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4)
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4)
 
 <!--more-->
 
 ### TypeScript WebPart Example
 
-This is the first of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to take the simple JavaScript example we created in the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/), and create it in TypeScript. This example will use webpack and babel to compile and bundle the code into a JavaScript files using ES2015 standards.
+This is the first of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to take the simple JavaScript example we created in the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart), and create it in TypeScript. This example will use webpack and babel to compile and bundle the code into a JavaScript files using ES2015 standards.
 
 #### Requirements
 
-- [NodeJS](https://nodejs.org/en/) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
-- [TypeScript](https://www.typescriptlang.org/) - Link to TypeScript for reference.
+- [NodeJS](https://nodejs.org/en) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
+- [TypeScript](https://www.typescriptlang.org) - Link to TypeScript for reference.
 
 ##### Global Libraries
 
@@ -50,10 +50,10 @@ _Running the 'npm init --y' command will select the default values and create th
 
 ##### Install the Libraries
 
-- [Babel](https://babeljs.io/) - The babel-core, babel-loader, babel-preset-es2015 & ts-loader are referenced by WebPack to compile the TypeScript code to JavaScript ES2015 standards
+- [Babel](https://babeljs.io) - The babel-core, babel-loader, babel-preset-es2015 & ts-loader are referenced by WebPack to compile the TypeScript code to JavaScript ES2015 standards
 - [gd-sprest](https://gunjandatta.github.io/sprest) - The library used to create the webpart
 - [gd-sprest-js](https://github.com/gunjandatta/sprest-js) - The javascript library extending the office fabric-ui javascript framework
-- [WebPack](https://webpack.js.org/) - Used to compile and bundle the code into a single output file
+- [WebPack](https://webpack.js.org) - Used to compile and bundle the code into a single output file
 
 ```
 npm i --save-dev gd-sprest gd-sprest-js babel-core babel-loader babel-preset-es2015 ts-loader webpack

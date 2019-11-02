@@ -13,7 +13,7 @@ This blog post will give code examples of the new Taxonomy, ListForm and ListFor
 
 ### Automated Check-In Example
 
-Let's design a SharePoint 2013 solution, giving an example of automatically checking in a user, when they visit a web. We will use a SharePoint list to contain an item for team members. [@JoanneCKlein](https://twitter.com/JoanneCKlein) recently [blogged](https://joannecklein.com/2016/06/21/choice-lookup-or-managed-metadata/) about the use of choice, lookup and managed metadata fields. I recommend reading it for real-cases.
+Let's design a SharePoint 2013 solution, giving an example of automatically checking in a user, when they visit a web. We will use a SharePoint list to contain an item for team members. [@JoanneCKlein](https://twitter.com/JoanneCKlein) recently [blogged](https://joannecklein.com/2016/06/21/choice-lookup-or-managed-metadata) about the use of choice, lookup and managed metadata fields. I recommend reading it for real-cases.
 
 For this blog post, I'll use a managed metadata field, so I can give code examples of the new [Taxonomy](https://github.com/gunjandatta/sprest/wiki/Taxonomy), [ListForm](https://github.com/gunjandatta/sprest/wiki/List-Form) and [ListFormField](https://github.com/gunjandatta/sprest/wiki/List-Form-Field) helper classes.
 

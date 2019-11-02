@@ -7,13 +7,13 @@ feature_image: ""
 tags: []
 ---
 
-This blog post will give an overview of an extension to the [gd-sprest](https://gunjandatta.github.io/sprest/) library for creating list item forms in SharePoint. The source code for this project can be found in [github](https://github.com/gunjandatta/sprest-react).
+This blog post will give an overview of an extension to the [gd-sprest](https://gunjandatta.github.io/sprest) library for creating list item forms in SharePoint. The source code for this project can be found in [github](https://github.com/gunjandatta/sprest-react).
 
 <!--more-->
 
 ### Project Overview
 
-From all of the posts I've written so far, it just made sense to create an extension to the [gd-sprest](https://gunjandatta.github.io/sprest/) library for creating list item forms in SharePoint. The project uses the [Office Fabric UI React](https://dev.office.com/fabric) framework to render the field components. This post will go over the test project, located in the [github project](https://github.com/gunjandatta/sprest-react). The test project is a simple dashboard to display the list items, with a simple menu for creating and viewing items using a panel.
+From all of the posts I've written so far, it just made sense to create an extension to the [gd-sprest](https://gunjandatta.github.io/sprest) library for creating list item forms in SharePoint. The project uses the [Office Fabric UI React](https://dev.office.com/fabric) framework to render the field components. This post will go over the test project, located in the [github project](https://github.com/gunjandatta/sprest-react). The test project is a simple dashboard to display the list items, with a simple menu for creating and viewing items using a panel.
 
 #### Files
 
@@ -21,7 +21,7 @@ The test folder has the following files: \* cfg.ts - The configuration file to c
 
 #### Configuration
 
-The configuration file uses the automation feature of the [gd-sprest](https://gunjandatta.github.io/sprest/) library. This configuration file defines the test list with the custom field types the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library currently supports.
+The configuration file uses the automation feature of the [gd-sprest](https://gunjandatta.github.io/sprest) library. This configuration file defines the test list with the custom field types the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library currently supports.
 
 ```
 import { Helper, SPTypes } from "gd-sprest";

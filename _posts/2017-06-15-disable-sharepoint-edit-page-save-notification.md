@@ -13,7 +13,7 @@ This post will cover how to bypass the "Save Notification" when editing a ShareP
 
 ### Overview
 
-I needed to implement this for the [Modern WebPart](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) post. The custom configuration was stored in the WebPart's "Content" property. The code example uses JSOM (JavaScript Object-Model) to update the webpart and redirects the user to the current page. When trying to redirect the user, SharePoint will display a "Save Notification" warning the user to save the page. Not only is this notification annoying, but by clicking "OK" to save the page changes it would overwrite the previous version reverting it back to its original state.
+I needed to implement this for the [Modern WebPart](https://dattabase.com/blog/sharepoint-2013-modern-webpart) post. The custom configuration was stored in the WebPart's "Content" property. The code example uses JSOM (JavaScript Object-Model) to update the webpart and redirects the user to the current page. When trying to redirect the user, SharePoint will display a "Save Notification" warning the user to save the page. Not only is this notification annoying, but by clicking "OK" to save the page changes it would overwrite the previous version reverting it back to its original state.
 
 ### Solution
 

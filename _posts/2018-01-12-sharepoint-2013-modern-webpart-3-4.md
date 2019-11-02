@@ -7,21 +7,21 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/)
-- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/)
-- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/) **(This Post)**
-- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4)
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4)
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4) **(This Post)**
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4)
 
 <!--more-->
 
 ### VueJS WebPart Example
 
-This is the third of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an example of using VueJS, while expanding on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/). This is the first time I've coded in VueJS, so this should be fun.
+This is the third of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an example of using VueJS, while expanding on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4). This is the first time I've coded in VueJS, so this should be fun.
 
 #### Requirements
 
-- [NodeJS](https://nodejs.org/en/) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
+- [NodeJS](https://nodejs.org/en) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
 
 ### Create the Project
 

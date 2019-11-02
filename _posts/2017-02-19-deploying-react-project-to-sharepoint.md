@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will give an overview of how to deploy the projects created in various blog posts to SharePoint 2013/Online. For this post we will reference the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5/) project. The code reference is available at [github](https://github.com/gunjandatta/sprest-fabric-react-redux). We will also reference [JSLinks](https://dattabase.com/blog/js-links/) from a previous blog post as part of the solution.
+This post will give an overview of how to deploy the projects created in various blog posts to SharePoint 2013/Online. For this post we will reference the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5) project. The code reference is available at [github](https://github.com/gunjandatta/sprest-fabric-react-redux). We will also reference [JSLinks](https://dattabase.com/blog/js-links) from a previous blog post as part of the solution.
 
 <!--more-->
 
@@ -19,7 +19,7 @@ I wanted to give a recommended solution for deploying projects to SharePoint 201
 
 ### Deployment - Code Updates
 
-We will be using the [gd-sprest](https://gunjandatta.github.io/sprest) library to write helper scripts for the administrator. Referencing the src folder structure of the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5/) project: \* actions - The project actions \* components - The project components \* data - The data source methods \* reducers - The redux reducers \* store - The redux store
+We will be using the [gd-sprest](https://gunjandatta.github.io/sprest) library to write helper scripts for the administrator. Referencing the src folder structure of the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5) project: \* actions - The project actions \* components - The project components \* data - The data source methods \* reducers - The redux reducers \* store - The redux store
 
 We will add a new folder: scripts
 
@@ -331,7 +331,7 @@ It's always best practice to validate the list, custom fields and view were crea
 
 ### Displaying in a Web
 
-The custom view created uses the JSLink property to reference a javascript file to override the Client-Side Rendering (CSR) of the list view. Reference the [JSLinks](https://dattabase.com/blog/js-links/) from a previous blog for additional information on this subject.
+The custom view created uses the JSLink property to reference a javascript file to override the Client-Side Rendering (CSR) of the list view. Reference the [JSLinks](https://dattabase.com/blog/js-links) from a previous blog for additional information on this subject.
 
 #### Loading the Scripts
 

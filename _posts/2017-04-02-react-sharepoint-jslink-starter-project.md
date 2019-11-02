@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will give an overview of the React SharePoint JSLink starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](https://dattabase.com/blog/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-jslink). This project template can be used in SharePoint 2013+ environments.
+This post will give an overview of the React SharePoint JSLink starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [JSLinks](https://dattabase.com/blog/js-links). The code for this post can be found on [github](https://github.com/gunjandatta/sp-jslink). This project template can be used in SharePoint 2013+ environments.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ This post will give an overview of the React SharePoint JSLink starter project. 
 
 ### Project Overview
 
-The starter project gives sample code for creating jslink files to customize SharePoint list forms and views. I will go over the sample code and explain how to apply customizations. This starter project has been based off of the concepts in this [previous blog post](https://dattabase.com/blog/deploying-react-project-to-sharepoint/), so I recommend reading it as a prerequisites if you are new to Client-Side Rendering (CSR).
+The starter project gives sample code for creating jslink files to customize SharePoint list forms and views. I will go over the sample code and explain how to apply customizations. This starter project has been based off of the concepts in this [previous blog post](https://dattabase.com/blog/deploying-react-project-to-sharepoint), so I recommend reading it as a prerequisites if you are new to Client-Side Rendering (CSR).
 
 ###### WebPack Configuration (webpack.config.js)
 
@@ -69,7 +69,7 @@ It's important to note the "entry" and "output" properties of the webpack config
 
 The template file contains the code to override the list view templates. I'll break out the code file and explain it by each function.
 
-**Initialization** The initialization method will create an instance of the JSLink object, a helper class from the [gd-sprest](https://gunjandatta.github.io/sprest/) library. The "id" property should be updated based on the class or file name. This sample code will override a list view's Header, Body and Footer templates.
+**Initialization** The initialization method will create an instance of the JSLink object, a helper class from the [gd-sprest](https://gunjandatta.github.io/sprest) library. The "id" property should be updated based on the class or file name. This sample code will override a list view's Header, Body and Footer templates.
 
 ```
 /**
@@ -163,7 +163,7 @@ render(<ListView data={ctx.ListData.Row} wpId={ctx.wpq} />, el);
 
 ```
 
-**Client-Side Rendering (CSR) Override** To apply the CSR override, we will create a global variable for this class. The reason I'm making this check, is in the case we have multiple instances of the same list view webpart on the page. For example, let's say you make a generic chart for a list view which can be used to visualize the data in a chart. If the user adds two instances of the same list view webpart targeting different datasets on a webpart page, you will need to add additional code to prevent a conflict. By design, you only need to register a CSR once since it will run for each list view webpart based on the CSR template override values. A [previous blog post](https://dattabase.com/blog/js-links/) goes into further details of the available template overrides.
+**Client-Side Rendering (CSR) Override** To apply the CSR override, we will create a global variable for this class. The reason I'm making this check, is in the case we have multiple instances of the same list view webpart on the page. For example, let's say you make a generic chart for a list view which can be used to visualize the data in a chart. If the user adds two instances of the same list view webpart targeting different datasets on a webpart page, you will need to add additional code to prevent a conflict. By design, you only need to register a CSR once since it will run for each list view webpart based on the CSR template override values. A [previous blog post](https://dattabase.com/blog/js-links) goes into further details of the available template overrides.
 
 ```
 // Ensure this class is available globally
@@ -242,7 +242,7 @@ export class ListView extends React.Component<Props, any> {
 
 ###### Scripts (src/scripts/view.ts)
 
-This sample code isn't required, but comes in handy for a manual deployment. This view helper class will allow you to set and clear the JSLink property of a view using the console window of the browser. It uses the [gd-sprest](https://gunjandatta.github.io/sprest/) library to get the list view and update the JSLink property. The JSLink property for Content Types and Views are not available through the GUI, so you will need to use code to update the JSLink property.
+This sample code isn't required, but comes in handy for a manual deployment. This view helper class will allow you to set and clear the JSLink property of a view using the console window of the browser. It uses the [gd-sprest](https://gunjandatta.github.io/sprest) library to get the list view and update the JSLink property. The JSLink property for Content Types and Views are not available through the GUI, so you will need to use code to update the JSLink property.
 
 ```
 import { List } from "gd-sprest";

@@ -13,7 +13,7 @@ This post will go over updates to my [Office Fabric UI SharePoint Hosted Add-In 
 
 ### New List Example
 
-Since we are working in SharePoint, it would be ideal to give an example of using the Office Fabric React Framework to display list data. Instead of giving a generic code example, I wanted to give an example for developing SharePoint 2013 Add-Ins more efficiently. Our main bottleneck in SharePoint development is the environment itself, which has been removed based on the configuration of the solution. Refer to a [previous blog](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) post for additional details. This section will go over the data source of the list, and how to configure it with test data.
+Since we are working in SharePoint, it would be ideal to give an example of using the Office Fabric React Framework to display list data. Instead of giving a generic code example, I wanted to give an example for developing SharePoint 2013 Add-Ins more efficiently. Our main bottleneck in SharePoint development is the environment itself, which has been removed based on the configuration of the solution. Refer to a [previous blog](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) post for additional details. This section will go over the data source of the list, and how to configure it with test data.
 
 #### Test vs SharePoint Data
 

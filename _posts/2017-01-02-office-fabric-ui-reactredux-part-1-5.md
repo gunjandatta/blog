@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over creating a SharePoint Hosted Add-In using the Office Fabric UI React framework and Redux. It's a continuation of a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3), but we will now incorporate Redux. I've broken this post into five parts: 1. Introduction and Project Creation (This Post) 2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5/) 3. [Office UI Fabric Dialog](https://dattabase.com/blog/office-fabric-ui-reactredux-part-3-5/) 4. [Office UI Fabric Panel](https://dattabase.com/blog/office-fabric-ui-reactredux-part-4-5/) 5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5/)
+This post will go over creating a SharePoint Hosted Add-In using the Office Fabric UI React framework and Redux. It's a continuation of a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3), but we will now incorporate Redux. I've broken this post into five parts: 1. Introduction and Project Creation (This Post) 2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5) 3. [Office UI Fabric Dialog](https://dattabase.com/blog/office-fabric-ui-reactredux-part-3-5) 4. [Office UI Fabric Panel](https://dattabase.com/blog/office-fabric-ui-reactredux-part-4-5) 5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5)
 
 The entire project is on [github](https://github.com/gunjandatta/sprest-fabric-react-redux).
 
@@ -66,7 +66,7 @@ Since this is a continuation of a [previous post](https://dattabase.com/blog/sha
 #### Required Software
 
 - [Visual Studio Code](https://code.visualstudio.com)
-- [Node JS](https://nodejs.org/en/)
+- [Node JS](https://nodejs.org/en)
 
 #### NPM Package Configuration
 

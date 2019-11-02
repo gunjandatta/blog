@@ -15,8 +15,8 @@ This post will give a recommended approach to deploying SharePoint 2013 solution
 
 #### Libraries
 
-- The [gd-sprest](https://gunjandatta.github.io/sprest/) library's automation feature is used for easy deployment.
-- The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library's webpart component. _Refer to a [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) discussing an approach to creating webparts utilizing modern web techniques._
+- The [gd-sprest](https://gunjandatta.github.io/sprest) library's automation feature is used for easy deployment.
+- The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library's webpart component. _Refer to a [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart) discussing an approach to creating webparts utilizing modern web techniques._
 
 #### Global and Web Solutions
 
@@ -24,7 +24,7 @@ A webpart will be created and added to the site collection's webpart gallery in 
 
 #### Global Library
 
-This solution uses [webpack](http://webpack.github.io/) to bundle and package the solution and assoicated libraries into a single output file. Since we are using the [Office Fabric React](http://dev.office.com/fabric) framework, the output file will have a decent amount of overhead. If we create each project as a component, and package them into one global library, this will minimize the duplication of libraries and size of the project files. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest/) library allows us to create a user custom action scoped to the site-collection. A user custom action will allow us to add a script link to each page within the site collection. Using SharePoint's Script On-Demand (SOD) library, our code can notify each other giving us the ability to control the execution order. The code shown below is an example of notifying other scripts that the "demo.js" script library has been loaded.
+This solution uses [webpack](http://webpack.github.io) to bundle and package the solution and assoicated libraries into a single output file. Since we are using the [Office Fabric React](http://dev.office.com/fabric) framework, the output file will have a decent amount of overhead. If we create each project as a component, and package them into one global library, this will minimize the duplication of libraries and size of the project files. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest) library allows us to create a user custom action scoped to the site-collection. A user custom action will allow us to add a script link to each page within the site collection. Using SharePoint's Script On-Demand (SOD) library, our code can notify each other giving us the ability to control the execution order. The code shown below is an example of notifying other scripts that the "demo.js" script library has been loaded.
 
 ```
 SP.SOD.notifyScriptLoadedAndExecuteWaitingJobs("demo.js");
@@ -33,7 +33,7 @@ SP.SOD.notifyScriptLoadedAndExecuteWaitingJobs("demo.js");
 
 ##### Custom WebParts
 
-The webpart we create is actually an out-of-the-box (OTB) "Script Editor" webpart. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest/) library makes it easy to deploy it to the webpart gallery and set the "Content" property to load the our custom component from the global library. Refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for additional details. This approach allows us to make updates to a single file that is applied to all webparts that are currently being used.
+The webpart we create is actually an out-of-the-box (OTB) "Script Editor" webpart. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest) library makes it easy to deploy it to the webpart gallery and set the "Content" property to load the our custom component from the global library. Refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart) for additional details. This approach allows us to make updates to a single file that is applied to all webparts that are currently being used.
 
 ```
 SP.SOD.executeOrDelayUntilScriptLoaded(function() { new Solution.Project(); }, "demo.js");
@@ -46,7 +46,7 @@ One main reason why I recommend this approach, is that the code we create will m
 
 ### Solution Overview
 
-This section will go over the file and folder structure of the demo project. Refer to the [prev post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for a detailed overview of the webpart starter project. This project will use the same configuration and webpart component files for this demo.
+This section will go over the file and folder structure of the demo project. Refer to the [prev post](https://dattabase.com/blog/sharepoint-2013-modern-webpart) for a detailed overview of the webpart starter project. This project will use the same configuration and webpart component files for this demo.
 
 #### Source Folder Structure
 
@@ -227,7 +227,7 @@ Configuration["addDemoWebPart"] = () => {
 
 #### WebPart Files
 
-This demo will not focus on the webpart, you can refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for additional details. **Display Component (./src/demo/wp.tsx)**
+This demo will not focus on the webpart, you can refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart) for additional details. **Display Component (./src/demo/wp.tsx)**
 
 ```
 import * as React from "react";

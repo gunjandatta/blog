@@ -19,7 +19,7 @@ Developing for SharePoint 2013 environments can be difficult, given the new mode
 
 The original code for this library came from the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library. I wanted to make sure the solution was framework independent, so you can reference this from any framework you choose to work with. My goal in this post is to give examples of developing webparts using the following frameworks:
 
-1) [JavaScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) **(This Post)** 2) [TypeScript - Example of using TypeScript to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) 3) [React - Example of using the gd-sprest-react library](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/) 4) [VueJS - Example of using VueJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/) 5) [AngularJS - Example of using AngularJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
+1) [JavaScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart) **(This Post)** 2) [TypeScript - Example of using TypeScript to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4) 3) [React - Example of using the gd-sprest-react library](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4) 4) [VueJS - Example of using VueJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4) 5) [AngularJS - Example of using AngularJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4)
 
 #### WebPart Logic
 

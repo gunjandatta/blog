@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over a new feature in the [gd-sprest](https://gunjandatta.github.io/sprest) library. This feature will help automate the creation and removal of SharePoint web components, specifically the Field, Content Type, List and User Custom Actions. Refer to the [SharePoint Scripts Starter Project](https://dattabase.com/blog/sharepoint-scripts-starter-project/) blog post for additional details of using this feature, this post just goes over the feature.
+This post will go over a new feature in the [gd-sprest](https://gunjandatta.github.io/sprest) library. This feature will help automate the creation and removal of SharePoint web components, specifically the Field, Content Type, List and User Custom Actions. Refer to the [SharePoint Scripts Starter Project](https://dattabase.com/blog/sharepoint-scripts-starter-project) blog post for additional details of using this feature, this post just goes over the feature.
 
 <!--more-->
 
@@ -106,7 +106,7 @@ The webpart configuration is an array of webpart information objects.
 
 ### Example Configuration File
 
-This example configuration file comes from a [prev blog post](https://dattabase.com/blog/sharepoint-scripts-starter-project/). Refer to [this post](https://dattabase.com/blog/sharepoint-scripts-starter-project/) for a full break down of the configuration file and how to deploy it.
+This example configuration file comes from a [prev blog post](https://dattabase.com/blog/sharepoint-scripts-starter-project). Refer to [this post](https://dattabase.com/blog/sharepoint-scripts-starter-project) for a full break down of the configuration file and how to deploy it.
 
 ```
 import {Helper, SPTypes} from "gd-sprest";

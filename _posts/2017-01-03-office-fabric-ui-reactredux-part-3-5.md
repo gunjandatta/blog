@@ -11,11 +11,11 @@ This is the third of five posts going over the Office Fabric UI React library an
 
 <!--more-->
 
-1. [Introduction and Project Creation](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5/)
-2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5/)
+1. [Introduction and Project Creation](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5)
+2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5)
 3. Office UI Fabric Navigation (This Post)
-4. [Office UI Fabric Dialog/Panel](https://dattabase.com/blog/office-fabric-ui-reactredux-part-4-5/)
-5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5/)
+4. [Office UI Fabric Dialog/Panel](https://dattabase.com/blog/office-fabric-ui-reactredux-part-4-5)
+5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5)
 
 ### Office Fabric UI - Navigation Example
 

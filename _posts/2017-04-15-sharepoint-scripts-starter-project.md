@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over the SharePoint Scripts starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](https://dattabase.com/blog/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-scripts). This project template is for SharePoint 2013+ environments.
+This post will go over the SharePoint Scripts starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [JSLinks](https://dattabase.com/blog/js-links). The code for this post can be found on [github](https://github.com/gunjandatta/sp-scripts). This project template is for SharePoint 2013+ environments.
 
 <!--more-->
 
@@ -70,7 +70,7 @@ This starter project template is meant for SharePoint 2013 environments where th
 
 #### SharePoint Configuration
 
-The [gd-sprest](https://gunjandatta.github.io/sprest/) has a new feature for creating and removing fields, lists and user custom actions. Refer to [this post](https://dattabase.com/blog/sharepoint-configuration/) for additional details of the SharePoint configuration feature. The list customizations for this solution will create custom fields and views. The script file below contains the configuration for:
+The [gd-sprest](https://gunjandatta.github.io/sprest) has a new feature for creating and removing fields, lists and user custom actions. Refer to [this post](https://dattabase.com/blog/sharepoint-configuration) for additional details of the SharePoint configuration feature. The list customizations for this solution will create custom fields and views. The script file below contains the configuration for:
 
 - \[Custom Action\] Add a script link to the 'testProject.js' output file in the "dev" folder of the "Site Assets" folder
 - \[Custom Action\] Add a script block to add a link to the Office Fabric UI CDN (Required for the Panel)
@@ -188,7 +188,7 @@ export const TestProjectCfg = new Helper.SPConfig({
 
 #### Data Source Folder
 
-The "data" folder contains the class for retreiving the data from the "Test Project" list. The interface will give us intellisense for the item. We are using the [gd-sprest](https://gunjandatta.github.io/sprest/) library to get the list from the current web and return the results using a promise.
+The "data" folder contains the class for retreiving the data from the "Test Project" list. The interface will give us intellisense for the item. We are using the [gd-sprest](https://gunjandatta.github.io/sprest) library to get the list from the current web and return the results using a promise.
 
 _/src/data/panel.ts_
 
@@ -234,7 +234,7 @@ export class TestProjectDataSource {
 
 #### Custom View
 
-Let's start with customizing the list view. This is just a basic example of customizing a list view while letting SharePoint do the work for the data source. Refer to a [prev post](https://dattabase.com/blog/deploying-react-project-to-sharepoint/) for more information of this approach. This example will override the header, body and footer of the view, which is basically the entire view. The context of the view will be passed to our React component and render a custom view instead. _Note - JSLinks when used in web part pages with other list views can cause conflicts. Refer to the JSLink post for additional details._
+Let's start with customizing the list view. This is just a basic example of customizing a list view while letting SharePoint do the work for the data source. Refer to a [prev post](https://dattabase.com/blog/deploying-react-project-to-sharepoint) for more information of this approach. This example will override the header, body and footer of the view, which is basically the entire view. The context of the view will be passed to our React component and render a custom view instead. _Note - JSLinks when used in web part pages with other list views can cause conflicts. Refer to the JSLink post for additional details._
 
 _/src/jslink.tsx_
 

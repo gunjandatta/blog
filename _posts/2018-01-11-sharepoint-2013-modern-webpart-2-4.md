@@ -7,22 +7,22 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/)
-- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/) **(This Post)**
-- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/)
-- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4)
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4) **(This Post)**
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4)
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4)
 
 <!--more-->
 
 ### React WebPart Example
 
-This is the second of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an overview of [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library and expand on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) to give better code examples using the [React](https://reactjs.org/) framework. This example will be written in TypeScript using the [Office Fabric-UI React](https://dev.office.com/fabric) framework.
+This is the second of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an overview of [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library and expand on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4) to give better code examples using the [React](https://reactjs.org) framework. This example will be written in TypeScript using the [Office Fabric-UI React](https://dev.office.com/fabric) framework.
 
 #### Requirements
 
-- [NodeJS](https://nodejs.org/en/) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
-- [TypeScript](https://www.typescriptlang.org/) - Link to TypeScript for reference.
+- [NodeJS](https://nodejs.org/en) - A superset of JavaScript functions. NodeJS allows us to develop code similar to C#, which is compiled into JavaScript.
+- [TypeScript](https://www.typescriptlang.org) - Link to TypeScript for reference.
 
 ##### Global Libraries
 
@@ -33,13 +33,13 @@ npm i -g typescript
 
 ```
 
-#### [SharePoint React Components](https://dattabase.com/blog/sp-react-components/)
+#### [SharePoint React Components](https://dattabase.com/blog/sp-react-components)
 
-The webpart logic originated from the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library, which is why this post will have many more examples then the rest. The main reason for selecting the [React](https://reactjs.org/) framework, is Microsoft's decision on using React for the [Fabric-UI](https://dev.office.com/fabric) library. The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library was designed to extend the Fabric-UI components for SharePoint 2013+ environments. _For the latest information, refer to the [wiki](https://github.com/gunjandatta/sprest/wiki/React)_
+The webpart logic originated from the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library, which is why this post will have many more examples then the rest. The main reason for selecting the [React](https://reactjs.org) framework, is Microsoft's decision on using React for the [Fabric-UI](https://dev.office.com/fabric) library. The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library was designed to extend the Fabric-UI components for SharePoint 2013+ environments. _For the latest information, refer to the [wiki](https://github.com/gunjandatta/sprest/wiki/React)_
 
 ##### Available Components
 
-There is just too much to go over, so I created a [blog post](https://dattabase.com/blog/sp-react-components/) giving a high level overview of the available components.
+There is just too much to go over, so I created a [blog post](https://dattabase.com/blog/sp-react-components) giving a high level overview of the available components.
 
 ### Project
 
@@ -58,12 +58,12 @@ _Running the 'npm init --y' command will select the default values and create th
 
 ##### Install the Libraries
 
-- [Babel](https://babeljs.io/) - The babel-core, babel-loader, babel-preset-es2015 & ts-loader are referenced by WebPack to compile the TypeScript code to JavaScript ES2015 standards
+- [Babel](https://babeljs.io) - The babel-core, babel-loader, babel-preset-es2015 & ts-loader are referenced by WebPack to compile the TypeScript code to JavaScript ES2015 standards
 - [gd-sprest](https://gunjandatta.github.io/sprest) - The library used to create the webpart
 - [gd-sp-webpart](https://github.com/gunjandatta/sp-webpart) - The webpart library
-- [React](https://reactjs.org/) - The react library is split up into react and react-dom. For intellisense we will need to download the @types/react & @types/react-dom libraries.
-- [SASS](http://sass-lang.com/) - The node-sass, sass-loader, css-loader & style-loader libraries are used to compile SASS to JS.
-- [WebPack](https://webpack.js.org/) - Used to compile and bundle the code into a single output file
+- [React](https://reactjs.org) - The react library is split up into react and react-dom. For intellisense we will need to download the @types/react & @types/react-dom libraries.
+- [SASS](http://sass-lang.com) - The node-sass, sass-loader, css-loader & style-loader libraries are used to compile SASS to JS.
+- [WebPack](https://webpack.js.org) - Used to compile and bundle the code into a single output file
 
 ```
 npm i --save gd-sprest gd-sprest-react office-ui-fabric-react react react-dom

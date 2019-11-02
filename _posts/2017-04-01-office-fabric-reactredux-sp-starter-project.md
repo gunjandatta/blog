@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will give an overview of the Office Fabric UI React/Redux SharePoint starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) and [Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-react-redux). This project template can be used in SharePoint 2013+ environments.
+This post will give an overview of the Office Fabric UI React/Redux SharePoint starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5). The code for this post can be found on [github](https://github.com/gunjandatta/sp-react-redux). This project template can be used in SharePoint 2013+ environments.
 
 <!--more-->
 
@@ -46,7 +46,7 @@ The starter project gives sample code for displaying the Fabric Pivot and Spinne
 
 ###### Entry Point (index.tsx)
 
-The entry point of the project will create the redux store, load the data and render the main component. The "Helper.Loader.waitForSPLibs()" is optional. This method is one of many helper methods available in the [gd-sprest library](https://gunjandatta.github.io/sprest/). It will wait until the SharePoint core libraries are loaded before executing the callback method, with a timeout of 2.5 seconds. There are other optional parameters to set the timeout or manually load the core libraries.The timeout of 2.5 seconds can provide a delay to simulate loading of data for the test page. In general, the SharePoint core libraries are already available by the time this code is running, so this method is really for the test page. This method may come in handy if you are using a minimal html page in SharePoint, similar to [this one](https://dattabase.com/blog/minimal-page-for-sharepoint-app-parts/). After the SP core libraries are loaded, we will call the "loadData" action method and pass the dispatch to the redux store. This will load the sample page data asynchronously.
+The entry point of the project will create the redux store, load the data and render the main component. The "Helper.Loader.waitForSPLibs()" is optional. This method is one of many helper methods available in the [gd-sprest library](https://gunjandatta.github.io/sprest). It will wait until the SharePoint core libraries are loaded before executing the callback method, with a timeout of 2.5 seconds. There are other optional parameters to set the timeout or manually load the core libraries.The timeout of 2.5 seconds can provide a delay to simulate loading of data for the test page. In general, the SharePoint core libraries are already available by the time this code is running, so this method is really for the test page. This method may come in handy if you are using a minimal html page in SharePoint, similar to [this one](https://dattabase.com/blog/minimal-page-for-sharepoint-app-parts). After the SP core libraries are loaded, we will call the "loadData" action method and pass the dispatch to the redux store. This will load the sample page data asynchronously.
 
 ```
 // Create the store
@@ -92,7 +92,7 @@ export function loadData() {
 
 ###### Page Data (data/pageData.ts)
 
-The page data provides a template for querying a SharePoint list using the [gd-sprest](https://gunjandatta.github.io/sprest/) library. The "ContextInfo" will check to see if the SharePoint core libraries are loaded. This is really used for the test page, since we are not testing in a SharePoint environment. If a SharePoint environment is detected, it will query the SharePoint list and return the item collection, otherwise it will return test data.
+The page data provides a template for querying a SharePoint list using the [gd-sprest](https://gunjandatta.github.io/sprest) library. The "ContextInfo" will check to see if the SharePoint core libraries are loaded. This is really used for the test page, since we are not testing in a SharePoint environment. If a SharePoint environment is detected, it will query the SharePoint list and return the item collection, otherwise it will return test data.
 
 ```
 /**
@@ -300,4 +300,4 @@ export class Navigation extends React.Component<Props, any> {
 
 ### Sample Output
 
-To run this project, type in "npm run test" to start the webpack dev server. Making changes to the code will trigger the react-hot-loader plugin to recompile. Refreshing the page after it recompiles will display the code changes for faster development. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/demo.png) [Click here](https://gunjandatta.github.io/sp-react-redux/) to view the sample output.
+To run this project, type in "npm run test" to start the webpack dev server. Making changes to the code will trigger the react-hot-loader plugin to recompile. Refreshing the page after it recompiles will display the code changes for faster development. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/demo.png) [Click here](https://gunjandatta.github.io/sp-react-redux) to view the sample output.

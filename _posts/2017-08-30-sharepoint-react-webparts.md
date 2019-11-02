@@ -13,7 +13,7 @@ This post will go over new webpart classes available in the [gd-sprest-react](ht
 
 ### Available WebPart Classes
 
-Refer to this [blog post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for a detailed explanation of the webpart component. Below are a list of the current available webpart classes.
+Refer to this [blog post](https://dattabase.com/blog/sharepoint-2013-modern-webpart) for a detailed explanation of the webpart component. Below are a list of the current available webpart classes.
 
 #### WebPart
 

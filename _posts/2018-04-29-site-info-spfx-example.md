@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over a SharePoint Framework (SPFX) webpart project using the [SharePoint REST Framework](https://gunjandatta.github.io). The code can be found on [github](https://github.com/gunjandatta/spfx-siteinfo). Refer to [this blog post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3/) for a reference for setting up your development environment for SPFX.
+This post will go over a SharePoint Framework (SPFX) webpart project using the [SharePoint REST Framework](https://gunjandatta.github.io). The code can be found on [github](https://github.com/gunjandatta/spfx-siteinfo). Refer to [this blog post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3) for a reference for setting up your development environment for SPFX.
 
 <!--more-->
 
