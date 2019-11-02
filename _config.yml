@@ -25,6 +25,8 @@ favicon: images/favicon.png
 
 # Site navigation - each item must have a title and a url.
 navigation:
+  - text: About
+    url: /blog/about
   - text: SharePoint REST Framework
     url: /
 
