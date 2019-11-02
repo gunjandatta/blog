@@ -19,3 +19,14 @@ if (menuToggle) {
     }, false);
   }
 }
+
+// Back arrow button
+let backButtons = document.querySelectorAll(".archive-back-link");
+if (backButtons) {
+  for (let i = 0; i < backButtons.length; i++) {
+    backButtons[i].addEventListener("click", function (e) {
+      window.history.back();
+      e.preventDefault();
+    });
+  }
+}
