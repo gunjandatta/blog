@@ -4,7 +4,7 @@ title: "Office Fabric React SharePoint Hosted Add-In"
 date: "2016-12-17"
 description: ""
 feature_image: ""
-tags: []
+tags: [add-in, fabric-ui, react]
 ---
 
 This post will go over my github project showing examples of using the Office Fabric React Framework. Refer to a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) on the setup and configuration of the project.

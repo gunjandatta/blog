@@ -4,7 +4,7 @@ title: "Create Content Types Using JSOM"
 date: "2016-09-22"
 description: ""
 feature_image: ""
-tags: []
+tags: [jsom, content type]
 ---
 
 I generally try to use REST to do stuff in SharePoint, but as we all know there are limitations with it. If you are doing research on creating content types NOT inheriting from the default "Item" content type, then you'll have to use SSOM, CSOM or JSOM. Below is a code example of creating a content type inheriting from the "Document" content type.

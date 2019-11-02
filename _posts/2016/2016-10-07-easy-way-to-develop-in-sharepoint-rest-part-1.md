@@ -4,7 +4,7 @@ title: "Easy Way to Develop in SharePoint (REST) - Part I"
 date: "2016-10-07"
 description: ""
 feature_image: ""
-tags: []
+tags: [rest, gd-sprest]
 ---
 
 This first post will go over the background and struggles of developing against the SharePoint REST api. Part II will go over the library and how to use it.

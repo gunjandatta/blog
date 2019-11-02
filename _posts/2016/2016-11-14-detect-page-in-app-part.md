@@ -4,7 +4,7 @@ title: "Detect Page in App Part"
 date: "2016-11-14"
 description: ""
 feature_image: ""
-tags: []
+tags: [app part, add-in]
 ---
 
 In this post, I'll go over a simple solution for focusing on the main placeholder content, if the page is detected to be within an App-Part.

@@ -4,7 +4,7 @@ title: "Create a Managed Metadata Field Using REST and JSOM"
 date: "2016-09-23"
 description: ""
 feature_image: ""
-tags: []
+tags: [taxonomy, rest, jsom]
 ---
 
 This topic will go over creating a Managed Metadata Field using REST and JSOM. I will be using REST to create the fields, and JSOM to connect it to a term set. I've seen many examples on the web for connecting fields to a term set, but most of them hard-code GUIDs which isn't helpful, since they are unique to the environment.

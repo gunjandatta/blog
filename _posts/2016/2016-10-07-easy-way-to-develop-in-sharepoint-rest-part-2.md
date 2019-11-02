@@ -4,7 +4,7 @@ title: "Easy Way to Develop in SharePoint (REST) - Part II"
 date: "2016-10-07"
 description: ""
 feature_image: ""
-tags: []
+tags: [rest, gd-sprest]
 ---
 
 I'll highlight the benefits, but if you want background information, then refer to the previous post. This post will go over the REST library and how it can be used to minimize the amount of code required with interacting with SharePoint. The library is available on [npm](https://npmjs.com/packages/gd-sprest) and [github](https://github.com/gunjandatta/sprest).

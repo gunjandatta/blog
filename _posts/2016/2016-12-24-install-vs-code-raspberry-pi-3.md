@@ -4,7 +4,7 @@ title: "Install VS Code on Raspberry Pi 3"
 date: "2016-12-24"
 description: ""
 feature_image: ""
-tags: []
+tags: [raspberry pi]
 ---
 
 This blog post is a little outside SharePoint, which is generally what I tend to blog about. As a side project, I'm working w/ my daughter to build her class computer lab. I purchased 5 raspberry pi 3b kits and tried to follow Scott Hanselman's [blog post](http://www.hanselman.com/blog/BuildingVisualStudioCodeOnARaspberryPi3.aspx) on installing VS Code. Here are the latest steps that worked for me. The version of Raspbian is the latest Nov 2016 (Pixel).

@@ -4,7 +4,7 @@ title: "SharePoint App - Fabric UI and React (Part 1 of 3)"
 date: "2016-12-03"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, fabric-ui, add-in]
 ---
 
 In this post I will give a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. I will break this out into three sections: [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) (This Post) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3)

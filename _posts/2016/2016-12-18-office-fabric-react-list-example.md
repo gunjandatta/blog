@@ -4,7 +4,7 @@ title: "Office Fabric React List Example"
 date: "2016-12-18"
 description: ""
 feature_image: ""
-tags: []
+tags: [fabric-ui, react, add-in]
 ---
 
 This post will go over updates to my [Office Fabric UI SharePoint Hosted Add-In using the React Framework](https://dattabase.com/blog/office-fabric-react-sharepoint-hosted-add) blog post.

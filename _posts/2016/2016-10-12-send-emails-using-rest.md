@@ -4,7 +4,7 @@ title: "Send Emails Using REST"
 date: "2016-10-12"
 description: ""
 feature_image: ""
-tags: []
+tags: [email, rest]
 ---
 
 In this post, I'll demonstrate how to send an email in a SharePoint 2013 (On-Premise) or Online environment. This will be using the REST library I created, which is available on [npm](https://npmjs.com/packages/gd-sprest) and [github](https://github.com/gunjandatta/sprest).

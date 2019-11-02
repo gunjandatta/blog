@@ -4,7 +4,7 @@ title: "Query >5000 Items using REST"
 date: "2016-12-10"
 description: ""
 feature_image: ""
-tags: []
+tags: [large list, rest]
 ---
 
 From this [blog post](http://sympmarc.com/2016/11/30/25696) by Marc Anderson, I incorporated the logic in the gd-sprest framework available on [github](https://github.com/gunjandatta/sprest) and [npm](https://www.npmjs.com/package/gd-sprest).

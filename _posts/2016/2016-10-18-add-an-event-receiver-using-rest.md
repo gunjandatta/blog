@@ -4,7 +4,7 @@ title: "Add an Event Receiver using REST"
 date: "2016-10-18"
 description: ""
 feature_image: ""
-tags: []
+tags: [event receiver, rest]
 ---
 
 In this post, I'll demonstrate how to add an event receiver to a web or list in a SharePoint 2013 (On-Premise) or Online environment. This will be using the REST library I created, which is available on [npm](https://npmjs.com/packages/gd-sprest) and [github](https://github.com/gunjandatta/sprest).

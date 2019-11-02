@@ -4,7 +4,7 @@ title: "Minimal Page for SharePoint App Parts"
 date: "2016-10-22"
 description: ""
 feature_image: ""
-tags: []
+tags: [minimal page]
 ---
 
 When developing app parts, you want to focus on the main content of the page. Instead of using css and js to hide the ribbon and other parts of the page, I wanted to figure out the minimum required to use JSOM or interact with the REST API. I believe the code example below has the minimum. Please add a comment if this doesn't work for you, or if I missed anything.
