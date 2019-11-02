@@ -12,7 +12,7 @@ lang: en-US
 title: "Blog"
 
 # A description of your site for meta tag, search engine results.
-description: "A blog site for SharePoint developers."
+description: "Simple Ideas + Simple Solutions = Innovation"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: "/blog"
