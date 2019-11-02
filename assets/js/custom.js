@@ -21,11 +21,22 @@ if (menuToggle) {
 }
 
 // Back arrow button
-let backButtons = document.querySelectorAll(".archive-back-link");
+let backButtons = document.querySelectorAll(".go-back");
 if (backButtons) {
   for (let i = 0; i < backButtons.length; i++) {
     backButtons[i].addEventListener("click", function (e) {
       window.history.back();
+      e.preventDefault();
+    });
+  }
+}
+
+// Top arrow button
+let topButtons = document.querySelectorAll(".back-to-top");
+if (topButtons) {
+  for (let i = 0; i < topButtons.length; i++) {
+    topButtons[i].addEventListener("click", function (e) {
+      window.scrollTo(0, 0);
       e.preventDefault();
     });
   }
