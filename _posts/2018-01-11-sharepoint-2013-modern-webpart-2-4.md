@@ -7,17 +7,17 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](http://dattabase.com/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](http://dattabase.com/sharepoint-2013-modern-webpart-1-4/)
-- [Demo 2 - React](http://dattabase.com/sharepoint-2013-modern-webpart-2-4/) **(This Post)**
-- [Demo 3 - VueJS](http://dattabase.com/sharepoint-2013-modern-webpart-3-4/)
-- [Demo 4 - AngularJS](http://dattabase.com/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/)
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/) **(This Post)**
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/)
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
 
 <!--more-->
 
 ### React WebPart Example
 
-This is the second of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an overview of [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library and expand on the [previous post](http://dattabase.com/sharepoint-2013-modern-webpart-1-4/) to give better code examples using the [React](https://reactjs.org/) framework. This example will be written in TypeScript using the [Office Fabric-UI React](https://dev.office.com/fabric) framework.
+This is the second of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an overview of [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library and expand on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) to give better code examples using the [React](https://reactjs.org/) framework. This example will be written in TypeScript using the [Office Fabric-UI React](https://dev.office.com/fabric) framework.
 
 #### Requirements
 
@@ -33,13 +33,13 @@ npm i -g typescript
 
 ```
 
-#### [SharePoint React Components](http://dattabase.com/sp-react-components/)
+#### [SharePoint React Components](https://dattabase.com/blog/sp-react-components/)
 
 The webpart logic originated from the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library, which is why this post will have many more examples then the rest. The main reason for selecting the [React](https://reactjs.org/) framework, is Microsoft's decision on using React for the [Fabric-UI](https://dev.office.com/fabric) library. The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library was designed to extend the Fabric-UI components for SharePoint 2013+ environments. _For the latest information, refer to the [wiki](https://github.com/gunjandatta/sprest/wiki/React)_
 
 ##### Available Components
 
-There is just too much to go over, so I created a [blog post](http://dattabase.com/sp-react-components/) giving a high level overview of the available components.
+There is just too much to go over, so I created a [blog post](https://dattabase.com/blog/sp-react-components/) giving a high level overview of the available components.
 
 ### Project
 
@@ -434,18 +434,18 @@ Contacts.Configuration.List.install()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](http://dattabase.com/wp-content/uploads/2018/01/react_install_list.png) 5) Install the webpart
+_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_install_list.png) 5) Install the webpart
 
 ```
 Contacts.Configuration.WebPart.install()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](http://dattabase.com/wp-content/uploads/2018/01/react_install_webpart.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_install_webpart.png)
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo - Contacts" group "My Contacts" webpart ![](http://dattabase.com/wp-content/uploads/2018/01/react_add_webpart.png) 4) After the page reloads, click on the "Edit Configuration" 5) Select the "My Contacts" test list we created ![](http://dattabase.com/wp-content/uploads/2018/01/react_select_list.png) 6) Save the webpart 7) Save the page At this point, you should see the webpart title only. This is because we don't have any data in the list, so nothing is being rendered. ![](http://dattabase.com/wp-content/uploads/2018/01/react_display_empty.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo - Contacts" group "My Contacts" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_add_webpart.png) 4) After the page reloads, click on the "Edit Configuration" 5) Select the "My Contacts" test list we created ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_select_list.png) 6) Save the webpart 7) Save the page At this point, you should see the webpart title only. This is because we don't have any data in the list, so nothing is being rendered. ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_display_empty.png)
 
 ##### Step 4 - Add Test Data
 
@@ -456,7 +456,7 @@ Contacts.Configuration.List.addTestData()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/react_test_data.png) 4) Refresh the page and view the data ![](http://dattabase.com/wp-content/uploads/2018/01/react_display.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_test_data.png) 4) Refresh the page and view the data ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_display.png)
 
 ##### Step 4 - Clean Up
 
@@ -468,7 +468,7 @@ DemoWebPart.Configuration.WebPart.uninstall()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](http://dattabase.com/wp-content/uploads/2018/01/react_uninstall.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_uninstall.png)
 
 ##### Output Size
 
@@ -476,4 +476,4 @@ One thing to note, is the output file size (uncompressed) is about 3MB. This is 
 
 ### Conclusion
 
-I hope this post was useful for using the React framework. This [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library was designed to reduce the redundancies and complexities for developing react solutions. In the [next post](http://dattabase.com/sharepoint-2013-modern-webpart-3-4) we will explore VueJS framework.
+I hope this post was useful for using the React framework. This [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library was designed to reduce the redundancies and complexities for developing react solutions. In the [next post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4) we will explore VueJS framework.

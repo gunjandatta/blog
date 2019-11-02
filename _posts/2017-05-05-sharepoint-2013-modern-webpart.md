@@ -19,7 +19,7 @@ Developing for SharePoint 2013 environments can be difficult, given the new mode
 
 The original code for this library came from the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library. I wanted to make sure the solution was framework independent, so you can reference this from any framework you choose to work with. My goal in this post is to give examples of developing webparts using the following frameworks:
 
-1) [JavaScript](http://dattabase.com/sharepoint-2013-modern-webpart/) **(This Post)** 2) [TypeScript - Example of using TypeScript to create a demo webpart](http://dattabase.com/sharepoint-2013-modern-webpart-1-4/) 3) [React - Example of using the gd-sprest-react library](http://dattabase.com/sharepoint-2013-modern-webpart-2-4/) 4) [VueJS - Example of using VueJS to create a demo webpart](http://dattabase.com/sharepoint-2013-modern-webpart-3-4/) 5) [AngularJS - Example of using AngularJS to create a demo webpart](http://dattabase.com/sharepoint-2013-modern-webpart-4-4/)
+1) [JavaScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) **(This Post)** 2) [TypeScript - Example of using TypeScript to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) 3) [React - Example of using the gd-sprest-react library](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/) 4) [VueJS - Example of using VueJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/) 5) [AngularJS - Example of using AngularJS to create a demo webpart](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
 
 #### WebPart Logic
 
@@ -93,14 +93,14 @@ _If you are not referencing the file from github, update the src location to the
 
 ##### Step 3 - Configure the WebPart
 
-The last step is to configure the webpart. Since we are using the list webpart template, there is no need to write code to reference the list in the current or other webs. 1) Edit the page and you will see a configuration button ![](http://dattabase.com/wp-content/uploads/2017/05/edit-button.png)
+The last step is to configure the webpart. Since we are using the list webpart template, there is no need to write code to reference the list in the current or other webs. 1) Edit the page and you will see a configuration button ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-button.png)
 
-2) Clicking on the configuration button will display a panel to configure the webpart. ![](http://dattabase.com/wp-content/uploads/2017/05/edit-panel.png)
+2) Clicking on the configuration button will display a panel to configure the webpart. ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-panel.png)
 
-3) For this example, I'll use the "Dev" list. Click on the list dropdown and click on "Save". ![](http://dattabase.com/wp-content/uploads/2017/05/edit-panel-list.png) _Optional - You can set the relative web url to another site, and select a list from a different web. Click the "Refresh" button to reload the lists dropdown._
+3) For this example, I'll use the "Dev" list. Click on the list dropdown and click on "Save". ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-panel-list.png) _Optional - You can set the relative web url to another site, and select a list from a different web. Click the "Refresh" button to reload the lists dropdown._
 
-4) After the page saves the webpart data, stop editing and view the list data. ![](http://dattabase.com/wp-content/uploads/2017/05/display-listview.png)
+4) After the page saves the webpart data, stop editing and view the list data. ![](https://dattabase.com/blog/wp-content/uploads/2017/05/display-listview.png)
 
 ##### Conclusion
 
-I hope you found this demo useful. Now that we have covered a basic JavaScript example, lets jump over to other examples using the modern web stack. The [next post](http://dattabase.com/sharepoint-2013-modern-webpart-1-4) will give an example of creating this in TypeScript.
+I hope you found this demo useful. Now that we have covered a basic JavaScript example, lets jump over to other examples using the modern web stack. The [next post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4) will give an example of creating this in TypeScript.

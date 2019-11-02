@@ -11,11 +11,11 @@ This is the fourth of five posts going over the Office Fabric UI React library a
 
 <!--more-->
 
-1. [Introduction and Project Creation](http://dattabase.com/office-fabric-ui-reactredux-part-1-5/)
-2. [Core Configuration/Files](http://dattabase.com/office-fabric-ui-reactredux-part-2-5/)
-3. [Office UI Fabric Navigation](http://dattabase.com/office-fabric-ui-reactredux-part-3-5/)
+1. [Introduction and Project Creation](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5/)
+2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5/)
+3. [Office UI Fabric Navigation](https://dattabase.com/blog/office-fabric-ui-reactredux-part-3-5/)
 4. Office UI Fabric Dialog/Panel (This Post)
-5. [Office UI Fabric Details List](http://dattabase.com/office-fabric-ui-reactredux-part-5-5/)
+5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5/)
 
 ### Office Fabric UI - Panel Example
 
@@ -338,11 +338,11 @@ npm run test
 
 #### Navigation
 
-![Navigation](http://dattabase.com/wp-content/uploads/2017/01/nav_bar_updated.png)
+![Navigation](https://dattabase.com/blog/wp-content/uploads/2017/01/nav_bar_updated.png)
 
 #### Demo Panel
 
-![Panel](http://dattabase.com/wp-content/uploads/2017/01/panel.png)
+![Panel](https://dattabase.com/blog/wp-content/uploads/2017/01/panel.png)
 
 ### Conclusion
 

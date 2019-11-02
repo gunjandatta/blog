@@ -16,7 +16,7 @@ This post will give a recommended approach to deploying SharePoint 2013 solution
 #### Libraries
 
 - The [gd-sprest](https://gunjandatta.github.io/sprest/) library's automation feature is used for easy deployment.
-- The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library's webpart component. _Refer to a [previous post](http://dattabase.com/sharepoint-2013-modern-webpart/) discussing an approach to creating webparts utilizing modern web techniques._
+- The [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library's webpart component. _Refer to a [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) discussing an approach to creating webparts utilizing modern web techniques._
 
 #### Global and Web Solutions
 
@@ -33,7 +33,7 @@ SP.SOD.notifyScriptLoadedAndExecuteWaitingJobs("demo.js");
 
 ##### Custom WebParts
 
-The webpart we create is actually an out-of-the-box (OTB) "Script Editor" webpart. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest/) library makes it easy to deploy it to the webpart gallery and set the "Content" property to load the our custom component from the global library. Refer to [this post](http://dattabase.com/sharepoint-2013-modern-webpart/) for additional details. This approach allows us to make updates to a single file that is applied to all webparts that are currently being used.
+The webpart we create is actually an out-of-the-box (OTB) "Script Editor" webpart. The automation feature in the [gd-sprest](https://gunjandatta.github.io/sprest/) library makes it easy to deploy it to the webpart gallery and set the "Content" property to load the our custom component from the global library. Refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for additional details. This approach allows us to make updates to a single file that is applied to all webparts that are currently being used.
 
 ```
 SP.SOD.executeOrDelayUntilScriptLoaded(function() { new Solution.Project(); }, "demo.js");
@@ -46,7 +46,7 @@ One main reason why I recommend this approach, is that the code we create will m
 
 ### Solution Overview
 
-This section will go over the file and folder structure of the demo project. Refer to the [prev post](http://dattabase.com/sharepoint-2013-modern-webpart/) for a detailed overview of the webpart starter project. This project will use the same configuration and webpart component files for this demo.
+This section will go over the file and folder structure of the demo project. Refer to the [prev post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for a detailed overview of the webpart starter project. This project will use the same configuration and webpart component files for this demo.
 
 #### Source Folder Structure
 
@@ -227,7 +227,7 @@ Configuration["addDemoWebPart"] = () => {
 
 #### WebPart Files
 
-This demo will not focus on the webpart, you can refer to [this post](http://dattabase.com/sharepoint-2013-modern-webpart/) for additional details. **Display Component (./src/demo/wp.tsx)**
+This demo will not focus on the webpart, you can refer to [this post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/) for additional details. **Display Component (./src/demo/wp.tsx)**
 
 ```
 import * as React from "react";
@@ -327,14 +327,14 @@ Solution.Demo.Configuration.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2017/06/install-1.png)
+![](https://dattabase.com/blog/wp-content/uploads/2017/06/install-1.png)
 
 #### Demo
 
 ###### Site Solution
 
-**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](http://dattabase.com/wp-content/uploads/2017/06/AddSiteWebPart.png) **4\. WebPart (Edit Mode)** ![](http://dattabase.com/wp-content/uploads/2017/06/SiteWebPartEditMode.png) **5\. Configure the WebPart** ![](http://dattabase.com/wp-content/uploads/2017/06/WebPartEditPanel.png)
+**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/AddSiteWebPart.png) **4\. WebPart (Edit Mode)** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/SiteWebPartEditMode.png) **5\. Configure the WebPart** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/WebPartEditPanel.png)
 
 ###### Web Solution
 
-**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](http://dattabase.com/wp-content/uploads/2017/06/AddCustomRibbonWebPart.png) **4\. WebPart (Display Mode)** ![](http://dattabase.com/wp-content/uploads/2017/06/WebPartDisplay.png)
+**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/AddCustomRibbonWebPart.png) **4\. WebPart (Display Mode)** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/WebPartDisplay.png)

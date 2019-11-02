@@ -102,7 +102,7 @@ For those who don't want to use the library, the request is a POST. The query pa
 
 ###### Output
 
-The output of the query returned the correct user account. ![](http://dattabase.com/wp-content/uploads/2017/04/searchUser.png)
+The output of the query returned the correct user account. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/searchUser.png)
 
 #### clientPeoplePickerResolveUser
 
@@ -143,4 +143,4 @@ For those who don't want to use the library, the request is a POST. The query pa
 
 ###### Output
 
-The output of the query returned the correct user account. ![](http://dattabase.com/wp-content/uploads/2017/04/resolveUser.png)
+The output of the query returned the correct user account. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/resolveUser.png)

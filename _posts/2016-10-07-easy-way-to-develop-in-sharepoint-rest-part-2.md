@@ -11,7 +11,7 @@ I'll highlight the benefits, but if you want background information, then refer 
 
 <!--more-->
 
-### [Link to the Latest Updates in the Framework](http://dattabase.com/sp-rest-framework-updates)
+### [Link to the Latest Updates in the Framework](https://dattabase.com/blog/sp-rest-framework-updates)
 
 ## Benefits
 

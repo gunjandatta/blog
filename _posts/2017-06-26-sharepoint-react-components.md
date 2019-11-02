@@ -599,22 +599,22 @@ After building the test project and uploading the file to SharePoint, you can ed
 
 #### Install the List
 
-![](http://dattabase.com/wp-content/uploads/2017/06/empty_list.png) Now that the script file is referenced on the page, you'll see an empty list. The next step is to open the browser console window (F-12), and typing the following command to install the test project. After the test project installs, refresh the page.
+![](https://dattabase.com/blog/wp-content/uploads/2017/06/empty_list.png) Now that the script file is referenced on the page, you'll see an empty list. The next step is to open the browser console window (F-12), and typing the following command to install the test project. After the test project installs, refresh the page.
 
 ```
 Demo.Configuration.install();
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2017/06/install.png)
+![](https://dattabase.com/blog/wp-content/uploads/2017/06/install.png)
 
 #### Create a New Item
 
-Refresh the page, and click on the "New Item" button to display the new item form. ![](http://dattabase.com/wp-content/uploads/2017/06/new_item_form.png)
+Refresh the page, and click on the "New Item" button to display the new item form. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/new_item_form.png)
 
 #### List View
 
-After saving an item, refresh the page and you will see it in the list view. ![](http://dattabase.com/wp-content/uploads/2017/06/list_view.png)
+After saving an item, refresh the page and you will see it in the list view. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/list_view.png)
 
 #### Uninstall the List
 

@@ -21,7 +21,7 @@ If you haven't already installed "TypeScript for Visual Studio", you will be req
 
 ### Create a SharePoint Hosted App (Add-In)
 
-[![Create VS Project](http://dattabase.com/wp-content/uploads/2016/10/CreateVSProject-300x209.png)](http://dattabase.com/wp-content/uploads/2016/10/CreateVSProject.png)
+[![Create VS Project](https://dattabase.com/blog/wp-content/uploads/2016/10/CreateVSProject-300x209.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/CreateVSProject.png)
 
 Clicking on "Next", select the Add-In type and set the url to the SharePoint site to deploy to. For this demo, I've selected to create a "SharePoint Hosted" Add-In.
 
@@ -29,19 +29,19 @@ Clicking on "Next", select the Add-In type and set the url to the SharePoint sit
 
 #### Unload the Project
 
-[![Unload VS Project](http://dattabase.com/wp-content/uploads/2016/10/UnloadProject-282x300.png)](http://dattabase.com/wp-content/uploads/2016/10/UnloadProject.png)
+[![Unload VS Project](https://dattabase.com/blog/wp-content/uploads/2016/10/UnloadProject-282x300.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UnloadProject.png)
 
 Right-click on the project and select the option to unload it.
 
 #### Edit the Project File
 
-[![Edit VS Project File](http://dattabase.com/wp-content/uploads/2016/10/EditProjectFile.png)](http://dattabase.com/wp-content/uploads/2016/10/EditProjectFile.png)
+[![Edit VS Project File](https://dattabase.com/blog/wp-content/uploads/2016/10/EditProjectFile.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/EditProjectFile.png)
 
 Right-click on the project and select the option to edit the \[Project Name\].csproj file.
 
 #### Add the TypeScript Reference
 
-[![Update Project File](http://dattabase.com/wp-content/uploads/2016/10/UpdateCSProjFile-300x59.png)](http://dattabase.com/wp-content/uploads/2016/10/UpdateCSProjFile.png)
+[![Update Project File](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateCSProjFile-300x59.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdateCSProjFile.png)
 
 Scroll to the bottom of the file, and add the following to the project file:
 
@@ -55,6 +55,6 @@ Scroll to the bottom of the file, and add the following to the project file:
 
 #### Reload the Project
 
-[![Reload VS Project](http://dattabase.com/wp-content/uploads/2016/10/ReloadProject-300x154.png)](http://dattabase.com/wp-content/uploads/2016/10/ReloadProject.png)
+[![Reload VS Project](https://dattabase.com/blog/wp-content/uploads/2016/10/ReloadProject-300x154.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/ReloadProject.png)
 
 Right-click on the project and select the option to reload it. Check out the next post for steps on using NPM in the Visual Studio project.

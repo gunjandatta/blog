@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will give an overview of the React SharePoint JSLink starter project. Please refer to previous blog posts for additional information on [React](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](http://dattabase.com/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-jslink). This project template can be used in SharePoint 2013+ environments.
+This post will give an overview of the React SharePoint JSLink starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](https://dattabase.com/blog/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-jslink). This project template can be used in SharePoint 2013+ environments.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ This post will give an overview of the React SharePoint JSLink starter project. 
 
 ### Project Overview
 
-The starter project gives sample code for creating jslink files to customize SharePoint list forms and views. I will go over the sample code and explain how to apply customizations. This starter project has been based off of the concepts in this [previous blog post](http://dattabase.com/deploying-react-project-to-sharepoint/), so I recommend reading it as a prerequisites if you are new to Client-Side Rendering (CSR).
+The starter project gives sample code for creating jslink files to customize SharePoint list forms and views. I will go over the sample code and explain how to apply customizations. This starter project has been based off of the concepts in this [previous blog post](https://dattabase.com/blog/deploying-react-project-to-sharepoint/), so I recommend reading it as a prerequisites if you are new to Client-Side Rendering (CSR).
 
 ###### WebPack Configuration (webpack.config.js)
 
@@ -163,7 +163,7 @@ render(<ListView data={ctx.ListData.Row} wpId={ctx.wpq} />, el);
 
 ```
 
-**Client-Side Rendering (CSR) Override** To apply the CSR override, we will create a global variable for this class. The reason I'm making this check, is in the case we have multiple instances of the same list view webpart on the page. For example, let's say you make a generic chart for a list view which can be used to visualize the data in a chart. If the user adds two instances of the same list view webpart targeting different datasets on a webpart page, you will need to add additional code to prevent a conflict. By design, you only need to register a CSR once since it will run for each list view webpart based on the CSR template override values. A [previous blog post](http://dattabase.com/js-links/) goes into further details of the available template overrides.
+**Client-Side Rendering (CSR) Override** To apply the CSR override, we will create a global variable for this class. The reason I'm making this check, is in the case we have multiple instances of the same list view webpart on the page. For example, let's say you make a generic chart for a list view which can be used to visualize the data in a chart. If the user adds two instances of the same list view webpart targeting different datasets on a webpart page, you will need to add additional code to prevent a conflict. By design, you only need to register a CSR once since it will run for each list view webpart based on the CSR template override values. A [previous blog post](https://dattabase.com/blog/js-links/) goes into further details of the available template overrides.
 
 ```
 // Ensure this class is available globally
@@ -325,19 +325,19 @@ JSLinkDemo.Scripts.View.setJSLink("Dev", "Dev", "~site/siteassets/jslink/jslink_
 
 ```
 
-![Set JSLink Property](http://dattabase.com/wp-content/uploads/2017/04/UpdateListView.png)
+![Set JSLink Property](https://dattabase.com/blog/wp-content/uploads/2017/04/UpdateListView.png)
 
 ###### Test Customization
 
-Accessing the "Dev" view, it will display our custom component. ![Custom List View](http://dattabase.com/wp-content/uploads/2017/04/CustomListView.png)
+Accessing the "Dev" view, it will display our custom component. ![Custom List View](https://dattabase.com/blog/wp-content/uploads/2017/04/CustomListView.png)
 
 ###### Remove Customization
 
-Since the "Dev" view has the JSLink script already loaded, we don't need to load the script manually. Simply press the "F-12" key to view the developer tools and use the helper script class to clear the JSLink property. ![Clear JSLink Property](http://dattabase.com/wp-content/uploads/2017/04/ClearJSLink.png)
+Since the "Dev" view has the JSLink script already loaded, we don't need to load the script manually. Simply press the "F-12" key to view the developer tools and use the helper script class to clear the JSLink property. ![Clear JSLink Property](https://dattabase.com/blog/wp-content/uploads/2017/04/ClearJSLink.png)
 
 ###### Test Default
 
-Refreshing the screen will display the default list view. ![Default List View](http://dattabase.com/wp-content/uploads/2017/04/DefaultListView.png)
+Refreshing the screen will display the default list view. ![Default List View](https://dattabase.com/blog/wp-content/uploads/2017/04/DefaultListView.png)
 
 ### Conclusion
 

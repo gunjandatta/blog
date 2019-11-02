@@ -13,7 +13,7 @@ This first post will go over the background and struggles of developing against 
 
 ### [View the Wiki for the latest information and how to use it](http://github.com/gunjandatta/sprest/wiki)
 
-### [Link to the Latest Updates in the Framework](http://dattabase.com/sp-rest-framework-updates)
+### [Link to the Latest Updates in the Framework](https://dattabase.com/blog/sp-rest-framework-updates)
 
 ## Background Info
 

@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This is the last of three posts giving a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. It is broken out into three sections shown below. The previous posts were focused on building solutions for SharePoint 2013 (On-Premise) environments. Now that Office 365 is here, Microsoft has introduced a new way to develop solutions for SharePoint Online using the modern web stack. This is available on-premise, but requires SharePoint 2016 with Feature Pack 2 installed. [1\. Configuring the User Interface Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3) [2\. Configuring the SharePoint Hosted Add-In Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](http://dattabase.com/sharepoint-app-fabric-ui-react-part-3-3) (This Post)
+This is the last of three posts giving a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. It is broken out into three sections shown below. The previous posts were focused on building solutions for SharePoint 2013 (On-Premise) environments. Now that Office 365 is here, Microsoft has introduced a new way to develop solutions for SharePoint Online using the modern web stack. This is available on-premise, but requires SharePoint 2016 with Feature Pack 2 installed. [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3) (This Post)
 
 <!--more-->
 
@@ -102,11 +102,11 @@ gulp serve
 
 ###### Add the WebPart
 
-![](http://dattabase.com/wp-content/uploads/2018/04/LocalWorkbench.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/04/LocalWorkbench.png)
 
 ###### View the WebPart
 
-![](http://dattabase.com/wp-content/uploads/2018/04/LocalWorkbenchWebpart.png) _The local workbench will not be able to execute requests to the REST API. This test should be used for developing the look and feel of the solution._
+![](https://dattabase.com/blog/wp-content/uploads/2018/04/LocalWorkbenchWebpart.png) _The local workbench will not be able to execute requests to the REST API. This test should be used for developing the look and feel of the solution._
 
 ##### 2\. Test in Tenant Workbench
 
@@ -119,16 +119,16 @@ gulp serve --nobrowser
 
 ###### Edge Issue
 
-As of Spring 2018, Microsoft Edge doesn't seem to connect to the dev environment. Please use IE or Chrome until this issue is fixed. ![](http://dattabase.com/wp-content/uploads/2018/04/EdgeError.png)
+As of Spring 2018, Microsoft Edge doesn't seem to connect to the dev environment. Please use IE or Chrome until this issue is fixed. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/EdgeError.png)
 
 ###### Add the WebPart
 
-![](http://dattabase.com/wp-content/uploads/2018/04/TenantWorkbench.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/04/TenantWorkbench.png)
 
 ###### View the WebPart
 
-![](http://dattabase.com/wp-content/uploads/2018/04/TenantWorkbenchWebpart.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/04/TenantWorkbenchWebpart.png)
 
 ###### Test the WebPart
 
-Since we are testing in the tenant workbench, we are able to test the requests made to the REST API. ![](http://dattabase.com/wp-content/uploads/2018/04/TenantWorkbenchTestAPI.png)
+Since we are testing in the tenant workbench, we are able to test the requests made to the REST API. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/TenantWorkbenchTestAPI.png)

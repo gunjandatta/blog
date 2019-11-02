@@ -132,7 +132,7 @@ customActions.execute(() => {
 
 Finally, we execute the request. The execute method will wait until all requests have completed, and returns the responses to the callback method. We don't need to do anything with the responses, so we will refresh the page to see the custom banner being added to the page.
 
-![Custom Banner](http://dattabase.com/wp-content/uploads/2016/11/customBanner.png)
+![Custom Banner](https://dattabase.com/blog/wp-content/uploads/2016/11/customBanner.png)
 
 #### Remove Custom Action
 

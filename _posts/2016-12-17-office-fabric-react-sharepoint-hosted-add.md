@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over my github project showing examples of using the Office Fabric React Framework. Refer to a [previous post](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3) on the setup and configuration of the project.
+This post will go over my github project showing examples of using the Office Fabric React Framework. Refer to a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) on the setup and configuration of the project.
 
 <!--more-->
 
@@ -38,11 +38,11 @@ The configuration of the date picker will require you to define the "strings" pr
 
 ##### Demo Page
 
-![Datepicker Demo](http://dattabase.com/wp-content/uploads/2016/12/Datepicker.png)
+![Datepicker Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/Datepicker.png)
 
 ##### Selecting a Date
 
-![Select Date](http://dattabase.com/wp-content/uploads/2016/12/SelectDate.png)
+![Select Date](https://dattabase.com/blog/wp-content/uploads/2016/12/SelectDate.png)
 
 ### Dropdown Demo
 
@@ -87,11 +87,11 @@ Parent/Child dropdown lists are very common, so I thought it would be important 
 
 #### Demo Page
 
-![Dropdown Demo](http://dattabase.com/wp-content/uploads/2016/12/Dropdown.png)
+![Dropdown Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/Dropdown.png)
 
 #### Select City
 
-![Parent/Child Relation](http://dattabase.com/wp-content/uploads/2016/12/ParentChild.png)
+![Parent/Child Relation](https://dattabase.com/blog/wp-content/uploads/2016/12/ParentChild.png)
 
 ### People Picker Demo
 
@@ -156,4 +156,4 @@ The "People Picker" api endpoint has been incorporated in my [SharePoint REST Fr
 
 #### Demo Page
 
-![People Picker Demo](http://dattabase.com/wp-content/uploads/2016/12/PeoplePicker.png)
+![People Picker Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/PeoplePicker.png)

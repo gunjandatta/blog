@@ -7,13 +7,13 @@ feature_image: ""
 tags: []
 ---
 
-This is the second of three posts giving a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. It is broken out into three sections: [1\. Configuring the User Interface Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3) [2\. Configuring the SharePoint Hosted Add-In Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-2-3) (This Post) [3\. Convert to the SharePoint Framework](http://dattabase.com/sharepoint-app-fabric-ui-react-part-3-3/)
+This is the second of three posts giving a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. It is broken out into three sections: [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) (This Post) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3/)
 
 <!--more-->
 
 ### Configure the Pre-Build Event
 
-In Visual Studio, right-click the SharePoint Hosted Add-In project, and select the properties. ![View Project Properties](http://dattabase.com/wp-content/uploads/2016/12/ViewProjectProperties.png)
+In Visual Studio, right-click the SharePoint Hosted Add-In project, and select the properties. ![View Project Properties](https://dattabase.com/blog/wp-content/uploads/2016/12/ViewProjectProperties.png)
 
 Enter the following into the "Pre-build event command line" box. These commands will copy the required scripts from the UX project to the scripts folder.
 
@@ -26,7 +26,7 @@ copy "$(SolutionDir)Demo.FabricReact.UX\dist\bundle.js" "$(SolutionDir)\Demo.Fab
 
 _Note - We are renaming the "bundle.js" file to "App.js, since the Add-In defaults to this script for the landing page."_
 
-Run the build command (Ctrl+Shift+B) to test the commands and copy the files. Display all files, and include them in this project. ![Include Scripts in Project](http://dattabase.com/wp-content/uploads/2016/12/IncludeScripts.png)
+Run the build command (Ctrl+Shift+B) to test the commands and copy the files. Display all files, and include them in this project. ![Include Scripts in Project](https://dattabase.com/blog/wp-content/uploads/2016/12/IncludeScripts.png)
 
 ### Configure the Default Landing Page
 
@@ -71,8 +71,8 @@ The last step is to update the landing page to display the solution. The things 
 
 ### Test the Add-In
 
-Deploy the SharePoint Add-In to SP 2013/Online environment, and view the solution in the main page. ![Demo SP App](http://dattabase.com/wp-content/uploads/2016/12/ViewSPApp.png)
+Deploy the SharePoint Add-In to SP 2013/Online environment, and view the solution in the main page. ![Demo SP App](https://dattabase.com/blog/wp-content/uploads/2016/12/ViewSPApp.png)
 
 ### Conclusion
 
-I hope this post was useful. The [github project](https://github.com/gunjandatta/sprest-fabric-react) for this post has been updated to include examples of the [gd-sprest-react](https://gunjandatta.github.io/react/) library components. The \[last blog post\]([3\. Convert to the SharePoint Framework](http://dattabase.com/sharepoint-app-fabric-ui-react-part-3-3/)) of this series will use this example and convert it to the SPFX project.
+I hope this post was useful. The [github project](https://github.com/gunjandatta/sprest-fabric-react) for this post has been updated to include examples of the [gd-sprest-react](https://gunjandatta.github.io/react/) library components. The \[last blog post\]([3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3/)) of this series will use this example and convert it to the SPFX project.

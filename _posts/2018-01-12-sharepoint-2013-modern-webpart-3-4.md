@@ -7,17 +7,17 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](http://dattabase.com/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](http://dattabase.com/sharepoint-2013-modern-webpart-1-4/)
-- [Demo 2 - React](http://dattabase.com/sharepoint-2013-modern-webpart-2-4/)
-- [Demo 3 - VueJS](http://dattabase.com/sharepoint-2013-modern-webpart-3-4/) **(This Post)**
-- [Demo 4 - AngularJS](http://dattabase.com/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/)
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/)
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/) **(This Post)**
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
 
 <!--more-->
 
 ### VueJS WebPart Example
 
-This is the third of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an example of using VueJS, while expanding on the [previous post](http://dattabase.com/sharepoint-2013-modern-webpart-2-4/). This is the first time I've coded in VueJS, so this should be fun.
+This is the third of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to give an example of using VueJS, while expanding on the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/). This is the first time I've coded in VueJS, so this should be fun.
 
 #### Requirements
 
@@ -335,32 +335,32 @@ document.head.appendChild(s);
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/LoadScript.png) 4) Install the list
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/LoadScript.png) 4) Install the list
 
 ```
 VueJSDemo.Configuration.List.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/CreateList.png) 5) Add the test data
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateList.png) 5) Add the test data
 
 ```
 VueJSDemo.Configuration.List.createTestData()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/CreateTestData.png) 6) Install the webpart
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateTestData.png) 6) Install the webpart
 
 ```
 VueJSDemo.Configuration.WebPart.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/CreateWebPart.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateWebPart.png)
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Contacts (VueJS)" webpart ![](http://dattabase.com/wp-content/uploads/2018/01/vuejs_wp_gallery.png) 4) After the page reloads, you will see the edit configuration button ![](http://dattabase.com/wp-content/uploads/2018/01/EditConfiguration.png) 5) Click on the button to display the configuration panel ![](http://dattabase.com/wp-content/uploads/2018/01/EditPanel.png) 6) Select the 'My Contacts' list and save the webpart ![](http://dattabase.com/wp-content/uploads/2018/01/SelectList.png) 7) Save the page, and when the page reloads you will see the contacts test data ![](http://dattabase.com/wp-content/uploads/2018/01/ListView.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Contacts (VueJS)" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/vuejs_wp_gallery.png) 4) After the page reloads, you will see the edit configuration button ![](https://dattabase.com/blog/wp-content/uploads/2018/01/EditConfiguration.png) 5) Click on the button to display the configuration panel ![](https://dattabase.com/blog/wp-content/uploads/2018/01/EditPanel.png) 6) Select the 'My Contacts' list and save the webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/SelectList.png) 7) Save the page, and when the page reloads you will see the contacts test data ![](https://dattabase.com/blog/wp-content/uploads/2018/01/ListView.png)
 
 ##### Step 4 - Clean Up
 
@@ -371,7 +371,7 @@ VueJSDemo.Configuration.WebPart.uninstall()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](http://dattabase.com/wp-content/uploads/2018/01/vuejs_uninstall.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/vuejs_uninstall.png)
 
 ##### Output Size
 
@@ -379,4 +379,4 @@ One thing to note, is the output file size (uncompressed) is about 745KB. This i
 
 ### Conclusion
 
-I hope this post was useful for using the VueJS framework. In the [next post](http://dattabase.com/sharepoint-2013-modern-webpart-4-4) we will explore AngularJS framework.
+I hope this post was useful for using the VueJS framework. In the [next post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4) we will explore AngularJS framework.

@@ -7,17 +7,17 @@ feature_image: ""
 tags: []
 ---
 
-- [Modern WebPart Overview](http://dattabase.com/sharepoint-2013-modern-webpart/)
-- [Demo 1 - TypeScript](http://dattabase.com/sharepoint-2013-modern-webpart-1-4/) **(This Post)**
-- [Demo 2 - React](http://dattabase.com/sharepoint-2013-modern-webpart-2-4/)
-- [Demo 3 - VueJS](http://dattabase.com/sharepoint-2013-modern-webpart-3-4/)
-- [Demo 4 - AngularJS](http://dattabase.com/sharepoint-2013-modern-webpart-4-4/)
+- [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart/)
+- [Demo 1 - TypeScript](https://dattabase.com/blog/sharepoint-2013-modern-webpart-1-4/) **(This Post)**
+- [Demo 2 - React](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4/)
+- [Demo 3 - VueJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-3-4/)
+- [Demo 4 - AngularJS](https://dattabase.com/blog/sharepoint-2013-modern-webpart-4-4/)
 
 <!--more-->
 
 ### TypeScript WebPart Example
 
-This is the first of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to take the simple JavaScript example we created in the [previous post](http://dattabase.com/sharepoint-2013-modern-webpart/), and create it in TypeScript. This example will use webpack and babel to compile and bundle the code into a JavaScript files using ES2015 standards.
+This is the first of four demos giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp). The goal of this post is to take the simple JavaScript example we created in the [previous post](https://dattabase.com/blog/sharepoint-2013-modern-webpart/), and create it in TypeScript. This example will use webpack and babel to compile and bundle the code into a JavaScript files using ES2015 standards.
 
 #### Requirements
 
@@ -313,11 +313,11 @@ WebPartDemo.Configuration.install();
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/install.png) _This part may take a little time to initialize, depending on the size of the web._
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/install.png) _This part may take a little time to initialize, depending on the size of the web._
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Demo" webpart ![](http://dattabase.com/wp-content/uploads/2018/01/wpgallery.png) 4) After the page reloads, the configuration button will be displayed ![](http://dattabase.com/wp-content/uploads/2018/01/cfg-panel.png) 5) Clicking on the button will display the configuration panel ![](http://dattabase.com/wp-content/uploads/2018/01/show-cfg.png) 6) For this demo, we will use the "Dev" list ![](http://dattabase.com/wp-content/uploads/2018/01/select-list.png) 7) After selecting the list, save the form and the list view will be displayed ![](http://dattabase.com/wp-content/uploads/2018/01/list-view.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Demo" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/wpgallery.png) 4) After the page reloads, the configuration button will be displayed ![](https://dattabase.com/blog/wp-content/uploads/2018/01/cfg-panel.png) 5) Clicking on the button will display the configuration panel ![](https://dattabase.com/blog/wp-content/uploads/2018/01/show-cfg.png) 6) For this demo, we will use the "Dev" list ![](https://dattabase.com/blog/wp-content/uploads/2018/01/select-list.png) 7) After selecting the list, save the form and the list view will be displayed ![](https://dattabase.com/blog/wp-content/uploads/2018/01/list-view.png)
 
 ##### Step 4 - Clean Up
 
@@ -328,8 +328,8 @@ WebPartDemo.Configuration.uninstall()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/01/uninstall.png) _This part may take a little time to initialize, depending on the size of the web._
+![](https://dattabase.com/blog/wp-content/uploads/2018/01/uninstall.png) _This part may take a little time to initialize, depending on the size of the web._
 
 ### Conclusion
 
-I hope this post was useful and wasn't too overwhelming with the new modern web stack. This solution is useful for simple and quick ways of developing solutions. Creating more robust applications will require a framework (React, VueJS, Angular, etc). The [next post](http://dattabase.com/sharepoint-2013-modern-webpart-2-4) will give an example of creating webparts using the React framework.
+I hope this post was useful and wasn't too overwhelming with the new modern web stack. This solution is useful for simple and quick ways of developing solutions. Creating more robust applications will require a framework (React, VueJS, Angular, etc). The [next post](https://dattabase.com/blog/sharepoint-2013-modern-webpart-2-4) will give an example of creating webparts using the React framework.

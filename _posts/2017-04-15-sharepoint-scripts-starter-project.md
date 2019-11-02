@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over the SharePoint Scripts starter project. Please refer to previous blog posts for additional information on [React](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](http://dattabase.com/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-scripts). This project template is for SharePoint 2013+ environments.
+This post will go over the SharePoint Scripts starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3/) and [JSLinks](https://dattabase.com/blog/js-links/). The code for this post can be found on [github](https://github.com/gunjandatta/sp-scripts). This project template is for SharePoint 2013+ environments.
 
 <!--more-->
 
@@ -70,7 +70,7 @@ This starter project template is meant for SharePoint 2013 environments where th
 
 #### SharePoint Configuration
 
-The [gd-sprest](https://gunjandatta.github.io/sprest/) has a new feature for creating and removing fields, lists and user custom actions. Refer to [this post](http://dattabase.com/sharepoint-configuration/) for additional details of the SharePoint configuration feature. The list customizations for this solution will create custom fields and views. The script file below contains the configuration for:
+The [gd-sprest](https://gunjandatta.github.io/sprest/) has a new feature for creating and removing fields, lists and user custom actions. Refer to [this post](https://dattabase.com/blog/sharepoint-configuration/) for additional details of the SharePoint configuration feature. The list customizations for this solution will create custom fields and views. The script file below contains the configuration for:
 
 - \[Custom Action\] Add a script link to the 'testProject.js' output file in the "dev" folder of the "Site Assets" folder
 - \[Custom Action\] Add a script block to add a link to the Office Fabric UI CDN (Required for the Panel)
@@ -234,7 +234,7 @@ export class TestProjectDataSource {
 
 #### Custom View
 
-Let's start with customizing the list view. This is just a basic example of customizing a list view while letting SharePoint do the work for the data source. Refer to a [prev post](http://dattabase.com/deploying-react-project-to-sharepoint/) for more information of this approach. This example will override the header, body and footer of the view, which is basically the entire view. The context of the view will be passed to our React component and render a custom view instead. _Note - JSLinks when used in web part pages with other list views can cause conflicts. Refer to the JSLink post for additional details._
+Let's start with customizing the list view. This is just a basic example of customizing a list view while letting SharePoint do the work for the data source. Refer to a [prev post](https://dattabase.com/blog/deploying-react-project-to-sharepoint/) for more information of this approach. This example will override the header, body and footer of the view, which is basically the entire view. The context of the view will be passed to our React component and render a custom view instead. _Note - JSLinks when used in web part pages with other list views can cause conflicts. Refer to the JSLink post for additional details._
 
 _/src/jslink.tsx_
 
@@ -671,9 +671,9 @@ After compiling the project, copy the files to the "dev" folder of the "Site Ass
 
 #### Install
 
-1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![](http://dattabase.com/wp-content/uploads/2017/04/dev_folder.png)
+1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/dev_folder.png)
 2. Press F-12 to open the browser console.
-3. Load the script ![](http://dattabase.com/wp-content/uploads/2017/04/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
+3. Load the script ![](https://dattabase.com/blog/wp-content/uploads/2017/04/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
 
 ```
 var s = document.createElement("script"); s.src = "/sites/dev/siteassets/dev/testProject.js"; document.head.appendChild(s);
@@ -687,23 +687,23 @@ TestProject.Configuration.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2017/04/install_output.png)
+![](https://dattabase.com/blog/wp-content/uploads/2017/04/install_output.png)
 
 #### Demo
 
-Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![](http://dattabase.com/wp-content/uploads/2017/04/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
+Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
 
-Accessing the "All Items" default list view, the view fields have been updated. ![](http://dattabase.com/wp-content/uploads/2017/04/default_view.png)
+Accessing the "All Items" default list view, the view fields have been updated. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/default_view.png)
 
-Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![](http://dattabase.com/wp-content/uploads/2017/04/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
+Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
 
-Clicking on the top ribbon link will display the same message. ![](http://dattabase.com/wp-content/uploads/2017/04/panel_empty.png)
+Clicking on the top ribbon link will display the same message. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/panel_empty.png)
 
-After adding some data, the custom list view will display the links. ![](http://dattabase.com/wp-content/uploads/2017/04/my_view.png)
+After adding some data, the custom list view will display the links. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/my_view.png)
 
-Clicking on the top ribbon link, the panel will display the links. ![](http://dattabase.com/wp-content/uploads/2017/04/panel_links.png)
+Clicking on the top ribbon link, the panel will display the links. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/panel_links.png)
 
-Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![](http://dattabase.com/wp-content/uploads/2017/04/webpart.png)
+Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![](https://dattabase.com/blog/wp-content/uploads/2017/04/webpart.png)
 
 #### Uninstall
 
@@ -715,4 +715,4 @@ TestProject.Configuration.uninstall()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2017/04/uninstall_output.png)
+![](https://dattabase.com/blog/wp-content/uploads/2017/04/uninstall_output.png)

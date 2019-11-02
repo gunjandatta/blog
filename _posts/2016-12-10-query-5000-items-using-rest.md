@@ -59,11 +59,11 @@ var items = (new $REST.List("Dev"))
 
 ```
 
-_Note - This example will use synchronous requests to demonstrate, but it's recommend to use asynchronous requests._ ![Get Items](http://dattabase.com/wp-content/uploads/2016/12/getItems.png)
+_Note - This example will use synchronous requests to demonstrate, but it's recommend to use asynchronous requests._ ![Get Items](https://dattabase.com/blog/wp-content/uploads/2016/12/getItems.png)
 
 #### Validate First Set of Results
 
-By default the number of results returned is 100. Looking at the first item, we verify that it's "Test 1". ![Validate First Set of Results](http://dattabase.com/wp-content/uploads/2016/12/validateFirstSetOfResults.png)
+By default the number of results returned is 100. Looking at the first item, we verify that it's "Test 1". ![Validate First Set of Results](https://dattabase.com/blog/wp-content/uploads/2016/12/validateFirstSetOfResults.png)
 
 #### Query the Next Set of Results
 
@@ -75,11 +75,11 @@ var nextSet = items.next().executeAndWait();
 
 ```
 
-![Get Next Set of Results](http://dattabase.com/wp-content/uploads/2016/12/getNextSetOfResults.png)
+![Get Next Set of Results](https://dattabase.com/blog/wp-content/uploads/2016/12/getNextSetOfResults.png)
 
 #### Validate Next Set of Results
 
-We can validate the first item in the results to be "Test 101". ![Validate Next Set of Results](http://dattabase.com/wp-content/uploads/2016/12/validateNextSetOfResults.png)
+We can validate the first item in the results to be "Test 101". ![Validate Next Set of Results](https://dattabase.com/blog/wp-content/uploads/2016/12/validateNextSetOfResults.png)
 
 ### Threshold Limits
 
@@ -107,7 +107,7 @@ Executing the code above will result in an error from the server:
 
 ##### The attempted operation is prohibited because it exceeds the list view threshold enforced by the administrator.
 
-![](http://dattabase.com/wp-content/uploads/2016/12/testFilterOnNonIndexedField.png)
+![](https://dattabase.com/blog/wp-content/uploads/2016/12/testFilterOnNonIndexedField.png)
 
 #### Query Example 2
 
@@ -125,4 +125,4 @@ Executing the code above will result in an error from the server:
 
 ```
 
-Executing the code above will result return the expected results: ![](http://dattabase.com/wp-content/uploads/2016/12/testFilterOnIndexedField.png)
+Executing the code above will result return the expected results: ![](https://dattabase.com/blog/wp-content/uploads/2016/12/testFilterOnIndexedField.png)

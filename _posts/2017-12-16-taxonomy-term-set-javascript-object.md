@@ -195,8 +195,8 @@ let addTermToSet = (termSet: ITermSet, termInfo: ITermInfo, path: Array<string>)
 
 #### Term Store
 
-The term store contains a test term set called "TestManagedMetadata". We will get this term set for this demo. ![](http://dattabase.com/wp-content/uploads/2017/12/TermStore.png)
+The term store contains a test term set called "TestManagedMetadata". We will get this term set for this demo. ![](https://dattabase.com/blog/wp-content/uploads/2017/12/TermStore.png)
 
 #### JavaScript Object
 
-After loading the script, we will run the command which will return a promise. I added some code to set the global variable to the term set. ![](http://dattabase.com/wp-content/uploads/2017/12/TermSetObject.png)
+After loading the script, we will run the command which will return a promise. I added some code to set the global variable to the term set. ![](https://dattabase.com/blog/wp-content/uploads/2017/12/TermSetObject.png)

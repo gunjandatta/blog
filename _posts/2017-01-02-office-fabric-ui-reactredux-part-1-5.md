@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-This post will go over creating a SharePoint Hosted Add-In using the Office Fabric UI React framework and Redux. It's a continuation of a [previous post](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3), but we will now incorporate Redux. I've broken this post into five parts: 1. Introduction and Project Creation (This Post) 2. [Core Configuration/Files](http://dattabase.com/office-fabric-ui-reactredux-part-2-5/) 3. [Office UI Fabric Dialog](http://dattabase.com/office-fabric-ui-reactredux-part-3-5/) 4. [Office UI Fabric Panel](http://dattabase.com/office-fabric-ui-reactredux-part-4-5/) 5. [Office UI Fabric Details List](http://dattabase.com/office-fabric-ui-reactredux-part-5-5/)
+This post will go over creating a SharePoint Hosted Add-In using the Office Fabric UI React framework and Redux. It's a continuation of a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3), but we will now incorporate Redux. I've broken this post into five parts: 1. Introduction and Project Creation (This Post) 2. [Core Configuration/Files](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5/) 3. [Office UI Fabric Dialog](https://dattabase.com/blog/office-fabric-ui-reactredux-part-3-5/) 4. [Office UI Fabric Panel](https://dattabase.com/blog/office-fabric-ui-reactredux-part-4-5/) 5. [Office UI Fabric Details List](https://dattabase.com/blog/office-fabric-ui-reactredux-part-5-5/)
 
 The entire project is on [github](https://github.com/gunjandatta/sprest-fabric-react-redux).
 
@@ -41,7 +41,7 @@ Redux helps with complex applications, where different independent components of
 
 #### Flow
 
-![Flow](http://dattabase.com/wp-content/uploads/2017/01/flow-300x229.png)
+![Flow](https://dattabase.com/blog/wp-content/uploads/2017/01/flow-300x229.png)
 
 ##### Store
 
@@ -61,7 +61,7 @@ The store will send the state changes to "React" which will handle the requested
 
 ### Project Setup
 
-Since this is a continuation of a [previous post](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3), I will not go into details of the basic configuration and assume that you have a basic knowledge of the required components and how to use them. If you do not feel comfortable, please read the previous post before moving forward with this one.
+Since this is a continuation of a [previous post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3), I will not go into details of the basic configuration and assume that you have a basic knowledge of the required components and how to use them. If you do not feel comfortable, please read the previous post before moving forward with this one.
 
 #### Required Software
 

@@ -25,19 +25,19 @@ NPM uses a package file to assist with the libraries referenced in the project. 
 
 #### Add a New Item
 
-[![Add New Item](http://dattabase.com/wp-content/uploads/2016/10/AddNewItem.png)](http://dattabase.com/wp-content/uploads/2016/10/AddNewItem.png)
+[![Add New Item](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewItem.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddNewItem.png)
 
 Right click on the project to add a new item to the root of it.
 
 #### Add the NPM Package File
 
-[![Add NPM Package File](http://dattabase.com/wp-content/uploads/2016/10/AddPackageFile.png)](http://dattabase.com/wp-content/uploads/2016/10/AddPackageFile.png)
+[![Add NPM Package File](https://dattabase.com/blog/wp-content/uploads/2016/10/AddPackageFile.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddPackageFile.png)
 
 Search for "npm" and you should find the "NPM Configuration File" item type. Rename it to "package.json" and click on "Add" to add it to the project.
 
 ### Add Dev Dependencies
 
-[![Add Dev Dependencies](http://dattabase.com/wp-content/uploads/2016/10/AddDevDependencies.png)](http://dattabase.com/wp-content/uploads/2016/10/AddDevDependencies.png)
+[![Add Dev Dependencies](https://dattabase.com/blog/wp-content/uploads/2016/10/AddDevDependencies.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddDevDependencies.png)
 
 Update the "name" property to match your project name. _(Note - This value cannot contain specific characters. Refer to the documentation for additional details.)_ style="max-width:100%"
 
@@ -45,13 +45,13 @@ I'll add my SP REST library as an example. There is intellisense, which is very 
 
 #### Node Modules Directory
 
-[![Node Modules](http://dattabase.com/wp-content/uploads/2016/10/NodeModules.png)](http://dattabase.com/wp-content/uploads/2016/10/NodeModules.png)
+[![Node Modules](https://dattabase.com/blog/wp-content/uploads/2016/10/NodeModules.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/NodeModules.png)
 
 If you click on the "Show All Files" option, you can view the "node\_modules" directory and the associated npm packages.
 
 #### Update Packages
 
-[![Update NPM Packages](http://dattabase.com/wp-content/uploads/2016/10/UpdatePackage.png)](http://dattabase.com/wp-content/uploads/2016/10/UpdatePackage.png)
+[![Update NPM Packages](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdatePackage.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/UpdatePackage.png)
 
 This part is not needed, but more of a reference. If you left-click to the left of the npm packages, a "light-bulb" icon will appear which will provide quick actions.
 
@@ -61,18 +61,18 @@ This section is just an example of how to get started. I encourage you to read t
 
 #### Add the App.ts TypeScript File
 
-[![Add TypeScript File](http://dattabase.com/wp-content/uploads/2016/10/AddTypeScriptFile.png)](http://dattabase.com/wp-content/uploads/2016/10/AddTypeScriptFile.png)
+[![Add TypeScript File](https://dattabase.com/blog/wp-content/uploads/2016/10/AddTypeScriptFile.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/AddTypeScriptFile.png)
 
 Right-click on the "Scripts" folder and add the "App.ts" typescript file. _(Note - This will overwrite the App.js file on save of the associated App.ts file.)_
 
 #### Intellisense
 
-[![SP-REST Intellisense](http://dattabase.com/wp-content/uploads/2016/10/Intellisense.png)](http://dattabase.com/wp-content/uploads/2016/10/Intellisense.png)
+[![SP-REST Intellisense](https://dattabase.com/blog/wp-content/uploads/2016/10/Intellisense.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/Intellisense.png)
 
 The above is an example of the intellisense available in the gd-sprest library. This feature will make it easier to develop client-side against the SharePoint REST api.
 
 #### JavaScript Output
 
-[![JavaScript Output](http://dattabase.com/wp-content/uploads/2016/10/TStoJS.png)](http://dattabase.com/wp-content/uploads/2016/10/TStoJS.png)
+[![JavaScript Output](https://dattabase.com/blog/wp-content/uploads/2016/10/TStoJS.png)](https://dattabase.com/blog/wp-content/uploads/2016/10/TStoJS.png)
 
 After saving the App.ts file, it will automatically compile and overwrite the App.js file.

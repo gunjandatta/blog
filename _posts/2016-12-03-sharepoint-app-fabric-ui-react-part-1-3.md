@@ -7,7 +7,7 @@ feature_image: ""
 tags: []
 ---
 
-In this post I will give a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. I will break this out into three sections: [1\. Configuring the User Interface Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-1-3) (This Post) [2\. Configuring the SharePoint Hosted Add-In Project](http://dattabase.com/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](http://dattabase.com/sharepoint-app-fabric-ui-react-part-3-3/)
+In this post I will give a step-by-step guide of building a SharePoint Hosted Add-In utilizing the Office Fabric UI React framework. I will break this out into three sections: [1\. Configuring the User Interface Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) (This Post) [2\. Configuring the SharePoint Hosted Add-In Project](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-2-3) [3\. Convert to the SharePoint Framework](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3/)
 
 <!--more-->
 
@@ -36,11 +36,11 @@ For the SharePoint developers who are currently working in SP 2013 on-premise en
 
 The Visual Studio solution will consist of two projects: 1. SharePoint Add-In 2. Node.js Web Application
 
-First we will create the Visual Studio solution. Make sure to do the following: \* Select "Blank Node.js Web Application" \* Check the option to create a directory for a solution \* Set the "Project Name" to \[Solution Name\].UX ![Create VS Solution](http://dattabase.com/wp-content/uploads/2016/12/CreateVSSolution.png)
+First we will create the Visual Studio solution. Make sure to do the following: \* Select "Blank Node.js Web Application" \* Check the option to create a directory for a solution \* Set the "Project Name" to \[Solution Name\].UX ![Create VS Solution](https://dattabase.com/blog/wp-content/uploads/2016/12/CreateVSSolution.png)
 
-Next we will create the SharePoint Hosted Add-In. Make sure to do the following: \* Set the "Project Name" to \[Solution Name\].App ![Create SP Add-In VS Project](http://dattabase.com/wp-content/uploads/2016/12/CreateSPAddProject.png)
+Next we will create the SharePoint Hosted Add-In. Make sure to do the following: \* Set the "Project Name" to \[Solution Name\].App ![Create SP Add-In VS Project](https://dattabase.com/blog/wp-content/uploads/2016/12/CreateSPAddProject.png)
 
-- Select the "SharePoint-hosted" for the "Add-In" type ![Select SP App Type](http://dattabase.com/wp-content/uploads/2016/12/SelectSPAppType.png)
+- Select the "SharePoint-hosted" for the "Add-In" type ![Select SP App Type](https://dattabase.com/blog/wp-content/uploads/2016/12/SelectSPAppType.png)
 
 ### Configure the User Interface
 
@@ -315,27 +315,27 @@ This section will go over testing the solution, using the webpack dev server lib
 
 The assumption for this solution is for the UX developers to use Visual Studio Code to build out the solution. Using this solution will require you to configure the [Task Runner](https://code.visualstudio.com/Docs/editor/tasks). Type Ctrl+Shift+P to display the "Command Palette". Once open, type in "task" and you will see the options to run the "Build" and "Test" tasks.
 
-![VS Code Task Runner](http://dattabase.com/wp-content/uploads/2016/12/VSCodeTaskRunner.png) _Note - To terminate a running task, type Ctrl+Shift+P and select the option to terminate the running task_
+![VS Code Task Runner](https://dattabase.com/blog/wp-content/uploads/2016/12/VSCodeTaskRunner.png) _Note - To terminate a running task, type Ctrl+Shift+P and select the option to terminate the running task_
 
 #### VS Community - Run Build Task
 
-To run the "Build" task in Visual Studio, right-click the "package.json" configuration file and select the "Task Runner Explorer". ![View Task Runner Explorer](http://dattabase.com/wp-content/uploads/2016/12/TaskRunnerExplorer.png)
+To run the "Build" task in Visual Studio, right-click the "package.json" configuration file and select the "Task Runner Explorer". ![View Task Runner Explorer](https://dattabase.com/blog/wp-content/uploads/2016/12/TaskRunnerExplorer.png)
 
-From the available options, double-click the "build" task to build the project. ![Run Build Task](http://dattabase.com/wp-content/uploads/2016/12/RunBuildTask.png)
+From the available options, double-click the "build" task to build the project. ![Run Build Task](https://dattabase.com/blog/wp-content/uploads/2016/12/RunBuildTask.png)
 
-View the output and ensure it was successful. ![Build Task Output](http://dattabase.com/wp-content/uploads/2016/12/RunBuildTaskOutput.png)
+View the output and ensure it was successful. ![Build Task Output](https://dattabase.com/blog/wp-content/uploads/2016/12/RunBuildTaskOutput.png)
 
-After successfully building the project, select the option to view all files in the Solution Explorer, and include the "dist" folder. ![Include Dist in VS Project](http://dattabase.com/wp-content/uploads/2016/12/IncludeDistInProject.png)
+After successfully building the project, select the option to view all files in the Solution Explorer, and include the "dist" folder. ![Include Dist in VS Project](https://dattabase.com/blog/wp-content/uploads/2016/12/IncludeDistInProject.png)
 
 _Note - View the bundle.js file in the dist folder. It will include all of the required js and css for the solution_
 
 #### VS Community - Run Test Task
 
-To run the "Test" task, double-click the "test" task to build the project. ![Run Test Task](http://dattabase.com/wp-content/uploads/2016/12/RunTestTask.png)
+To run the "Test" task, double-click the "test" task to build the project. ![Run Test Task](https://dattabase.com/blog/wp-content/uploads/2016/12/RunTestTask.png)
 
-View the output and ensure it was successful. ![Test Task Output](http://dattabase.com/wp-content/uploads/2016/12/RunTestTaskOutput.png)
+View the output and ensure it was successful. ![Test Task Output](https://dattabase.com/blog/wp-content/uploads/2016/12/RunTestTaskOutput.png)
 
-After successfully building the project, open up your internet browser of choice and goto "http://localhost:8080" to view the solution. ![Demo in Edge](http://dattabase.com/wp-content/uploads/2016/12/DemoInEdge.png)
+After successfully building the project, open up your internet browser of choice and goto "http://localhost:8080" to view the solution. ![Demo in Edge](https://dattabase.com/blog/wp-content/uploads/2016/12/DemoInEdge.png)
 
 _Note - To terminate the running task, close the "Test" window in the "Task Runner Explorer" window_ _Note - Update the index.tsx file, change the message and save the file. View the browser to see the changes updated automatically_
 

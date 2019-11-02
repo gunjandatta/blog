@@ -37,7 +37,7 @@ A new feature of the framework is the ability to have full control of the reques
 
 #### execute() Method Logic
 
-[![Execute Method](http://dattabase.com/wp-content/uploads/2016/11/executeMethod.png)](http://dattabase.com/wp-content/uploads/2016/11/executeMethod.png)
+[![Execute Method](https://dattabase.com/blog/wp-content/uploads/2016/11/executeMethod.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/executeMethod.png)
 
 #### Server-Side Code Comparison
 
@@ -45,11 +45,11 @@ The new features allows for less code required to interact with SharePoint. I re
 
 ##### Server-Side Code Example
 
-[![Server Side Code Example](http://dattabase.com/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)](http://dattabase.com/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)
+[![Server Side Code Example](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_1.png)
 
 ##### TypeScript Code Example
 
-[![TypeScript Code Example](http://dattabase.com/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)](http://dattabase.com/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)
+[![TypeScript Code Example](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)](https://dattabase.com/blog/wp-content/uploads/2016/11/SSOMvsSPREST_2.png)
 
 ### Conclusion
 

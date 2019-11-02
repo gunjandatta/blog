@@ -384,26 +384,26 @@ document.head.appendChild(s);
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/02/add-script.png) 4. Install the List
+![](https://dattabase.com/blog/wp-content/uploads/2018/02/add-script.png) 4. Install the List
 
 ```
 CheckInDemo.Configuration.List.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/02/install-list.png) 5. Install the Custom Action
+![](https://dattabase.com/blog/wp-content/uploads/2018/02/install-list.png) 5. Install the Custom Action
 
 ```
 CheckInDemo.Configuration.Web.install()
 
 ```
 
-![](http://dattabase.com/wp-content/uploads/2018/02/install-custom-action.png) 6. Access the "Team Members" List Settings 7. Edit the Check-In Status Field 8. Select the Term Set _I've gone ahead and created a term set in the site collection's term group._ ![](http://dattabase.com/wp-content/uploads/2018/02/update-field.png)
+![](https://dattabase.com/blog/wp-content/uploads/2018/02/install-custom-action.png) 6. Access the "Team Members" List Settings 7. Edit the Check-In Status Field 8. Select the Term Set _I've gone ahead and created a term set in the site collection's term group._ ![](https://dattabase.com/blog/wp-content/uploads/2018/02/update-field.png)
 
 #### Solution
 
-1. Refresh the page, and you should see an alert ![](http://dattabase.com/wp-content/uploads/2018/02/unknown-team-member.png)
+1. Refresh the page, and you should see an alert ![](https://dattabase.com/blog/wp-content/uploads/2018/02/unknown-team-member.png)
 2. Access the list
-3. Add an item ![](http://dattabase.com/wp-content/uploads/2018/02/add-item.png)
-4. After the page refreshes, you should see an alert saying it's checking you in ![](http://dattabase.com/wp-content/uploads/2018/02/checking-in-member.png)
-5. This will disappear after the item is updated, displaying a notification saying you are checked in ![](http://dattabase.com/wp-content/uploads/2018/02/notification.png)
+3. Add an item ![](https://dattabase.com/blog/wp-content/uploads/2018/02/add-item.png)
+4. After the page refreshes, you should see an alert saying it's checking you in ![](https://dattabase.com/blog/wp-content/uploads/2018/02/checking-in-member.png)
+5. This will disappear after the item is updated, displaying a notification saying you are checked in ![](https://dattabase.com/blog/wp-content/uploads/2018/02/notification.png)
