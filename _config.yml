@@ -27,11 +27,13 @@ favicon: images/favicon.png
 navigation:
   - text: About
     url: /blog/about
-  - text: SharePoint REST Framework
+  - text: Tags
+    url: /blog/tags
+  - text: Library
     url: /
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+disqus: 
 
 # Colors
 accent_color: '#2d72d9'
