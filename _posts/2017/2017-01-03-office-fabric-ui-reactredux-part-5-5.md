@@ -336,7 +336,7 @@ npm run test
 
 #### Dashboard
 
-![List](https://dattabase.com/blog/wp-content/uploads/2017/01/list.png)
+![List](images/ReactRedux/list.png)
 
 ### Conclusion
 

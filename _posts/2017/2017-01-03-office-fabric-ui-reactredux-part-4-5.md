@@ -338,11 +338,11 @@ npm run test
 
 #### Navigation
 
-![Navigation](https://dattabase.com/blog/wp-content/uploads/2017/01/nav_bar_updated.png)
+![Navigation](images/ReactRedux/nav_bar_updated.png)
 
 #### Demo Panel
 
-![Panel](https://dattabase.com/blog/wp-content/uploads/2017/01/panel.png)
+![Panel](images/ReactRedux/panel.png)
 
 ### Conclusion
 

@@ -427,11 +427,11 @@ npm run test
 
 #### Navigation
 
-![Navigation](https://dattabase.com/blog/wp-content/uploads/2017/01/nav_bar.png)
+![Navigation](images/ReactRedux/nav_bar.png)
 
 #### Demo Dialog
 
-![Demo Dialog](https://dattabase.com/blog/wp-content/uploads/2017/01/dialog.png)
+![Demo Dialog](images/ReactRedux/dialog.png)
 
 ### Conclusion
 
