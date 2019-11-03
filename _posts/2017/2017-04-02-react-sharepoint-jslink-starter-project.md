@@ -4,7 +4,7 @@ title: "React SharePoint JSLink Starter Project"
 date: "2017-04-02"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, jslink]
 ---
 
 This post will give an overview of the React SharePoint JSLink starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [JSLinks](https://dattabase.com/blog/js-links). The code for this post can be found on [github](https://github.com/gunjandatta/sp-jslink). This project template can be used in SharePoint 2013+ environments.

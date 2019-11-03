@@ -4,7 +4,7 @@ title: "Office Fabric React/Redux SharePoint Starter Project"
 date: "2017-04-01"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, fabric-ui]
 ---
 
 This post will give an overview of the Office Fabric UI React/Redux SharePoint starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5). The code for this post can be found on [github](https://github.com/gunjandatta/sp-react-redux). This project template can be used in SharePoint 2013+ environments.

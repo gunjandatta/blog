@@ -4,7 +4,7 @@ title: "Office Fabric UI - React/Redux (Part 4 of 5)"
 date: "2017-01-03"
 description: ""
 feature_image: ""
-tags: []
+tags: [fabric-ui, react, add-in]
 ---
 
 This is the fourth of five posts going over the Office Fabric UI React library and Redux. The entire project is on [github](https://github.com/gunjandatta/sprest-fabric-react-redux).

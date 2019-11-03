@@ -4,7 +4,7 @@ title: "SharePoint REST Framework Updates"
 date: "2017-02-04"
 description: ""
 feature_image: ""
-tags: []
+tags: [gd-sprest]
 ---
 
 This post will go over the latest changes to the gd-sprest project. This framework is used to develop against the SharePoint 2013/Online REST api. It's available at [github](http://gunjandatta.github.io/sprest) and [npm](https://www.npmjs.com/package/gd-sprest).

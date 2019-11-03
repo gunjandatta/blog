@@ -4,7 +4,7 @@ title: "SharePoint Calendar Event Callout"
 date: "2017-02-04"
 description: ""
 feature_image: ""
-tags: []
+tags: [calendar]
 ---
 
 This post will go over a simple customization for SharePoint 2013/Online calendars, to display a callout for each event displayed in a calendar. Refer to the [github project](https://github.com/gunjandatta/sp-event-callout) to see the code.

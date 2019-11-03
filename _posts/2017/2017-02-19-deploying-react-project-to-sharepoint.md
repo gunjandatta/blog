@@ -4,7 +4,7 @@ title: "Deploying a React Project to SharePoint"
 date: "2017-02-19"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, fabric-ui, add-in]
 ---
 
 This post will give an overview of how to deploy the projects created in various blog posts to SharePoint 2013/Online. For this post we will reference the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5) project. The code reference is available at [github](https://github.com/gunjandatta/sprest-fabric-react-redux). We will also reference [JSLinks](https://dattabase.com/blog/js-links) from a previous blog post as part of the solution.
