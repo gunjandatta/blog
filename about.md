@@ -2,7 +2,7 @@
 layout: about
 title: About the Author
 description: This page is about the author.
-feature_image: images/about.jpg
+feature_image: images/author.jpg
 ---
 
 **Gunjan Datta** is a SharePoint Developer.
