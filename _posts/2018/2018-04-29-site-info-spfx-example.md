@@ -4,7 +4,7 @@ title: "Site Info SPFX Example"
 date: "2018-04-29"
 description: ""
 feature_image: ""
-tags: []
+tags: [spfx, fabric-ui]
 ---
 
 This post will go over a SharePoint Framework (SPFX) webpart project using the [SharePoint REST Framework](https://gunjandatta.github.io). The code can be found on [github](https://github.com/gunjandatta/spfx-siteinfo). Refer to [this blog post](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-3-3) for a reference for setting up your development environment for SPFX.
@@ -176,16 +176,16 @@ Open your browser and access your tenant workbench by going to `https://[tenant]
 
 #### Add the WebPart
 
-Click on the + icon to add the webpart. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/AddWebPart.png)
+Click on the + icon to add the webpart. ![Add WebPart](images/WPSiteInfo/AddWebPart.png)
 
 #### Add Site Info WebPart
 
-Scroll down the webpart list and select the Site Info webpart. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/AddSiteInfoWebPart.png)
+Scroll down the webpart list and select the Site Info webpart. ![Add Site Information WebPart](images/WPSiteInfo/AddSiteInfoWebPart.png)
 
 #### Loading Web Info
 
-Once the webpart is added, a loading message will be displayed until the web information is loaded. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/LoadingSiteInfo.png)
+Once the webpart is added, a loading message will be displayed until the web information is loaded. ![Load Site Information](images/WPSiteInfo/LoadingSiteInfo.png)
 
 #### View List Info
 
-The web information will be displayed in tabs. ![](https://dattabase.com/blog/wp-content/uploads/2018/04/ListInfo.png)
+The web information will be displayed in tabs. ![List Information](images/WPSiteInfo/ListInfo.png)

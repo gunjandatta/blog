@@ -671,9 +671,9 @@ After compiling the project, copy the files to the "dev" folder of the "Site Ass
 
 #### Install
 
-1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![](images/SPScriptsStarterProject/dev_folder.png)
+1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![Dev Folder](images/SPScriptsStarterProject/dev_folder.png)
 2. Press F-12 to open the browser console.
-3. Load the script ![](images/SPScriptsStarterProject/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
+3. Load the script ![Load Script](images/SPScriptsStarterProject/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
 
 ```
 var s = document.createElement("script"); s.src = "/sites/dev/siteassets/dev/testProject.js"; document.head.appendChild(s);
@@ -687,23 +687,23 @@ TestProject.Configuration.install()
 
 ```
 
-![](images/SPScriptsStarterProject/install_output.png)
+![Output](images/SPScriptsStarterProject/install_output.png)
 
 #### Demo
 
-Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![](images/SPScriptsStarterProject/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
+Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![Custom Action Link](images/SPScriptsStarterProject/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
 
-Accessing the "All Items" default list view, the view fields have been updated. ![](images/SPScriptsStarterProject/default_view.png)
+Accessing the "All Items" default list view, the view fields have been updated. ![Default View](images/SPScriptsStarterProject/default_view.png)
 
-Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![](images/SPScriptsStarterProject/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
+Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![Empty View](images/SPScriptsStarterProject/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
 
-Clicking on the top ribbon link will display the same message. ![](images/SPScriptsStarterProject/panel_empty.png)
+Clicking on the top ribbon link will display the same message. ![Empty Panel](images/SPScriptsStarterProject/panel_empty.png)
 
-After adding some data, the custom list view will display the links. ![](images/SPScriptsStarterProject/my_view.png)
+After adding some data, the custom list view will display the links. ![My View](images/SPScriptsStarterProject/my_view.png)
 
-Clicking on the top ribbon link, the panel will display the links. ![](images/SPScriptsStarterProject/panel_links.png)
+Clicking on the top ribbon link, the panel will display the links. ![Panel Links](images/SPScriptsStarterProject/panel_links.png)
 
-Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![](images/SPScriptsStarterProject/webpart.png)
+Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![WebPart](images/SPScriptsStarterProject/webpart.png)
 
 #### Uninstall
 
@@ -715,4 +715,4 @@ TestProject.Configuration.uninstall()
 
 ```
 
-![](images/SPScriptsStarterProject/uninstall_output.png)
+![Uninstall](images/SPScriptsStarterProject/uninstall_output.png)

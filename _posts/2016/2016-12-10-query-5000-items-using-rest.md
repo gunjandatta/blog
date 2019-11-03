@@ -107,7 +107,7 @@ Executing the code above will result in an error from the server:
 
 ##### The attempted operation is prohibited because it exceeds the list view threshold enforced by the administrator.
 
-![](images/LargeList/testFilterOnNonIndexedField.png)
+![Test Filter](images/LargeList/testFilterOnNonIndexedField.png)
 
 #### Query Example 2
 
@@ -125,4 +125,4 @@ Executing the code above will result in an error from the server:
 
 ```
 
-Executing the code above will result return the expected results: ![](images/LargeList/testFilterOnIndexedField.png)
+Executing the code above will result return the expected results: ![Test Filter](images/LargeList/testFilterOnIndexedField.png)

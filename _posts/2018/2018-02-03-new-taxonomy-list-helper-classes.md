@@ -4,7 +4,7 @@ title: "New Taxonomy & List Helper Classes"
 date: "2018-02-03"
 description: ""
 feature_image: ""
-tags: []
+tags: [taxonomy, gd-sprest]
 ---
 
 This blog post will give code examples of the new Taxonomy, ListForm and ListFormField helper classes, available in the [gd-sprest](https://gunjandatta.github.io/sprest) library. The source code can be found in [github](https://github.com/gunjandatta/sp-checkin).
@@ -384,26 +384,26 @@ document.head.appendChild(s);
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/02/add-script.png) 4. Install the List
+![Add Script](images/CheckIn/add-script.png) 4. Install the List
 
 ```
 CheckInDemo.Configuration.List.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/02/install-list.png) 5. Install the Custom Action
+![Install List](images/CheckIn/install-list.png) 5. Install the Custom Action
 
 ```
 CheckInDemo.Configuration.Web.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/02/install-custom-action.png) 6. Access the "Team Members" List Settings 7. Edit the Check-In Status Field 8. Select the Term Set _I've gone ahead and created a term set in the site collection's term group._ ![](https://dattabase.com/blog/wp-content/uploads/2018/02/update-field.png)
+![Install Custom Action](images/CheckIn/install-custom-action.png) 6. Access the "Team Members" List Settings 7. Edit the Check-In Status Field 8. Select the Term Set _I've gone ahead and created a term set in the site collection's term group._ ![Update Field](images/CheckIn/update-field.png)
 
 #### Solution
 
-1. Refresh the page, and you should see an alert ![](https://dattabase.com/blog/wp-content/uploads/2018/02/unknown-team-member.png)
+1. Refresh the page, and you should see an alert ![Unknown Team Member](images/CheckIn/unknown-team-member.png)
 2. Access the list
-3. Add an item ![](https://dattabase.com/blog/wp-content/uploads/2018/02/add-item.png)
-4. After the page refreshes, you should see an alert saying it's checking you in ![](https://dattabase.com/blog/wp-content/uploads/2018/02/checking-in-member.png)
-5. This will disappear after the item is updated, displaying a notification saying you are checked in ![](https://dattabase.com/blog/wp-content/uploads/2018/02/notification.png)
+3. Add an item ![Add Item](images/CheckIn/add-item.png)
+4. After the page refreshes, you should see an alert saying it's checking you in ![Check-In Member](images/CheckIn/checking-in-member.png)
+5. This will disappear after the item is updated, displaying a notification saying you are checked in ![Notification](images/CheckIn/notification.png)
