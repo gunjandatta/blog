@@ -4,7 +4,7 @@ title: "Taxonomy Fields and OData Queries"
 date: "2018-07-06"
 description: ""
 feature_image: ""
-tags: []
+tags: [taxonomy, odata]
 ---
 
 This post will go over taxonomy fields and OData queries in SharePoint. These are generally difficult to do, based on the field's value containing the ID of the term instead of the value.

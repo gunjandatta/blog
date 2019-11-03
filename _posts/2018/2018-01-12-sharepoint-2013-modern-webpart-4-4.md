@@ -4,7 +4,7 @@ title: "SharePoint 2013 Modern WebPart (4 of 4)"
 date: "2018-01-12"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart]
 ---
 
 #### Still Working On This One ;)

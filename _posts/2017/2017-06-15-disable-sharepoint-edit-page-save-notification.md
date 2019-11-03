@@ -4,7 +4,7 @@ title: "Disable SharePoint Edit Page Save Notification"
 date: "2017-06-15"
 description: ""
 feature_image: ""
-tags: []
+tags: [wiki, webpart]
 ---
 
 This post will cover how to bypass the "Save Notification" when editing a SharePoint wiki or webpart page.

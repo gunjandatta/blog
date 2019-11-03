@@ -4,7 +4,7 @@ title: "SharePoint Field Schema XML Examples"
 date: "2017-12-31"
 description: ""
 feature_image: ""
-tags: []
+tags: [field]
 ---
 
 This post will give examples of SharePoint field schema xml. _Reference for [field schema](https://msdn.microsoft.com/en-us/library/office/aa979575.aspx)_

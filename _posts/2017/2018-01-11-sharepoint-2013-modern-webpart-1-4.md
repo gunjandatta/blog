@@ -4,7 +4,7 @@ title: "SharePoint 2013 Modern WebPart (1 of 4)"
 date: "2018-01-11"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart]
 ---
 
 - [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)

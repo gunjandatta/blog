@@ -4,7 +4,7 @@ title: "SharePoint JavaScript Libraries"
 date: "2017-09-04"
 description: ""
 feature_image: ""
-tags: []
+tags: [modal dialog, notify, status]
 ---
 
 I'm constantly googling for this information, since the core SharePoint javascript methods are pretty useful. This post will be added to, so check back for updates.

@@ -4,7 +4,7 @@ title: "SharePoint React Components"
 date: "2018-01-11"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, gd-sprest]
 ---
 
 ##### [Field](https://github.com/gunjandatta/sprest/wiki/React-Field)

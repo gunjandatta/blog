@@ -4,7 +4,7 @@ title: "Tasks List Not Connecting to Project Summary WebPart"
 date: "2018-02-06"
 description: ""
 feature_image: ""
-tags: []
+tags: [list]
 ---
 
 ### The Issue
