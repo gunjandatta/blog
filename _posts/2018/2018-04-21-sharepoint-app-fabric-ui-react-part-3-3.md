@@ -102,11 +102,11 @@ gulp serve
 
 ###### Add the WebPart
 
-![](images/SPAppFabricReact-3/LocalWorkbench.png)
+![Local Workbench](images/SPAppFabricReact-3/LocalWorkbench.png)
 
 ###### View the WebPart
 
-![](images/SPAppFabricReact-3/LocalWorkbenchWebpart.png) _The local workbench will not be able to execute requests to the REST API. This test should be used for developing the look and feel of the solution._
+![Local Workbench WebPart](images/SPAppFabricReact-3/LocalWorkbenchWebpart.png) _The local workbench will not be able to execute requests to the REST API. This test should be used for developing the look and feel of the solution._
 
 ##### 2\. Test in Tenant Workbench
 
@@ -114,21 +114,20 @@ Now that the solution works in the local workbench, we can now test the componen
 
 ```
 gulp serve --nobrowser
-
 ```
 
 ###### Edge Issue
 
-As of Spring 2018, Microsoft Edge doesn't seem to connect to the dev environment. Please use IE or Chrome until this issue is fixed. ![](images/SPAppFabricReact-3/EdgeError.png)
+As of Spring 2018, Microsoft Edge doesn't seem to connect to the dev environment. Please use IE or Chrome until this issue is fixed. ![Edge Error](images/SPAppFabricReact-3/EdgeError.png)
 
 ###### Add the WebPart
 
-![](images/SPAppFabricReact-3/TenantWorkbench.png)
+![Tenant Workbench](images/SPAppFabricReact-3/TenantWorkbench.png)
 
 ###### View the WebPart
 
-![](images/SPAppFabricReact-3/TenantWorkbenchWebpart.png)
+![Tenant Workbench WebPart](images/SPAppFabricReact-3/TenantWorkbenchWebpart.png)
 
 ###### Test the WebPart
 
-Since we are testing in the tenant workbench, we are able to test the requests made to the REST API. ![](images/SPAppFabricReact-3/TenantWorkbenchTestAPI.png)
+Since we are testing in the tenant workbench, we are able to test the requests made to the REST API. ![Test API](images/SPAppFabricReact-3/TenantWorkbenchTestAPI.png)
