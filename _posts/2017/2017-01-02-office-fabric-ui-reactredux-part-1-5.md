@@ -41,7 +41,7 @@ Redux helps with complex applications, where different independent components of
 
 #### Flow
 
-![Flow](https://dattabase.com/blog/wp-content/uploads/2017/01/flow-300x229.png)
+![Flow](images/ReactRedux/flow.png)
 
 ##### Store
 
