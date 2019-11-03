@@ -4,7 +4,7 @@ title: "SharePoint 2013 Modern WebPart"
 date: "2017-05-05"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart]
 ---
 
 This is the first of five posts giving an overview of creating modern webpart solutions for SharePoint 2013+ environments. The webpart library is part of the [gd-sprest](https://gunjandatta.github.io/sprest) SharePoint REST Framework. The demo code can be found in [github](https://github.com/gunjandatta/demo-wp).
@@ -97,13 +97,13 @@ _If you are not referencing the file from github, update the src location to the
 
 ##### Step 3 - Configure the WebPart
 
-The last step is to configure the webpart. Since we are using the list webpart template, there is no need to write code to reference the list in the current or other webs. 1) Edit the page and you will see a configuration button ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-button.png)
+The last step is to configure the webpart. Since we are using the list webpart template, there is no need to write code to reference the list in the current or other webs. 1) Edit the page and you will see a configuration button ![Edit Button](images/ModernWPJS/edit-button.png)
 
-2) Clicking on the configuration button will display a panel to configure the webpart. ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-panel.png)
+2) Clicking on the configuration button will display a panel to configure the webpart. ![Edit Panel](images/ModernWPJS/edit-panel.png)
 
-3) For this example, I'll use the "Dev" list. Click on the list dropdown and click on "Save". ![](https://dattabase.com/blog/wp-content/uploads/2017/05/edit-panel-list.png) _Optional - You can set the relative web url to another site, and select a list from a different web. Click the "Refresh" button to reload the lists dropdown._
+3) For this example, I'll use the "Dev" list. Click on the list dropdown and click on "Save". ![Edit Panel List](images/ModernWPJS/edit-panel-list.png) _Optional - You can set the relative web url to another site, and select a list from a different web. Click the "Refresh" button to reload the lists dropdown._
 
-4) After the page saves the webpart data, stop editing and view the list data. ![](https://dattabase.com/blog/wp-content/uploads/2017/05/display-listview.png)
+4) After the page saves the webpart data, stop editing and view the list data. ![List View](images/ModernWPJS/display-listview.png)
 
 ##### Conclusion
 

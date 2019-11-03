@@ -4,7 +4,7 @@ title: "SharePoint REST API OData"
 date: "2017-06-24"
 description: ""
 feature_image: ""
-tags: []
+tags: [rest, odata]
 ---
 
 This post will go over the SharePoint REST API's OData query. For demonstrating how to get the data, we will be using the [gd-sprest](https://gunjandatta.github.io/sprest) library.
@@ -17,17 +17,17 @@ The SharePoint REST API allows you to utilize OData requests against the objects
 
 ### SharePoint REST API
 
-To access the RAW results of a basic request to the web, you add "\[Url\]/\_api/web" to the url. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_api.png) _Note - You have to turn off the "Feed Reading View" in IE to view the raw results_
+To access the RAW results of a basic request to the web, you add "\[Url\]/\_api/web" to the url. ![Web API](images/OData/web_api.png) _Note - You have to turn off the "Feed Reading View" in IE to view the raw results_
 
 The area at the top shows the collections that are available for the object. Some of them are listed below: \* ContentTypes \* AssociatedMemberGroup \* AssociatedOwnerGroup \* AssociatedVisitorGroup \* CurrentUser \* Fields \* Folders \* Lists \* RoleAssignments \* RoleDefinitions \* SiteUsers \* Webs
 
-To get the "Fields" for the web, the url would be "\[Url\]/\_api/web/fields". ![](https://dattabase.com/blog/wp-content/uploads/2017/06/fields_api.png)
+To get the "Fields" for the web, the url would be "\[Url\]/\_api/web/fields". ![Fields API](images/OData/fields_api.png)
 
-If you wanted get the web information as well as the fields, this would require two requests to the server. Using JSOM or CSOM code, you can do this with one request to the server. Now that you can expand the collections using OData query, we can accomplish this in one request to the server. For example, if you wanted to get the web information, current user and fields, the request would be "\[Url\]/\_api/web?$expand=CurrentUser,Fields" ![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_odata_api.png)
+If you wanted get the web information as well as the fields, this would require two requests to the server. Using JSOM or CSOM code, you can do this with one request to the server. Now that you can expand the collections using OData query, we can accomplish this in one request to the server. For example, if you wanted to get the web information, current user and fields, the request would be "\[Url\]/\_api/web?$expand=CurrentUser,Fields" ![Web OData API](images/OData/web_odata_api.png)
 
-If you look at the top portion, you'll notice that the "Current User" can be expanded containing the current user information ![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_currentuser_info_LI.jpg)
+If you look at the top portion, you'll notice that the "Current User" can be expanded containing the current user information ![Current User](images/OData/web_currentuser_info_LI.jpg)
 
-The same goes for the "Fields" property. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_fields_info.png)
+The same goes for the "Fields" property. ![Web Fields](images/OData/web_fields_info.png)
 
 ### Developing using the SharePoint REST API
 
@@ -42,7 +42,7 @@ var web = (new $REST.Web()).query({ Expand: ["CurrentUser", "Fields"] }).execute
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_console.png)
+![Web Console](images/OData/web_console.png)
 
 #### TypeScript
 
@@ -71,11 +71,11 @@ import { Web } from "gd-sprest";
 
 ###### Current User Intellisense
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_ts_currentuser.png)
+![Web Current User](images/OData/web_ts_currentuser.png)
 
 ###### Fields Intellisense
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/web_ts_fields.png)
+![Web Fields](images/OData/web_ts_fields.png)
 
 ### Code Examples
 

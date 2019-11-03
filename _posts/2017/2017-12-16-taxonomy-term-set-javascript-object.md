@@ -4,7 +4,7 @@ title: "Taxonomy Term Set To JavaScript Object"
 date: "2017-12-16"
 description: ""
 feature_image: ""
-tags: []
+tags: [taxonomy, gd-sprest]
 ---
 
 This post will give a code example of reading a taxonomy term set and converting it into a JavaScript object. This code example will be written in TypeScript, since we can define an interface for better intellisense. Refer to the [github](https://github.com/gunjandatta/sp-taxonomy) project for the source code.
@@ -195,8 +195,8 @@ let addTermToSet = (termSet: ITermSet, termInfo: ITermInfo, path: Array<string>)
 
 #### Term Store
 
-The term store contains a test term set called "TestManagedMetadata". We will get this term set for this demo. ![](https://dattabase.com/blog/wp-content/uploads/2017/12/TermStore.png)
+The term store contains a test term set called "TestManagedMetadata". We will get this term set for this demo. ![Term Store](images/TermStore/TermStore.png)
 
 #### JavaScript Object
 
-After loading the script, we will run the command which will return a promise. I added some code to set the global variable to the term set. ![](https://dattabase.com/blog/wp-content/uploads/2017/12/TermSetObject.png)
+After loading the script, we will run the command which will return a promise. I added some code to set the global variable to the term set. ![Term Set Object](images/TermStore/TermSetObject.png)

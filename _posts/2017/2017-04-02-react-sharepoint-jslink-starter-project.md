@@ -325,19 +325,19 @@ JSLinkDemo.Scripts.View.setJSLink("Dev", "Dev", "~site/siteassets/jslink/jslink_
 
 ```
 
-![Set JSLink Property](https://dattabase.com/blog/wp-content/uploads/2017/04/UpdateListView.png)
+![Set JSLink Property](images/JSLinkReactStarterProject/UpdateListView.png)
 
 ###### Test Customization
 
-Accessing the "Dev" view, it will display our custom component. ![Custom List View](https://dattabase.com/blog/wp-content/uploads/2017/04/CustomListView.png)
+Accessing the "Dev" view, it will display our custom component. ![Custom List View](images/JSLinkReactStarterProject/CustomListView.png)
 
 ###### Remove Customization
 
-Since the "Dev" view has the JSLink script already loaded, we don't need to load the script manually. Simply press the "F-12" key to view the developer tools and use the helper script class to clear the JSLink property. ![Clear JSLink Property](https://dattabase.com/blog/wp-content/uploads/2017/04/ClearJSLink.png)
+Since the "Dev" view has the JSLink script already loaded, we don't need to load the script manually. Simply press the "F-12" key to view the developer tools and use the helper script class to clear the JSLink property. ![Clear JSLink Property](images/JSLinkReactStarterProject/ClearJSLink.png)
 
 ###### Test Default
 
-Refreshing the screen will display the default list view. ![Default List View](https://dattabase.com/blog/wp-content/uploads/2017/04/DefaultListView.png)
+Refreshing the screen will display the default list view. ![Default List View](images/JSLinkReactStarterProject/DefaultListView.png)
 
 ### Conclusion
 

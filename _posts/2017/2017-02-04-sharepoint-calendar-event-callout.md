@@ -195,4 +195,4 @@ The code to get the list item is using the [gd-sprest](https://gunjandatta.githu
 
 ### Demo
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/02/callout.png)
+![Calendar Callout](images/CalendarCallout/callout.png)

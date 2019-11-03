@@ -4,7 +4,7 @@ title: "SharePoint 2013 Modern WebPart (2 of 4)"
 date: "2018-01-11"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart, react, fabric-ui]
 ---
 
 - [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)
@@ -434,18 +434,18 @@ Contacts.Configuration.List.install()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_install_list.png) 5) Install the webpart
+_This part may take a little time to initialize, depending on the size of the web._ ![Install List](images/ModernWPReact/react_install_list.png) 5) Install the webpart
 
 ```
 Contacts.Configuration.WebPart.install()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_install_webpart.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![Install WebPart](images/ModernWPReact/react_install_webpart.png)
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo - Contacts" group "My Contacts" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_add_webpart.png) 4) After the page reloads, click on the "Edit Configuration" 5) Select the "My Contacts" test list we created ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_select_list.png) 6) Save the webpart 7) Save the page At this point, you should see the webpart title only. This is because we don't have any data in the list, so nothing is being rendered. ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_display_empty.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo - Contacts" group "My Contacts" webpart ![Add WebPart](images/ModernWPReact/react_add_webpart.png) 4) After the page reloads, click on the "Edit Configuration" 5) Select the "My Contacts" test list we created ![Select List](images/ModernWPReact/react_select_list.png) 6) Save the webpart 7) Save the page At this point, you should see the webpart title only. This is because we don't have any data in the list, so nothing is being rendered. ![Display Empty](images/ModernWPReact/react_display_empty.png)
 
 ##### Step 4 - Add Test Data
 
@@ -456,7 +456,7 @@ Contacts.Configuration.List.addTestData()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_test_data.png) 4) Refresh the page and view the data ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_display.png)
+![Test Data](images/ModernWPReact/react_test_data.png) 4) Refresh the page and view the data ![Display](images/ModernWPReact/react_display.png)
 
 ##### Step 4 - Clean Up
 
@@ -468,7 +468,7 @@ DemoWebPart.Configuration.WebPart.uninstall()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/react_uninstall.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![Uninstall](images/ModernWPReact/react_uninstall.png)
 
 ##### Output Size
 

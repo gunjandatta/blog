@@ -4,7 +4,7 @@ title: "SharePoint 2013/Online React WebParts"
 date: "2017-08-30"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, webpart, fabric-ui]
 ---
 
 This post will go over new webpart classes available in the [gd-sprest-react](https://github.com/gunjandatta/sprest-react) library. I created a new [GitHub](https://github.com/gunjandatta/sprest-webparts) project for code examples. I plan to grow this with various examples, so it's easy to reference.
@@ -295,7 +295,7 @@ DemoWebParts.DocView.Configuration.install();
 
 #### 3\. Demo Data
 
-Before we go further, let's go over the demo data. I added a choice field to the "Documents" list. The library has the following files: \* Doc 1.docx - Cat 1, Cat 2 \* Excel 1.xlsx - Cat 2, Cat 3 \* PowerPoint 1.pptx - Cat 1, Cat 2, Cat 3 \* workbench.aspx - No categories selected ![](https://dattabase.com/blog/wp-content/uploads/2017/08/data.png)
+Before we go further, let's go over the demo data. I added a choice field to the "Documents" list. The library has the following files: \* Doc 1.docx - Cat 1, Cat 2 \* Excel 1.xlsx - Cat 2, Cat 3 \* PowerPoint 1.pptx - Cat 1, Cat 2, Cat 3 \* workbench.aspx - No categories selected ![Data](images/DocView/data.png)
 
 #### 4\. Demo WebPart
 
@@ -307,11 +307,11 @@ Before we go further, let's go over the demo data. I added a choice field to the
 - In the "Searchable Fields" textbox, type in "Category" and select it from the tag picker.
 - Click on Save
 - Save the page and exit out of the edit mode
-- After the page loads, you will see the documents and a tag picker ![](https://dattabase.com/blog/wp-content/uploads/2017/08/docView.png)
-- Type in "Cat 1" and only the word and powerpoint files should be displayed ![](https://dattabase.com/blog/wp-content/uploads/2017/08/docViewFilter1.png)
-- Type in "Cat 3" and only the powerpoint file should be displayed ![](https://dattabase.com/blog/wp-content/uploads/2017/08/docViewFilter2.png)
+- After the page loads, you will see the documents and a tag picker ![Document View](images/DocView/docView.png)
+- Type in "Cat 1" and only the word and powerpoint files should be displayed ![Filter 1](images/DocView/docViewFilter1.png)
+- Type in "Cat 3" and only the powerpoint file should be displayed ![Filter 2](images/DocView/docViewFilter2.png)
 - Clear the picker list and all files should return
-- Click on any office document and view the document in the office app ![](https://dattabase.com/blog/wp-content/uploads/2017/08/officeApp.png)
+- Click on any office document and view the document in the office app ![Office App](images/DocView/officeApp.png)
 
 #### 4\. Uninstall WebPart
 

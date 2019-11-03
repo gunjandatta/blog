@@ -300,4 +300,4 @@ export class Navigation extends React.Component<Props, any> {
 
 ### Sample Output
 
-To run this project, type in "npm run test" to start the webpack dev server. Making changes to the code will trigger the react-hot-loader plugin to recompile. Refreshing the page after it recompiles will display the code changes for faster development. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/demo.png) [Click here](https://gunjandatta.github.io/sp-react-redux) to view the sample output.
+To run this project, type in "npm run test" to start the webpack dev server. Making changes to the code will trigger the react-hot-loader plugin to recompile. Refreshing the page after it recompiles will display the code changes for faster development. ![](images/ReactReduxStarterProject/demo.png) [Click here](https://gunjandatta.github.io/sp-react-redux) to view the sample output.

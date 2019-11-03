@@ -4,7 +4,7 @@ title: "SharePoint 2013 Modern WebPart (3 of 4)"
 date: "2018-01-12"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart, vuejs]
 ---
 
 - [Modern WebPart Overview](https://dattabase.com/blog/sharepoint-2013-modern-webpart)
@@ -335,32 +335,32 @@ document.head.appendChild(s);
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/LoadScript.png) 4) Install the list
+![Load Script](images/ModernWPVueJS/LoadScript.png) 4) Install the list
 
 ```
 VueJSDemo.Configuration.List.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateList.png) 5) Add the test data
+![Create List](images/ModernWPVueJS/CreateList.png) 5) Add the test data
 
 ```
 VueJSDemo.Configuration.List.createTestData()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateTestData.png) 6) Install the webpart
+![Test Data](images/ModernWPVueJS/CreateTestData.png) 6) Install the webpart
 
 ```
 VueJSDemo.Configuration.WebPart.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/CreateWebPart.png)
+![Create WebPart](images/ModernWPVueJS/CreateWebPart.png)
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Contacts (VueJS)" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/vuejs_wp_gallery.png) 4) After the page reloads, you will see the edit configuration button ![](https://dattabase.com/blog/wp-content/uploads/2018/01/EditConfiguration.png) 5) Click on the button to display the configuration panel ![](https://dattabase.com/blog/wp-content/uploads/2018/01/EditPanel.png) 6) Select the 'My Contacts' list and save the webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/SelectList.png) 7) Save the page, and when the page reloads you will see the contacts test data ![](https://dattabase.com/blog/wp-content/uploads/2018/01/ListView.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Contacts (VueJS)" webpart ![WebPart Gallery](images/ModernWPVueJS/vuejs_wp_gallery.png) 4) After the page reloads, you will see the edit configuration button ![Edit Configuration](images/ModernWPVueJS/EditConfiguration.png) 5) Click on the button to display the configuration panel ![Edit Panel](images/ModernWPVueJS/EditPanel.png) 6) Select the 'My Contacts' list and save the webpart ![Select List](images/ModernWPVueJS/SelectList.png) 7) Save the page, and when the page reloads you will see the contacts test data ![List View](images/ModernWPVueJS/ListView.png)
 
 ##### Step 4 - Clean Up
 
@@ -371,7 +371,7 @@ VueJSDemo.Configuration.WebPart.uninstall()
 
 ```
 
-_This part may take a little time to initialize, depending on the size of the web._ ![](https://dattabase.com/blog/wp-content/uploads/2018/01/vuejs_uninstall.png)
+_This part may take a little time to initialize, depending on the size of the web._ ![Uninstall](images/ModernWPVueJS/vuejs_uninstall.png)
 
 ##### Output Size
 

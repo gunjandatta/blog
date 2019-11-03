@@ -4,7 +4,7 @@ title: "SharePoint React Components"
 date: "2017-06-26"
 description: ""
 feature_image: ""
-tags: []
+tags: [gd-sprest, react]
 ---
 
 This blog post will give an overview of an extension to the [gd-sprest](https://gunjandatta.github.io/sprest) library for creating list item forms in SharePoint. The source code for this project can be found in [github](https://github.com/gunjandatta/sprest-react).
@@ -599,22 +599,22 @@ After building the test project and uploading the file to SharePoint, you can ed
 
 #### Install the List
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/empty_list.png) Now that the script file is referenced on the page, you'll see an empty list. The next step is to open the browser console window (F-12), and typing the following command to install the test project. After the test project installs, refresh the page.
+![Empty List](images/gd-sprest-react/empty_list.png) Now that the script file is referenced on the page, you'll see an empty list. The next step is to open the browser console window (F-12), and typing the following command to install the test project. After the test project installs, refresh the page.
 
 ```
 Demo.Configuration.install();
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/install.png)
+![Install](images/gd-sprest-react/install.png)
 
 #### Create a New Item
 
-Refresh the page, and click on the "New Item" button to display the new item form. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/new_item_form.png)
+Refresh the page, and click on the "New Item" button to display the new item form. ![Item Form](images/gd-sprest-react/new_item_form.png)
 
 #### List View
 
-After saving an item, refresh the page and you will see it in the list view. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/list_view.png)
+After saving an item, refresh the page and you will see it in the list view. ![List View](images/gd-sprest-react/list_view.png)
 
 #### Uninstall the List
 

@@ -4,7 +4,7 @@ title: "SharePoint 2013 Project Deployment"
 date: "2017-06-05"
 description: ""
 feature_image: ""
-tags: []
+tags: [webpart, react]
 ---
 
 This post will give a recommended approach to deploying SharePoint 2013 solutions.
@@ -327,14 +327,14 @@ Solution.Demo.Configuration.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/06/install-1.png)
+![Install](images/SP2013Deployment/install.png)
 
 #### Demo
 
 ###### Site Solution
 
-**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/AddSiteWebPart.png) **4\. WebPart (Edit Mode)** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/SiteWebPartEditMode.png) **5\. Configure the WebPart** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/WebPartEditPanel.png)
+**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![Add WebPart](images/SP2013Deployment/AddSiteWebPart.png) **4\. WebPart (Edit Mode)** ![Edit WebPart](images/SP2013Deployment/SiteWebPartEditMode.png) **5\. Configure the WebPart** ![Edit WebPart Panel](images/SP2013Deployment/WebPartEditPanel.png)
 
 ###### Web Solution
 
-**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![](https://dattabase.com/blog/wp-content/uploads/2017/06/AddCustomRibbonWebPart.png) **4\. WebPart (Display Mode)** ![](https://dattabase.com/blog/wp-content/uploads/2017/06/WebPartDisplay.png)
+**1\. Create a Page** Create a demo page. If you are using an Office 365 environment, make sure to create a classic page. **2\. Edit Page** Edit the demo page, and click on any webpart zone's "Add WebPart" link. **3\. Add Demo WebPart** Select the demo webpart from the "Demo" category. ![Ribbon WebPart](images/SP2013Deployment/AddCustomRibbonWebPart.png) **4\. WebPart (Display Mode)** ![WebPart Display](images/SP2013Deployment/WebPartDisplay.png)

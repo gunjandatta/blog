@@ -430,7 +430,7 @@ document.write("<script type='text/javascript'>(function() { new window.MyProjec
 
 #### Validate the List View
 
-Accessing the list view, you should see the project displayed. ![List View](https://dattabase.com/blog/wp-content/uploads/2017/02/ListView.png)
+Accessing the list view, you should see the project displayed. ![List View](images/DeployToSharePoint/ListView.png)
 
 ### Deploying to a Sub-Web
 
@@ -463,4 +463,4 @@ window.MyProject.init("My List", "myProject", "[relative url of the root web]");
 
 ##### Step 5. Validate the WebPart
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/02/ScriptEditorWebPart.png)
+![Script Editor WebPart](images/DeployToSharePoint/ScriptEditorWebPart.png)

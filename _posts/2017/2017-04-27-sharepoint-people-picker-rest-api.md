@@ -4,7 +4,7 @@ title: "SharePoint People Picker REST API"
 date: "2017-04-27"
 description: ""
 feature_image: ""
-tags: []
+tags: [people picker, rest]
 ---
 
 This post will cover the people picker api available in the SharePoint 2013+ environments.
@@ -102,7 +102,7 @@ For those who don't want to use the library, the request is a POST. The query pa
 
 ###### Output
 
-The output of the query returned the correct user account. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/searchUser.png)
+The output of the query returned the correct user account. ![Search User](images/PeoplePickerAPI/searchUser.png)
 
 #### clientPeoplePickerResolveUser
 
@@ -143,4 +143,4 @@ For those who don't want to use the library, the request is a POST. The query pa
 
 ###### Output
 
-The output of the query returned the correct user account. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/resolveUser.png)
+The output of the query returned the correct user account. ![Resolve User](images/PeoplePickerAPI/resolveUser.png)

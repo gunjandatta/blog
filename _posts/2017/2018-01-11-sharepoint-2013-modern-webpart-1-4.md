@@ -313,11 +313,11 @@ WebPartDemo.Configuration.install();
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/install.png) _This part may take a little time to initialize, depending on the size of the web._
+![Install](images/ModernWPJS/install.png) _This part may take a little time to initialize, depending on the size of the web._
 
 ##### Step 3 - Test
 
-1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Demo" webpart ![](https://dattabase.com/blog/wp-content/uploads/2018/01/wpgallery.png) 4) After the page reloads, the configuration button will be displayed ![](https://dattabase.com/blog/wp-content/uploads/2018/01/cfg-panel.png) 5) Clicking on the button will display the configuration panel ![](https://dattabase.com/blog/wp-content/uploads/2018/01/show-cfg.png) 6) For this demo, we will use the "Dev" list ![](https://dattabase.com/blog/wp-content/uploads/2018/01/select-list.png) 7) After selecting the list, save the form and the list view will be displayed ![](https://dattabase.com/blog/wp-content/uploads/2018/01/list-view.png)
+1) Edit the page 2) Click on a webpart zone to add a new webpart 3) From the webpart gallery, select the "Demo" group "My Demo" webpart ![WebPart Gallery](images/ModernWPJS/wpgallery.png) 4) After the page reloads, the configuration button will be displayed ![Configuration Panel](images/ModernWPTS/cfg-panel.png) 5) Clicking on the button will display the configuration panel ![Show Configuration](images/ModernWPTS/show-cfg.png) 6) For this demo, we will use the "Dev" list ![Select List](images/ModernWPTS/select-list.png) 7) After selecting the list, save the form and the list view will be displayed ![List View](images/ModernWPTS/list-view.png)
 
 ##### Step 4 - Clean Up
 
@@ -328,7 +328,7 @@ WebPartDemo.Configuration.uninstall()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2018/01/uninstall.png) _This part may take a little time to initialize, depending on the size of the web._
+![Uninstall](images/ModernWPJS/uninstall.png) _This part may take a little time to initialize, depending on the size of the web._
 
 ### Conclusion
 

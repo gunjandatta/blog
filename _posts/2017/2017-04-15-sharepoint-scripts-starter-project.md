@@ -4,7 +4,7 @@ title: "SharePoint Scripts Starter Project"
 date: "2017-04-15"
 description: ""
 feature_image: ""
-tags: []
+tags: [react, fabric-ui]
 ---
 
 This post will go over the SharePoint Scripts starter project. Please refer to previous blog posts for additional information on [React](https://dattabase.com/blog/sharepoint-app-fabric-ui-react-part-1-3) and [JSLinks](https://dattabase.com/blog/js-links). The code for this post can be found on [github](https://github.com/gunjandatta/sp-scripts). This project template is for SharePoint 2013+ environments.
@@ -671,9 +671,9 @@ After compiling the project, copy the files to the "dev" folder of the "Site Ass
 
 #### Install
 
-1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/dev_folder.png)
+1. Copy _testProject.js_ and _testProject\_jslink.js_ to the "Site Assets" library under the "dev" folder. ![](images/SPScriptsStarterProject/dev_folder.png)
 2. Press F-12 to open the browser console.
-3. Load the script ![](https://dattabase.com/blog/wp-content/uploads/2017/04/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
+3. Load the script ![](images/SPScriptsStarterProject/load_script.png) _Note - The site collection I'm working out of has a relative url of "/sites/dev"_
 
 ```
 var s = document.createElement("script"); s.src = "/sites/dev/siteassets/dev/testProject.js"; document.head.appendChild(s);
@@ -687,23 +687,23 @@ TestProject.Configuration.install()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/04/install_output.png)
+![](images/SPScriptsStarterProject/install_output.png)
 
 #### Demo
 
-Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
+Refresh the page and view the "Test Project" icon in the suite bar or top ribbon. I'm testing against SharePoint Online, so I see it in the top ribbon. ![](images/SPScriptsStarterProject/ca_link.png) _Note - I'm using an icon from the spCommon.png file_
 
-Accessing the "All Items" default list view, the view fields have been updated. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/default_view.png)
+Accessing the "All Items" default list view, the view fields have been updated. ![](images/SPScriptsStarterProject/default_view.png)
 
-Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
+Accessing the "My View" custom list view, you'll see a message saying the list is empty. ![](images/SPScriptsStarterProject/my_view_empty.png) _Note - In order to use JSLinks in SharePoint Online, you have to edit the list settings and set the "List Experience" value to "Classic experience"_
 
-Clicking on the top ribbon link will display the same message. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/panel_empty.png)
+Clicking on the top ribbon link will display the same message. ![](images/SPScriptsStarterProject/panel_empty.png)
 
-After adding some data, the custom list view will display the links. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/my_view.png)
+After adding some data, the custom list view will display the links. ![](images/SPScriptsStarterProject/my_view.png)
 
-Clicking on the top ribbon link, the panel will display the links. ![](https://dattabase.com/blog/wp-content/uploads/2017/04/panel_links.png)
+Clicking on the top ribbon link, the panel will display the links. ![](images/SPScriptsStarterProject/panel_links.png)
 
-Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![](https://dattabase.com/blog/wp-content/uploads/2017/04/webpart.png)
+Edit a WebPart Page, and add the "AAA Test" webpart to it. It will render the same html as the list view. _Note - The WebPart will be under the "Miscellaneous" category_ ![](images/SPScriptsStarterProject/webpart.png)
 
 #### Uninstall
 
@@ -715,4 +715,4 @@ TestProject.Configuration.uninstall()
 
 ```
 
-![](https://dattabase.com/blog/wp-content/uploads/2017/04/uninstall_output.png)
+![](images/SPScriptsStarterProject/uninstall_output.png)
