@@ -83,12 +83,12 @@ static get(): PromiseLike<IData[]> {
 
 ##### Demo Page
 
-![List Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/List.png)
+![List Demo](images/OfficeUIFabricReact/List.png)
 
 ##### View Item Dialog
 
-![View Item Dialog](https://dattabase.com/blog/wp-content/uploads/2016/12/ViewItemDialog.png)
+![View Item Dialog](images/OfficeUIFabricReact/ViewItemDialog.png)
 
 ##### New Item Panel
 
-![New Item Panel](https://dattabase.com/blog/wp-content/uploads/2016/12/NewItemPanel.png)
+![New Item Panel](images/OfficeUIFabricReact/NewItemPanel.png)

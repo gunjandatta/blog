@@ -38,11 +38,11 @@ The configuration of the date picker will require you to define the "strings" pr
 
 ##### Demo Page
 
-![Datepicker Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/Datepicker.png)
+![Datepicker Demo](images/OfficeUIFabricReact/Datepicker.png)
 
 ##### Selecting a Date
 
-![Select Date](https://dattabase.com/blog/wp-content/uploads/2016/12/SelectDate.png)
+![Select Date](images/OfficeUIFabricReact/SelectDate.png)
 
 ### Dropdown Demo
 
@@ -87,11 +87,11 @@ Parent/Child dropdown lists are very common, so I thought it would be important 
 
 #### Demo Page
 
-![Dropdown Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/Dropdown.png)
+![Dropdown Demo](images/OfficeUIFabricReact/Dropdown.png)
 
 #### Select City
 
-![Parent/Child Relation](https://dattabase.com/blog/wp-content/uploads/2016/12/ParentChild.png)
+![Parent/Child Relation](images/OfficeUIFabricReact/ParentChild.png)
 
 ### People Picker Demo
 
@@ -156,4 +156,4 @@ The "People Picker" api endpoint has been incorporated in my [SharePoint REST Fr
 
 #### Demo Page
 
-![People Picker Demo](https://dattabase.com/blog/wp-content/uploads/2016/12/PeoplePicker.png)
+![People Picker Demo](images/OfficeUIFabricReact/PeoplePicker.png)
