@@ -43,6 +43,13 @@ footer:
   content: "&copy; Dattabase LLC"
   has_social: true
 
+# Analytics
+analytics:
+  provider               : google
+  google:
+    tracking_id          : UA-88636936-1
+    anonymize_ip         : # true, false (default)
+
 # Plugins
 plugins:
   - jekyll-paginate
