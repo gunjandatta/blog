@@ -15,11 +15,19 @@ I wrote an [article](https://www.linkedin.com/pulse/customizing-sp-list-view-web
 
 ### Overview
 
-I wanted to give a recommended solution for deploying projects to SharePoint 2013 where the App Model is not allowed for whatever reason. The more tools in the toolbox, the better. The solution will go over the following: \* Deployment \* Displaying in a Web \* Displaying in a Sub-Web
+I wanted to give a recommended solution for deploying projects to SharePoint 2013 where the App Model is not allowed for whatever reason. The more tools in the toolbox, the better. The solution will go over the following:
+* Deployment
+* Displaying in a Web
+* Displaying in a Sub-Web
 
 ### Deployment - Code Updates
 
-We will be using the [gd-sprest](https://gunjandatta.github.io/sprest) library to write helper scripts for the administrator. Referencing the src folder structure of the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5) project: \* actions - The project actions \* components - The project components \* data - The data source methods \* reducers - The redux reducers \* store - The redux store
+We will be using the [gd-sprest](https://gunjandatta.github.io/sprest) library to write helper scripts for the administrator. Referencing the src folder structure of the [React/Redux](https://dattabase.com/blog/office-fabric-ui-reactredux-part-1-5) project:
+* actions - The project actions
+* components - The project components
+* data - The data source methods
+* reducers - The redux reducers
+* store - The redux store
 
 We will add a new folder: scripts
 

@@ -19,11 +19,26 @@ This is the second of five posts going over the Office Fabric UI React library a
 
 ### Folder Structure
 
-The folder structure of the project will be: \* actions - The available actions for the application. \* components - The application components. \* data - The data source for the components. \* reducers - Handlers for the actions. \* store - The redux store.
+The folder structure of the project will be:
+* actions - The available actions for the application.
+* components - The application components.
+* data - The data source for the components.
+* reducers - Handlers for the actions.
+* store - The redux store.
 
 ### File Structure
 
-The file structure of the core project files will be: \* src/actions/actionTypes.ts - Enumerator to store the available actions. \* src/actions/\[name\]Actions.ts - Available actions for the \[name\] component/module. \* src/components/\[name\] - Application components. \* src/data/\[name\]Data.ts - CRUD operations for the \[name\] component/module. \* src/reducers/index.ts - The root reducer, to reference the available reducers. \* src/reducers/initialState.ts - The default values of the application states. \* src/reducers/\[name\]Reducer.ts - Handler for the \[name\]Actions.js functions. \* src/store/configureStore.ts - The redux store. \* src/index.tsx - The javascript entry point of the application. \* index.html - The html entry point of the application.
+The file structure of the core project files will be:
+* src/actions/actionTypes.ts - Enumerator to store the available actions.
+* src/actions/\[name\]Actions.ts - Available actions for the \[name\] component/module.
+* src/components/\[name\] - Application components.
+* src/data/\[name\]Data.ts - CRUD operations for the \[name\] component/module.
+* src/reducers/index.ts - The root reducer, to reference the available reducers.
+* src/reducers/initialState.ts - The default values of the application states.
+* src/reducers/\[name\]Reducer.ts - Handler for the \[name\]Actions.js functions.
+* src/store/configureStore.ts - The redux store.
+* src/index.tsx - The javascript entry point of the application.
+* index.html - The html entry point of the application.
 
 ### Entry Points
 
@@ -72,7 +87,9 @@ render(
 
 ### Configure the Store
 
-The store will contain the component states, and is the first thing we will setup. \* Folder: ./src/store \* Filename: configureStore.ts
+The store will contain the component states, and is the first thing we will setup.
+* Folder: ./src/store
+* Filename: configureStore.ts
 
 #### Code
 
@@ -104,7 +121,9 @@ The rootReducer is a reference to the available reducers in the application. Thi
 
 ### Create Default Values for the Application States
 
-Since the store contains the available states of the application, the default values will be defined and referenced by various reducers. \* Folder: ./src/reducers \* Filename: initialState.js
+Since the store contains the available states of the application, the default values will be defined and referenced by various reducers.
+* Folder: ./src/reducers
+* Filename: initialState.js
 
 #### Code
 
@@ -117,7 +136,9 @@ export default {
 
 ### Configure the Reducers
 
-The rootReducers is referenced by the store for all available reducers. \* Folder: ./src/reducers \* Filename: index.ts
+The rootReducers is referenced by the store for all available reducers.
+* Folder: ./src/reducers
+* Filename: index.ts
 
 #### Code
 
@@ -165,7 +186,9 @@ export default function [name]Reducer(state = initalState.[Name], action) {
 
 ### Configure the Actions
 
-Since we haven't created anything, there really isn't much setup required for actions other than the actionTypes enumerator. This is recommended to reduce "developer error" when typing in "static" values. \* Folder: ./src/actions \* Filename: actionTypes.ts
+Since we haven't created anything, there really isn't much setup required for actions other than the actionTypes enumerator. This is recommended to reduce "developer error" when typing in "static" values.
+* Folder: ./src/actions
+* Filename: actionTypes.ts
 
 #### Code
 

@@ -157,7 +157,9 @@ Below is the package configuration file. The "dependencies" and "devDependencies
 
 ##### tsconfig.json
 
-Below is the typescript configuration file. These options will do the following: \* Compile the react code \* Target ES5 code standards
+Below is the typescript configuration file. These options will do the following:
+* Compile the react code
+* Target ES5 code standards
 
 ```
 {

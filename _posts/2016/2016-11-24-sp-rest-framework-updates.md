@@ -21,11 +21,14 @@ The "next()" method, which previously allowed you to chain events has been remov
 
 #### done()
 
-The "done()" method will wait for all requests to complete before executing the callback method. It takes the following input parameters: \* callback - The callback is a function type, which is executed after the request completes.
+The "done()" method will wait for all requests to complete before executing the callback method. It takes the following input parameters:
+* callback - The callback is a function type, which is executed after the request completes.
 
 #### execute()
 
-The "execute()" method has been updated. It takes the following input parameters: \* callback - The callback is a function type, which is executed after the request completes. \* waitFl - The wait flag is a booean type, which will wait for the previous request to complete before executing the current request.
+The "execute()" method has been updated. It takes the following input parameters:
+* callback - The callback is a function type, which is executed after the request completes.
+* waitFl - The wait flag is a booean type, which will wait for the previous request to complete before executing the current request.
 
 #### executeAndWait()
 

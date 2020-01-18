@@ -54,7 +54,11 @@ This step is only required if your environment doesn't have access to the intern
 
 ##### Step 2 - Create a Demo Page
 
-This demo will be tested in SharePoint Online, so make sure to create a classic webpart page. 1) Create a webpart page of your choice 2) Edit the page 3) Add a script part editor 4) Edit the "Snippet" and add the following: The gd-sprest-js library has various webpart templates available. This example will use the list webpart template to allow the list to be configured by the user. Below are the webpart properties we will use in this example. \* odataQuery - (Optional) Setting the ODATA query to order by the "Title" field \* cfgElementId - The id of the configuration element. \* elementId - The id of the webpart element to render to. \* onRenderItems - The render list items event. We will use the fabric "List" component to render the item "Title" and "ID" properties.
+This demo will be tested in SharePoint Online, so make sure to create a classic webpart page. 1) Create a webpart page of your choice 2) Edit the page 3) Add a script part editor 4) Edit the "Snippet" and add the following: The gd-sprest-js library has various webpart templates available. This example will use the list webpart template to allow the list to be configured by the user. Below are the webpart properties we will use in this example.
+* odataQuery - (Optional) Setting the ODATA query to order by the "Title" field
+* cfgElementId - The id of the configuration element.
+* elementId - The id of the webpart element to render to.
+* onRenderItems - The render list items event. We will use the fabric "List" component to render the item "Title" and "ID" properties.
 
 ```
 <div id="demo"></div>

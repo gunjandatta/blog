@@ -43,7 +43,15 @@ If set to true, the request will use the "SPHostUrl" query string parameter. Thi
 
 ### Target Information
 
-The target information consists of the following properties: \* asyncFl - Flag to determine if the request should executes asynchronously or synchronously. \* bufferFl - Flag to determine if the output of the request is a file stream. \* callback - Required for asynchronous request. Executed after execution. \* data - Template used for passing the method parameters in the body of the request. \* defaultToWebFl - Flag to determine if the url should default to the current web url, site url otherwise. \* method - The request method type. \* endpoint - The api endpoint. \* url - The server relative site/web url to execute the request against.
+The target information consists of the following properties:
+* asyncFl - Flag to determine if the request should executes asynchronously or synchronously.
+* bufferFl - Flag to determine if the output of the request is a file stream.
+* callback - Required for asynchronous request. Executed after execution.
+* data - Template used for passing the method parameters in the body of the request.
+* defaultToWebFl - Flag to determine if the url should default to the current web url, site url otherwise.
+* method - The request method type.
+* endpoint - The api endpoint.
+* url - The server relative site/web url to execute the request against.
 
 _Note - In general, you won't have to use this input parameter_
 
@@ -55,7 +63,14 @@ _Note - The commands will execute under the security of the current user._ _Note
 
 ### OData Queries
 
-Each collection will have a generic "query" method with the input of the OData query operations. The oData object consists of the following properties: \* Expand - A collection of strings representing the field names to expand. \* Filter - A string representing the filter to apply. \* OrderBy - A collection of strings representing the fields to order by. \* QueryString - A read-only property representing the query string value of the oData object. \* Select - A collection of strings representing the field names to select. \* Skip - The number of objects to skip. \* Top - The maximum number of objects to return.
+Each collection will have a generic "query" method with the input of the OData query operations. The oData object consists of the following properties:
+* Expand - A collection of strings representing the field names to expand.
+* Filter - A string representing the filter to apply.
+* OrderBy - A collection of strings representing the fields to order by.
+* QueryString - A read-only property representing the query string value of the oData object.
+* Select - A collection of strings representing the field names to select.
+* Skip - The number of objects to skip.
+* Top - The maximum number of objects to return.
 
 ## Asynchronous and Synchronous Requests
 

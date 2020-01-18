@@ -62,7 +62,9 @@ This section will go over the file and folder structure of the demo project. Ref
 
 #### Configuration (./src/demo/cfg.ts)
 
-The project configuration for this project is shown below. It consists of the following: \* Custom Action - A custom ribbon button to add solutions targeted to a specific web. \* WebPart - The webpart deployed to the site collection gallery.
+The project configuration for this project is shown below. It consists of the following:
+* Custom Action - A custom ribbon button to add solutions targeted to a specific web.
+* WebPart - The webpart deployed to the site collection gallery.
 
 ```
 import { ContextInfo, Helper } from "gd-sprest";

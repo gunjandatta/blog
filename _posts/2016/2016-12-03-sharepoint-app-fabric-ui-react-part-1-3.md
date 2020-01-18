@@ -36,9 +36,13 @@ For the SharePoint developers who are currently working in SP 2013 on-premise en
 
 The Visual Studio solution will consist of two projects: 1. SharePoint Add-In 2. Node.js Web Application
 
-First we will create the Visual Studio solution. Make sure to do the following: \* Select "Blank Node.js Web Application" \* Check the option to create a directory for a solution \* Set the "Project Name" to \[Solution Name\].UX ![Create VS Solution](images/SPAppFabricReact-1/CreateVSSolution.png)
+First we will create the Visual Studio solution. Make sure to do the following:
+* Select "Blank Node.js Web Application"
+* Check the option to create a directory for a solution
+* Set the "Project Name" to \[Solution Name\].UX ![Create VS Solution](images/SPAppFabricReact-1/CreateVSSolution.png)
 
-Next we will create the SharePoint Hosted Add-In. Make sure to do the following: \* Set the "Project Name" to \[Solution Name\].App ![Create SP Add-In VS Project](images/SPAppFabricReact-1/CreateSPAddProject.png)
+Next we will create the SharePoint Hosted Add-In. Make sure to do the following:
+* Set the "Project Name" to \[Solution Name\].App ![Create SP Add-In VS Project](images/SPAppFabricReact-1/CreateSPAddProject.png)
 
 - Select the "SharePoint-hosted" for the "Add-In" type ![Select SP App Type](images/SPAppFabricReact-1/SelectSPAppType.png)
 
@@ -48,7 +52,10 @@ This section will configure the \[Solution Name\].UX Node.js Web Application pro
 
 #### Project Folder Structure
 
-First, delete the default app.js file. The folder structure for the project will be the following: \* dist - This will contain the bundled script, which is the output of webpack. \* node\_modules - These are the libraries associated with the project. \* src - The source code.
+First, delete the default app.js file. The folder structure for the project will be the following:
+* dist - This will contain the bundled script, which is the output of webpack.
+* node\_modules - These are the libraries associated with the project.
+* src - The source code.
 
 #### Install TypeScript Library
 
@@ -61,7 +68,10 @@ npm i -g typescript
 
 #### Install the dependencies
 
-Open up powershell and goto the root folder of the visual studio project. We will be using the npm command to download the project dependencies. This demo will be utilizing the Office UI Fabric React framework, which requires the following libraries: \* Office UI Fabric React \* React \* React DOM
+Open up powershell and goto the root folder of the visual studio project. We will be using the npm command to download the project dependencies. This demo will be utilizing the Office UI Fabric React framework, which requires the following libraries:
+* Office UI Fabric React
+* React
+* React DOM
 
 To download these libraries, type the following command into powershell:
 
@@ -74,11 +84,22 @@ _Note - The --save property will update the package.json configuration file._
 
 #### Install the development dependencies
 
-This section will go over the development tools to execute the following: \* Compile the React code \* Test the Solution \* Package the Solution
+This section will go over the development tools to execute the following:
+* Compile the React code
+* Test the Solution
+* Package the Solution
 
 ##### Compile and Package Solution
 
-We will be using [Babel](https://babeljs.io) to compile the React code and [Webpack](https://webpack.github.io) to bundle it together. Similar to the previous section, we will use npm to download the development libraries to do the following: \* @types/react - Required to compile the react code using the typescript compiler. \* @types/react-dom - Required to compile the react code using the typescript compiler. \* babel-core - Required to use "Babel" \* babel-loader - Compiles the JSX code to JavaScript. \* babel-preset-es2015 - Converts the JavaScript to ES2015 (The current web standard supported by browsers) \* react-hot-loader - Plugin for the webpack development server library to display code changes on-demand \* ts-loader - Compiles the TypeScript code to JSX. \* webpack - Used to compile, bundle and package the solution
+We will be using [Babel](https://babeljs.io) to compile the React code and [Webpack](https://webpack.github.io) to bundle it together. Similar to the previous section, we will use npm to download the development libraries to do the following:
+* @types/react - Required to compile the react code using the typescript compiler.
+* @types/react-dom - Required to compile the react code using the typescript compiler.
+* babel-core - Required to use "Babel"
+* babel-loader - Compiles the JSX code to JavaScript.
+* babel-preset-es2015 - Converts the JavaScript to ES2015 (The current web standard supported by browsers)
+* react-hot-loader - Plugin for the webpack development server library to display code changes on-demand
+* ts-loader - Compiles the TypeScript code to JSX.
+* webpack - Used to compile, bundle and package the solution
 
 To download these libraries, type the following command into powershell:
 
@@ -102,7 +123,10 @@ _Note - The -g property will install the library globally_
 
 ### Configuration Files
 
-This section will configure the files shown below. These files should be placed in the root of the project folder. The package.json file is created with the project, but the tsconfig.json and webpack.config.js files will need to be created manually. \* package.json - [npm project configuration file](https://docs.npmjs.com/files/package.json) \* tsconfig.json - [typescript configuration file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) \* webpack.configuration.js - [webpack configuration file](https://webpack.github.io/docs/configuration.html)
+This section will configure the files shown below. These files should be placed in the root of the project folder. The package.json file is created with the project, but the tsconfig.json and webpack.config.js files will need to be created manually.
+* package.json - [npm project configuration file](https://docs.npmjs.com/files/package.json)
+* tsconfig.json - [typescript configuration file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+* webpack.configuration.js - [webpack configuration file](https://webpack.github.io/docs/configuration.html)
 
 #### package.json
 
@@ -151,7 +175,9 @@ _Note - The --hot property of the test script is in reference to the react-hot-l
 
 #### tsconfig.json
 
-Below is the typescript configuration file. These options will do the following: \* Compile the react code \* Target ES5 code standards
+Below is the typescript configuration file. These options will do the following:
+* Compile the react code
+* Target ES5 code standards
 
 ```
 {
@@ -165,7 +191,11 @@ Below is the typescript configuration file. These options will do the following:
 
 #### webpack.config.js
 
-This configuration file is used to compile, bundle and package the solution files. The important things to highlight in this file are: \* context - The root folder of the solution source code. \* entry - The entry point(s) of the solution. \* output - The location of the output file(s). \* [loaders](https://webpack.github.io/docs/loaders.html) - The configuration to pass to the compiler.
+This configuration file is used to compile, bundle and package the solution files. The important things to highlight in this file are:
+* context - The root folder of the solution source code.
+* entry - The entry point(s) of the solution.
+* output - The location of the output file(s).
+* [loaders](https://webpack.github.io/docs/loaders.html) - The configuration to pass to the compiler.
 
 ```
 var path = require('path');

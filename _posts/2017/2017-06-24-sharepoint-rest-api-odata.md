@@ -19,7 +19,19 @@ The SharePoint REST API allows you to utilize OData requests against the objects
 
 To access the RAW results of a basic request to the web, you add "\[Url\]/\_api/web" to the url. ![Web API](images/OData/web_api.png) _Note - You have to turn off the "Feed Reading View" in IE to view the raw results_
 
-The area at the top shows the collections that are available for the object. Some of them are listed below: \* ContentTypes \* AssociatedMemberGroup \* AssociatedOwnerGroup \* AssociatedVisitorGroup \* CurrentUser \* Fields \* Folders \* Lists \* RoleAssignments \* RoleDefinitions \* SiteUsers \* Webs
+The area at the top shows the collections that are available for the object. Some of them are listed below:
+* ContentTypes
+* AssociatedMemberGroup
+* AssociatedOwnerGroup
+* AssociatedVisitorGroup
+* CurrentUser
+* Fields
+* Folders
+* Lists
+* RoleAssignments
+* RoleDefinitions
+* SiteUsers
+* Webs
 
 To get the "Fields" for the web, the url would be "\[Url\]/\_api/web/fields". ![Fields API](images/OData/fields_api.png)
 

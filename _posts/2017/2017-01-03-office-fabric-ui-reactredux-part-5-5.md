@@ -39,7 +39,9 @@ Adding this component will be similar to the previous post. To add the details l
 
 #### Code
 
-The list component will need to interact with the store, so we will need to use the react-redux helper methods to connect it to it. \* Folder: ./src/components/list \* Filename: index.tsx
+The list component will need to interact with the store, so we will need to use the react-redux helper methods to connect it to it.
+* Folder: ./src/components/list
+* Filename: index.tsx
 
 ```
 import * as React from "react";

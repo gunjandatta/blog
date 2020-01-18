@@ -13,7 +13,20 @@ This post will give an overview of the Office Fabric UI React/Redux SharePoint s
 
 ### File/Folder Structure
 
-Refer to a previous [blog post](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5) for additional information. \* dist - The compiler output. \* node\_modules - Associated project libraries. \* src - The source code \* src/actions - The available actions for the project. \* src/components - The project components. \* src/data - The datasource classes. \* src/reducers - The action handlers. \* src/store - The redux store. \* src/index.tsx - The entry point of the project. \* index.html - The html page used to test the project. \* package.json - The [npm configuration](https://docs.npmjs.com/files/package.json) file. \* tsconfig.json - The [TypeScript configuration](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file. \* webpack.config.js - The [WebPack configuration](https://webpack.js.org/guides/hmr-react/#webpack-configuration) file.
+Refer to a previous [blog post](https://dattabase.com/blog/office-fabric-ui-reactredux-part-2-5) for additional information.
+* dist - The compiler output.
+* node\_modules - Associated project libraries.
+* src - The source code
+* src/actions - The available actions for the project.
+* src/components - The project components.
+* src/data - The datasource classes.
+* src/reducers - The action handlers.
+* src/store - The redux store.
+* src/index.tsx - The entry point of the project.
+* index.html - The html page used to test the project.
+* package.json - The [npm configuration](https://docs.npmjs.com/files/package.json) file.
+* tsconfig.json - The [TypeScript configuration](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) file.
+* webpack.config.js - The [WebPack configuration](https://webpack.js.org/guides/hmr-react/#webpack-configuration) file.
 
 ###### Actions Folder
 

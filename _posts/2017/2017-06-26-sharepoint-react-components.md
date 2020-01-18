@@ -17,7 +17,12 @@ From all of the posts I've written so far, it just made sense to create an exten
 
 #### Files
 
-The test folder has the following files: \* cfg.ts - The configuration file to create the test list and custom fields. \* data.ts - The data source class. \* index.ts - The main entry point of the project. \* list.tsx - The list view. \* wp.tsx - The dashboard webpart.
+The test folder has the following files:
+* cfg.ts - The configuration file to create the test list and custom fields.
+* data.ts - The data source class.
+* index.ts - The main entry point of the project.
+* list.tsx - The list view.
+* wp.tsx - The dashboard webpart.
 
 #### Configuration
 

@@ -57,7 +57,10 @@ It's important to review the webpack configuration file, since we are creating m
 
 ### Project Overview
 
-This starter project template is meant for SharePoint 2013 environments where the SharePoint FrameWork (SPFX) is not currently available. We will still use modern web technologies which will easily copy over to the SharePoint Framework when the environment is upgraded. In general, I've created links in the top suite bar or customized list forms/views using the ClientSide Rendering (CSR) override using the JSLink property. This project will do the following: \* Install/Uninstall Scripts \* Custom List View \* Suite Bar Link
+This starter project template is meant for SharePoint 2013 environments where the SharePoint FrameWork (SPFX) is not currently available. We will still use modern web technologies which will easily copy over to the SharePoint Framework when the environment is upgraded. In general, I've created links in the top suite bar or customized list forms/views using the ClientSide Rendering (CSR) override using the JSLink property. This project will do the following:
+* Install/Uninstall Scripts
+* Custom List View
+* Suite Bar Link
 
 #### Source Folder Structure
 

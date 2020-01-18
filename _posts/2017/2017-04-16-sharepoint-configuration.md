@@ -17,7 +17,19 @@ This new feature in the [gd-sprest](https://gunjandatta.github.io/sprest) librar
 
 ### Configuration File
 
-The SPConfig helper class takes an input of the SharePoint configuration. The available methods are \* install - Create all components. \* installByType - Create component(s) by the specified configuration type. \* installContentType - Create a specific content type in the configuration. \* installList - Create a specific list in the configuration. \* installSiteCustomAction - Create a specific site custom action in the configuration. \* installWebCustomAction - Create a specific site custom action in the configuration. \* uninstall - Remove all components. \* uninstallByType - Remove component(s) by the specified configuration type. \* uninstallContentType - Create a specific content type in the configuration. \* uninstallList - Create a specific list in the configuration. \* uninstallSiteCustomAction - Create a specific site custom action in the configuration. \* uninstallWebCustomAction - Create a specific site custom action in the configuration.
+The SPConfig helper class takes an input of the SharePoint configuration. The available methods are
+* install - Create all components.
+* installByType - Create component(s) by the specified configuration type.
+* installContentType - Create a specific content type in the configuration.
+* installList - Create a specific list in the configuration.
+* installSiteCustomAction - Create a specific site custom action in the configuration.
+* installWebCustomAction - Create a specific site custom action in the configuration.
+* uninstall - Remove all components.
+* uninstallByType - Remove component(s) by the specified configuration type.
+* uninstallContentType - Create a specific content type in the configuration.
+* uninstallList - Create a specific list in the configuration.
+* uninstallSiteCustomAction - Create a specific site custom action in the configuration.
+* uninstallWebCustomAction - Create a specific site custom action in the configuration.
 
 #### Configuration Properties
 
@@ -85,9 +97,19 @@ The list configuration is an array of list information objects.
 
 ```
 
-\*\* Content Type Information \*\* \* ContentType - The content type object. \* JSLink - The content type JSLink url. \* Name - The name of the content type. \* ParentName - The content type name to inherit from. (Default - Item)
+\*\* Content Type Information
+*\*
+* ContentType - The content type object.
+* JSLink - The content type JSLink url.
+* Name - The name of the content type.
+* ParentName - The content type name to inherit from. (Default - Item)
 
-\*\* View Information \*\* \* JSLink - The JSLink property of the view. \* ViewFields - An array of internal field names. \* ViewName - The view to create or update. \* ViewQuery - The view query.
+\*\* View Information
+*\*
+* JSLink - The JSLink property of the view.
+* ViewFields - An array of internal field names.
+* ViewName - The view to create or update.
+* ViewQuery - The view query.
 
 ###### WebPart Configuration
 
@@ -209,4 +231,12 @@ export const TestProjectCfg = new Helper.SPConfig({
 
 ### Conclusion
 
-Below is a small list of many things you can do with this feature. I hope this feature makes life easier for creating SharePoint solutions. \* Apply branding using user custom actions \* Apply custom suite bar or top ribbon links using user custom actions \* Create custom ribbon components using user custom actions \* Create custom site actions using user custom actions \* Create/Remove dev assets for faster development \* Create standard fields and content types to a site collection or web \* Apply standard lists to a site collection or web \* Easily apply upgrades to existing solutions by using multiple SharePoint Configuration objects
+Below is a small list of many things you can do with this feature. I hope this feature makes life easier for creating SharePoint solutions.
+* Apply branding using user custom actions
+* Apply custom suite bar or top ribbon links using user custom actions
+* Create custom ribbon components using user custom actions
+* Create custom site actions using user custom actions
+* Create/Remove dev assets for faster development
+* Create standard fields and content types to a site collection or web
+* Apply standard lists to a site collection or web
+* Easily apply upgrades to existing solutions by using multiple SharePoint Configuration objects

@@ -160,7 +160,9 @@ export class MyForm extends React.Component<null, null> {
 
 ##### [Panel](https://github.com/gunjandatta/sprest/wiki/React-Panel)
 
-The panel component extends the fabric panel component and adds common methods. \* hide() - Method to hide the panel \* show() - Method to show the panel
+The panel component extends the fabric panel component and adds common methods.
+* hide() - Method to hide the panel
+* show() - Method to show the panel
 
 ###### Code Example
 

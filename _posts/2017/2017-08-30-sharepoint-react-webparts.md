@@ -295,7 +295,11 @@ DemoWebParts.DocView.Configuration.install();
 
 #### 3\. Demo Data
 
-Before we go further, let's go over the demo data. I added a choice field to the "Documents" list. The library has the following files: \* Doc 1.docx - Cat 1, Cat 2 \* Excel 1.xlsx - Cat 2, Cat 3 \* PowerPoint 1.pptx - Cat 1, Cat 2, Cat 3 \* workbench.aspx - No categories selected ![Data](images/DocView/data.png)
+Before we go further, let's go over the demo data. I added a choice field to the "Documents" list. The library has the following files:
+* Doc 1.docx - Cat 1, Cat 2
+* Excel 1.xlsx - Cat 2, Cat 3
+* PowerPoint 1.pptx - Cat 1, Cat 2, Cat 3
+* workbench.aspx - No categories selected ![Data](images/DocView/data.png)
 
 #### 4\. Demo WebPart
 

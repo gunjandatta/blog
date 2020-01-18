@@ -30,7 +30,9 @@ Run the build command (Ctrl+Shift+B) to test the commands and copy the files. Di
 
 ### Configure the Default Landing Page
 
-The last step is to update the landing page to display the solution. The things to highlight are: \* React Libraries added in the PlaceHolderAdditionalPageHead \* The PlaceHolderMain html is copied from the "index.html" file of the UX project _Note - You can generate this file in the UX project._
+The last step is to update the landing page to display the solution. The things to highlight are:
+* React Libraries added in the PlaceHolderAdditionalPageHead
+* The PlaceHolderMain html is copied from the "index.html" file of the UX project _Note - You can generate this file in the UX project._
 
 ```
 <%-- The following 4 lines are ASP.NET directives needed when using SharePoint components --%>

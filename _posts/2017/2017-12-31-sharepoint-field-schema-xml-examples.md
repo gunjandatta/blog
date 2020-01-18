@@ -168,7 +168,8 @@ _Result Type - Boolean_
 
 ```
 
-_**Order Matters** - The main lookup field must be created before the associated field._ \* FieldRef - The main lookup field id
+_**Order Matters** - The main lookup field must be created before the associated field._
+* FieldRef - The main lookup field id
 
 ### Lookup (Multi)
 
@@ -194,7 +195,9 @@ _**Order Matters** - The main lookup field must be created before the associated
 
 ```
 
-_**Order Matters** - The value field must be created before the managed metadata field._ \* ShowField - Term\[The locale id\] \* 1033 - English
+_**Order Matters** - The value field must be created before the managed metadata field._
+* ShowField - Term\[The locale id\]
+* 1033 - English
 
 ### Note
 

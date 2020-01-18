@@ -13,7 +13,9 @@ This post will cover the people picker api available in the SharePoint 2013+ env
 
 ### Overview
 
-The SharePoint REST API has a people picker endpoint, which is pretty powerful. I haven't found much documentation, but here is the research I have. There are two available methods which take the same query parameters.: \* clientPeoplePickerSearchUser(queryParameters) \* clientPeoplePickerResolveUser(queryParameters)
+The SharePoint REST API has a people picker endpoint, which is pretty powerful. I haven't found much documentation, but here is the research I have. There are two available methods which take the same query parameters.:
+* clientPeoplePickerSearchUser(queryParameters)
+* clientPeoplePickerResolveUser(queryParameters)
 
 #### Client People Picker Query Parameters
 
