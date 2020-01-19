@@ -7,7 +7,7 @@ feature_image: ""
 tags: ["workflow"]
 ---
 
-This post will give an example of starting a SharePoint workflow using the REST API. The [gd-sprest](https://github.com/gunjandatta/sprest) library was recently updated to include the SharePoint Workflow REST API endpoints. We will be using this library for this example, but will also provide the raw HTTP request information.
+This post will give an example of starting a SharePoint workflow using the REST API. The [gd-sprest](https://github.com/gunjandatta/sprest) library was recently updated to include the SharePoint Workflow REST API endpoints, which we will be using for this example.
 
 <!--more-->
 
@@ -17,7 +17,7 @@ The REST API _only_ supports the ability to start a SharePoint 2013 workflow. In
 
 #### Getting the Workflow Information
 
-The workflow information for 2010 and 2013 types are stored in different locations.
+The workflow information for 2010 and 2013 types are stored in different locations. Below we will look at how to get both 2010 and 2013 workflows for a list.
 
 ##### 2010 List Workflow
 
@@ -40,7 +40,7 @@ List("Workflow Test").WorkflowAssociations().execute(workflows => {
 
 ##### 2013 List Workflow
 
-The workflow information will be found in the Workflow REST API endpoint.
+The workflow information will be found in the Workflow REST API endpoint. The list id will be required to obtain this information.
 
 ```ts
 import { List, WorkflowSubscriptionService } from "gd-sprest";
@@ -53,8 +53,8 @@ List("Workflow Test").execute(list => {
         for(let i=0; i<workflows.results.length; i++) {
             let workflow = workflows.results[i];
 
-            // The subscription id will be needed to start the workflow
-            let subscriptionId = workflow.Id;
+            // The workflow subscription id will be needed to start the workflow
+            let wfSubscriptionId = workflow.Id;
         }
     });
 });
@@ -85,7 +85,7 @@ url: "https://[tenant].sharepoint.com/sites/dev/_api/SP.WorkflowServices.Workflo
 
 #### Start the 2013 Workflow
 
-The Workflow REST API endpoint has a method to start workflows.
+The Workflow REST API endpoint has a method to start a workflow. The workflow subscription id and list item id will be required to execute this method.
 
 ```ts
 import { WorkflowInstanceService } from "gd-sprest";
