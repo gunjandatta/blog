@@ -4,7 +4,7 @@ title: "Start a Workflow using REST"
 date: "2020-01-19"
 description: ""
 feature_image: ""
-tags: ["github"]
+tags: ["workflow"]
 ---
 
 This post will give an example of starting a SharePoint workflow using the REST API. The [gd-sprest](https://github.com/gunjandatta/sprest) library was recently updated to include the SharePoint Workflow REST API endpoints. We will be using this library for this example, but will also provide the raw HTTP request information.
