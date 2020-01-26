@@ -44,7 +44,7 @@ Now that the libraries are available, we will connect to SharePoint. Refer to th
 console.log("Connecting to SPO");
 
 // Connect to SPO
-var url = "https://dattabase.sharepoint.com/sites/dev";
+var url = "https://[tenant].sharepoint.com/sites/dev";
 spauth.getAuth(url, {
     username: "[SPO Login]",
     password: "[SPO Password]",
