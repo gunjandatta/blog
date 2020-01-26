@@ -13,7 +13,11 @@ This post will give an example of getting data from SharePoint using NodeJS.
 
 ### Libraries
 
-The first thing we will do is get the required libraries. Run ```npm i node-sp-auth request-promise gd-sprest``` to install the required libraries.
+The first thing we will do is get the required libraries. Run
+
+```npm i node-sp-auth request-promise gd-sprest```
+
+to install the required libraries.
 
 - [node-sp-auth](https://github.com/s-KaiNet/node-sp-auth) used to authenticate with SharePoint.
 - [request-promise](https://github.com/request/request-promise) used to execute the HTTP request.
