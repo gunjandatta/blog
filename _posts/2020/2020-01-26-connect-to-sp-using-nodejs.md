@@ -56,15 +56,16 @@ spauth.getAuth(url, {
     // Code Continues in 'Generate the Request'
 });
 ```
-#### SharePoint REST API Intellisense
+
+#### Generate the Request
+
+This code example will get files stored in the "Site Assets" library's "sprest" sub-folder. We will use the [gd-sprest](https://dattabase.com) $REST library to generate the request information.
+
+##### SharePoint REST API Intellisense
 
 ![Intellisense](images/NodeJS/intellisense.png)
 
 The [gd-sprest](https://dattabase.com) library provides the intelliense automatically.
-
-#### Generate the Request
-
-This code example will get files stored in the site for the "Site Assets" library. The files will be located in the "sprest" sub-folder. Once we have the request information, we will copy the headers from the SPO authentication. We now have all of the information required to make the request.
 
 ```js
     // Get the web
@@ -80,6 +81,14 @@ This code example will get files stored in the site for the "Site Assets" librar
         // Get the request information
         .getInfo();
 
+    // Code Continues in 'Request Header Information'
+```
+
+##### Request Header Information
+
+In order for the request to be successful, we will need to copy the header information from the SP authentiation. We now have all of the information required to make the request.
+
+```js
     // Copy the headers from the SP authentication
     for (var key in options.headers) {
         // Set the header
