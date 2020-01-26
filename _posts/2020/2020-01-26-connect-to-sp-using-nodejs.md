@@ -86,7 +86,7 @@ The [gd-sprest](https://dattabase.com) library provides the intelliense automati
 
 ##### Request Header Information
 
-In order for the request to be successful, we will need to copy the header information from the SP authentiation. We now have all of the information required to make the request.
+In order for the request to be successful, we will need to copy the header information from the SP authentiation.
 
 ```js
     // Copy the headers from the SP authentication
