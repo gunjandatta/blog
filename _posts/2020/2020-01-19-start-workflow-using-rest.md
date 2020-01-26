@@ -2,7 +2,7 @@
 layout: "post"
 title: "Start a Workflow using REST"
 date: "2020-01-19"
-description: ""
+description: "Code example for starting a SharePoint workflow using the REST API."
 feature_image: ""
 tags: ["workflow"]
 ---

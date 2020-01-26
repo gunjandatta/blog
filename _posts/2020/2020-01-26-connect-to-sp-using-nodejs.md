@@ -2,7 +2,7 @@
 layout: "post"
 title: "Connect to SharePoint using NodeJS"
 date: "2020-01-26"
-description: ""
+description: "Code example for connecting to SharePoint using NodeJS."
 feature_image: ""
 tags: ["node js"]
 ---

@@ -2,7 +2,7 @@
 layout: "post"
 title: "Get WebPart Information using REST"
 date: "2020-01-24"
-description: ""
+description: "Code example for getting webpart information from SharePoint using the REST API."
 feature_image: ""
 tags: ["webpart"]
 ---
