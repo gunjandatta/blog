@@ -133,4 +133,4 @@ We will execute the Get/Post request, based on the type. Refer to the [documenta
 
 ##### Sample Output
 
-~[Sample Output](images/NodeJS/output.png)
+![Sample Output](images/NodeJS/output.png)
