@@ -100,7 +100,7 @@ In order for the request to be successful, we will need to copy the header infor
 
 #### Execute the Request
 
-We will execute the Get/Post request, based on the type. Refer to the [documentation](https://github.com/request/request-promise) for additional examples of executing requests. The object returned is expected to be a JSON object, so we can easily parse it to a variable. This request will return a collection, so we can easily output the data to the console.
+We will execute the Get/Post request, based on the type. Refer to the [documentation](https://github.com/request/request-promise) for additional examples of executing requests. The object returned is expected to be a JSON object, so we can easily parse it to a variable. This example will expect a collection of files, so we will parse the 'results' and output each file to the console.
 
 ```js
     // Execute the request, based on the method
