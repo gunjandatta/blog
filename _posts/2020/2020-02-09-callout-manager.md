@@ -27,7 +27,7 @@ Helper.SP.CalloutManager.init().then(() => {
 
 ### Step 2 - Launch Point
 
-To create a callout, we will first need to defint the "launch point", which refers to the html element to apply the callout to. For example, we will locate a custom input element where the value is set to 'Run'.
+To create a callout, we will first need to define the "launch point", which refers to the html element to apply the callout to. For example, we will locate a custom input element where the value is set to 'Run'.
 
 ```ts
 let elTarget = document.querySelector("input[value='Run']");
