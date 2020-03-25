@@ -13,7 +13,7 @@ This post will give an example of creating content types in SharePoint. The [gd-
 
 ### Configuration File
 
-The first thing we will do is reference the 'Helper' library from the [gd-sprest](https://github.com/gunjandatta/sprest) library.
+The first thing we will do is reference the 'Helper' component from the [gd-sprest](https://github.com/gunjandatta/sprest) library.
 
 ```ts
 import { Helper } from "gd-sprest";
