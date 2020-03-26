@@ -11,9 +11,9 @@ This post will give an example referencing the [DataTables.net](https://datatabl
 
 <!--more-->
 
-### Manually Reference jQuery Library
+### Update jQuery Reference
 
-The first thing we will do is update the DataTables.net internal reference to jQuery. This only needs to be done once, so I recommend you do it in the main source file.
+The first thing we will do is update the jQuery reference. This only needs to be done once, so I recommend you do it in the main source file. We will check to see if the DataTable plugin doesn't have jQuery defined and set it, otherwise we will update the gd-sprest-bs jQuery reference.
 
 ```ts
 import * as DataTable from "datatables.net";
@@ -24,7 +24,7 @@ if (DataTable.prototype.constructor.$ == undefined) {
     // Set the reference
     DataTable.prototype.constructor.$ = jQuery;
 } else {
-    // Update this jQuery reference
+    // Update this jQuery reference for this library
     window["$REST"].jQuery = DataTable.prototype.constructor.$;
 }
 ```
@@ -32,6 +32,8 @@ if (DataTable.prototype.constructor.$ == undefined) {
 ### How to Use DataTables
 
 To apply the DataTables.net plugin to a table, all you need to do is reference the jQuery library from the gd-sprest-bs library. The DataTables.net plugin has already been applied to it, so the __DataTable__ function is available.
+
+The code example below will create a BootStrap table and apply the datatable plugin to it.
 
 ```ts
 import { Components, jQuery } from "gd-sprest-bs";
