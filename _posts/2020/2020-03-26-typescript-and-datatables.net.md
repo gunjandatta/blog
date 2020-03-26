@@ -11,7 +11,7 @@ This post will give an example referencing the [DataTables.net](https://datatabl
 
 <!--more-->
 
-### Update jQuery Reference
+### Update the jQuery Reference
 
 The first thing we will do is update the jQuery reference. This only needs to be done once, so I recommend you do it in the main source file. We will check to see if the DataTable plugin doesn't have jQuery defined and set it, otherwise we will update the gd-sprest-bs jQuery reference.
 
