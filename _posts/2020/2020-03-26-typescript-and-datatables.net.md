@@ -16,11 +16,17 @@ This post will give an example referencing the [DataTables.net](https://datatabl
 The first thing we will do is update the DataTables.net internal reference to jQuery. This only needs to be done once, so I recommend you do it in the main source file.
 
 ```ts
+import * as DataTable from "datatables.net";
 import { jQuery } from "gd-sprest-bs";
-import * as DataTables from "datatables.net";
 
-// Set the jQuery reference for the plugin
-DataTables.prototype.constructor.$ = jQuery;
+// See if jQuery is defined in the DataTable lib
+if (DataTable.prototype.constructor.$ == undefined) {
+    // Set the reference
+    DataTable.prototype.constructor.$ = jQuery;
+} else {
+    // Update this jQuery reference
+    window["$REST"].jQuery = DataTable.prototype.constructor.$;
+}
 ```
 
 ### How to Use DataTables
@@ -28,15 +34,38 @@ DataTables.prototype.constructor.$ = jQuery;
 To apply the DataTables.net plugin to a table, all you need to do is reference the jQuery library from the gd-sprest-bs library. The DataTables.net plugin has already been applied to it, so the __DataTable__ function is available.
 
 ```ts
-import { jQuery } from "gd-sprest-bs";
+import { Components, jQuery } from "gd-sprest-bs";
 
-// Sample Code
-export function render() {
-    // Get the element to render to
-    let el = document.querySelector("#dt");
-    if (el) {
-        // Apply the DataTable plugin to the table
-        jQuery("#dt").DataTable();
-    }
+/**
+ * Sample code to render a datatable.
+ * @param el - The element to render the table to.
+ */
+export function render(el) {
+    // Create a sample table
+    let table = Components.Table({
+        el,
+        columns: [
+            { name: "Col1", title: "Column 1" },
+            { name: "Col2", title: "Column 2" },
+            { name: "Col3", title: "Column 3" },
+            { name: "Col4", title: "Column 4" },
+            { name: "Col5", title: "Column 5" }
+        ],
+        rows: [
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" },
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" },
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" },
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" },
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" },
+            { Col1: "Value 1", Col2: "Value 2", Col3: "Value3", Col4: "Value4", Col5: "Value5" }
+        ]
+    });
+
+    // Apply the datatable plugin
+    jQuery(table.el).DataTable();
 }
 ```
+
+#### Demo
+
+![DataTable Example](images/DataTables.net/demo.png)
