@@ -168,7 +168,7 @@ function analyze2010Workflow(xmlDoc) {
                 }
 
                 // Log
-                console.log("Workflow was found in the associated list.", wfName, wfScope, wfPublished, wfEnabled);
+                console.log("Workflow was found in the associated site.", wfName, wfScope, wfPublished, wfEnabled);
             });
         }
     }
