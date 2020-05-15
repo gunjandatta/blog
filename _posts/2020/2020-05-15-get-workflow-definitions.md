@@ -139,10 +139,12 @@ function analyze2010Workflow(xmlDoc) {
                         var wf = list.WorkflowAssociations.results[i];
 
                         // See if this is the target workflow
-                        if(wf.BaseId.toLowerCase() == wfBaseId && wf.Name == wfName) {
+                        if(wf.BaseId.toLowerCase() == wfBaseId) {
                             // Set the enabled flag
                             wfEnabled = wf.Enabled;
-                            break;
+
+                            // Compare the name
+                            if(wf.Name == wfName) { break; }
                         }
                     }
 
@@ -163,7 +165,9 @@ function analyze2010Workflow(xmlDoc) {
                     if(wf.BaseId.toLowerCase() == wfBaseId) {
                         // Set the enabled flag
                         wfEnabled = wf.Enabled;
-                        break;
+
+                        // Compare the name
+                        if(wf.Name == wfName) { break; }
                     }
                 }
 
