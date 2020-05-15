@@ -287,7 +287,7 @@ function analyze2013Workflow(activeWorkflows, xmlDoc, wfInfo) {
 
                 switch(prop.Key) {
                     case "WSEnabled":
-                        wfEnabled = prop.Value == "TRUE" ? true : false;
+                        wfEnabled = prop.Value.toLowerCase() == "true" ? true : false;
                         break;
 
                     case "Microsoft.SharePoint.ActivationProperties.ListId":
