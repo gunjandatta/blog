@@ -7,7 +7,7 @@ feature_image: ""
 tags: ["typescript"]
 ---
 
-This post will give an example referencing the [DataTables.net](https://datatables.net/) library in TypeScript projects. The [gd-sprest-bs](https://github.com/gunjandatta/sprest) library contains an instance of [jQuery](https://jquery.com/) for the [Bootstrap](https://getbootstrap.com/) library. The DataTables.net library references the jQuery global reference, which is not be available based on how webpack bundles the gd-sprest-bs library. We will need to manually set the jQuery reference in the DataTables.net library.
+This post will give an example referencing the [DataTables.net](https://datatables.net/) library in TypeScript projects. The [gd-sprest-bs](https://github.com/gunjandatta/sprest-bs) library contains an instance of [jQuery](https://jquery.com/) for the [Bootstrap](https://getbootstrap.com/) library. The DataTables.net library references the jQuery global reference, which is not be available based on how webpack bundles the gd-sprest-bs library. We will need to manually set the jQuery reference in the DataTables.net library.
 
 <!--more-->
 
