@@ -27,7 +27,7 @@ For this code example, I will create 8 total workflows:
     * 2013 Published
     * 2013 Un-Published
 
-What the workflows do are irrelevent, since our goal is to identify the using the REST API.
+What the workflows do are irrelevent, since our goal is to identify them using the REST API.
 
 #### List Workflows (Published)
 
