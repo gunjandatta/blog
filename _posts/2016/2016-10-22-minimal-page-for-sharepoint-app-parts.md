@@ -13,7 +13,7 @@ When developing app parts, you want to focus on the main content of the page. In
 
 #### Updated 10/2020
 
-This updated version will ensure the SP.UI.ModalDialog library works. It required a reference to the core styling.
+This updated version will ensure the SP.UI.ModalDialog library works. The library required a reference to the core styling.
 
 ```html
 <%-- The following 4 lines are ASP.NET directives needed when using SharePoint components --%>
