@@ -11,11 +11,11 @@ This post will go over how to surface a classic SharePoint HTML/JS/CSS solution 
 
 <!--more-->
 
-We will use the [Basic Dashboard](https://github.com/gunjandatta/sp-dashboard-vue/wiki) example from the [Code Examples](https://dattabase.com/examples/) page to surface in a modern page and teams tab.
+We will use the [VueJS Basic Dashboard](https://github.com/gunjandatta/sp-dashboard-vue/wiki) example from the [Code Examples](https://dattabase.com/examples/) page to surface in a modern page and teams tab.
 
 ### Minimal App Page
 
-We will use the [minimal app page](https://dattabase.com/blog/minimal-page-for-sharepoint-app-parts) for app parts to render our custom HTML/CSS/JS solution to. Microsoft haven't announced Add-In solutions being deprecated, so this solution should work long term. This solution will not work on sites that have [Custom Scripts](https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script) disabled.
+We will use the [minimal app page](https://dattabase.com/blog/minimal-page-for-sharepoint-app-parts) for app parts to render our custom HTML/CSS/JS solution to. Microsoft hasn't announced Add-In solutions being deprecated, so this solution should work long term. This solution will not work on sites that have [Custom Scripts](https://docs.microsoft.com/en-us/sharepoint/allow-or-prevent-custom-script) disabled.
 
 #### Dashboard Example
 
@@ -75,6 +75,8 @@ We will copy the [minimal app page](https://dattabase.com/blog/minimal-page-for-
 
 ##### View Dashboard
 
+Click on the **app.aspx** page to view the solution.
+
 ![Test File](images/ClassicSolutionsInModern/test-app.png)
 
 ##### Create Modern Page
@@ -90,6 +92,8 @@ Set the absolute url of the solution in the webpart properties.
 ![Reference App](reference-app.png)
 
 ##### View Modern Page
+
+Save or publish the page to view the solution.
 
 ![View Modern Page](view-modern-page.png)
 
