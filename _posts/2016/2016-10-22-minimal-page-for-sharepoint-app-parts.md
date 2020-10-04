@@ -55,7 +55,7 @@ This updated version will ensure the SP.UI.ModalDialog library works. The librar
 </html>
 ```
 
-#### Old Reference
+#### Older Template
 ```html
 <%-- The following 4 lines are ASP.NET directives needed when using SharePoint components --%>
 <%@ Page Language="C#" %>
