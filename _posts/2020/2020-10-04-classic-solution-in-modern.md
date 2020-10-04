@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "How to Surface a Classic Solution in a Modern Page"
-date: "2020-05-15"
+date: "2020-10-04"
 description: "Example on how to surface a classic HTML/JS/CSS solution in a modern page or teams tab."
 feature_image: ""
 tags: ["classic", "modern"]
