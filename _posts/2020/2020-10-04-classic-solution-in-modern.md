@@ -83,19 +83,19 @@ Click on the **app.aspx** page to view the solution.
 
 Create a new modern page and add the embed webpart to the page.
 
-![Create Modern Page](create-modern-page.png)
+![Create Modern Page](images/ClassicSolutionsInModern/create-modern-page.png)
 
 ##### Reference app.aspx
 
 Set the absolute url of the solution in the webpart properties.
 
-![Reference App](reference-app.png)
+![Reference App](images/ClassicSolutionsInModern/reference-app.png)
 
 ##### View Modern Page
 
 Save or publish the page to view the solution.
 
-![View Modern Page](view-modern-page.png)
+![View Modern Page](images/ClassicSolutionsInModern/view-modern-page.png)
 
 ##### Known Issues
 
@@ -106,23 +106,23 @@ Some of the classic core SharePoint JavaScript components require certain html e
 ##### Add Teams Tab
 In teams, add a "SharePoint" tab to a channel.
 
-![Add Teams Tab](add-sharepoint-tab.png)
+![Add Teams Tab](images/ClassicSolutionsInModern/add-sharepoint-tab.png)
 
 Next, click on the **Add page or list from any SharePoint site** link to reference the page by its url.
 
-![Add SharePoint Page](add-sharepoint-page.png)
+![Add SharePoint Page](images/ClassicSolutionsInModern/add-sharepoint-page.png)
 
 ##### Reference the App
 
 This will not work, but I wanted to show you what will happen if you try to reference a non-modern SharePoint page.
 
-![Reference App in Teams](reference-app-in-teams.png)
+![Reference App in Teams](images/ClassicSolutionsInModern/reference-app-in-teams.png)
 
 ##### Reference the Modern Page
 
 Updating the url to the modern page we created in the previous step will work.
 
-![View Teams Tab](!view-teams-tab.png)
+![View Teams Tab](images/ClassicSolutionsInModern/view-teams-tab.png)
 
 ##### Known Issues
 
