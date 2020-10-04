@@ -50,18 +50,18 @@ We will copy the [minimal app page](https://dattabase.com/blog/minimal-page-for-
         <title>VueJS Dashboard</title>
         <meta name="WebPartPageExpansion" content="full" />
 
-        <!-- SP References -->
-        <script src="/_layouts/1033/init.js"></script>
-        <script src="/_layouts/15/MicrosoftAjax.js"></script>
-        <script src="/_layouts/15/sp.core.js"></script>
-        <script src="/_layouts/15/sp.runtime.js"></script>
-        <script src="/_layouts/15/sp.js"></script>
-        <script src="/_layouts/15/sp.init.js"></script>
+        <!-- Required for the SP.UI.ModalDialog -->
+        <link rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/corev15.css">
     </head>
     <body>
         <form runat="server">
             <!-- Required to make posts to SP -->
             <SharePoint:FormDigest runat="server" />
+
+            <!-- SharePoint References -->
+            <SharePoint:ScriptLink Name="MicrosoftAjax.js" runat="server" Defer="False" Localizable="false" />
+            <SharePoint:ScriptLink Name="sp.core.js" runat="server" Defer="False" Localizable="false" />
+            <SharePoint:ScriptLink Name="sp.js" runat="server" Defer="True" Localizable="false" />
 
             <!-- The element to render the solution to -->
             <div id="sp-dashboard" class="bs"></div>
@@ -99,7 +99,7 @@ Save or publish the page to view the solution.
 
 ##### Known Issues
 
-Some of the classic core SharePoint JavaScript components require certain html elements or css references on the page, and may no longer work. The SP.UI.ModalDialog is one example of this.
+The css may need to be adjusted for the modern page.
 
 #### Surface to Teams
 
