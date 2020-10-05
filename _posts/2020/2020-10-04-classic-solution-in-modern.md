@@ -104,7 +104,7 @@ The css may need to be adjusted for the modern page.
 #### Surface to Teams
 
 ##### Add Teams Tab
-In teams, add a "SharePoint" tab to a channel.
+In teams, add a **SharePoint** tab to a channel.
 
 ![Add Teams Tab](images/ClassicSolutionsInModern/add-sharepoint-tab.png)
 
@@ -117,6 +117,8 @@ Next, click on the **Add page or list from any SharePoint site** link to referen
 This will not work, but I wanted to show you what will happen if you try to reference a non-modern SharePoint page.
 
 ![Reference App in Teams](images/ClassicSolutionsInModern/reference-app-in-teams.png)
+
+If you wanted to reference the app page, then you will need to select the **Website** instead of the **SharePoint** in the first step.
 
 ##### Reference the Modern Page
 
