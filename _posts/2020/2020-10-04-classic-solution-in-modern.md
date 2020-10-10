@@ -118,7 +118,7 @@ This will not work, but I wanted to show you what will happen if you try to refe
 
 ![Reference App in Teams](images/ClassicSolutionsInModern/reference-app-in-teams.png)
 
-If you wanted to reference the app page, then you will need to select the **Website** instead of the **SharePoint** in the first step.
+If you wanted to reference the app page, then you will need to select the **Website** instead of the **SharePoint** option in the first step.
 
 ##### Reference the Modern Page
 
