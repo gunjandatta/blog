@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "How to Expand Sub-Properties in OData Requests"
+title: "No Batch No Problem"
 date: "2021-03-13"
 description: "Example on how to expand sub-properties of an OData request."
 feature_image: ""
@@ -72,5 +72,9 @@ List("Doc Set Demo").Items().query({
 Below is an example of the request where I've manually expanded the sub-properties.
 
 ![Demo Query](images/ODataExpand/demo.png)
+
+### Summary
+
+This can be applied to any of the collections. I recommend that you also utilize the "Select" option to limit what to return to help w/ performance.
 
 Hope this example helps. Happy Coding!!!
