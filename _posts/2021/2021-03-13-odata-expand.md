@@ -15,6 +15,7 @@ This post will go over how to expand sub-properties of an OData REST API request
 
 We will query a document set library with the following information:
 
+* Document Set library named `Doc Set Demo`
 * Document Set content type renamed to `Dashboard Item`
 * Document Set item created and called `Test`
 
