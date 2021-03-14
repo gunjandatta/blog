@@ -44,7 +44,10 @@ List("Doc Set Demo").Items().query({
     // Filter for only the document set item types
     Filter: "ContentType eq 'Dashboard Item'",
     Expand: [
-        "Folder", "Folder/Files", "Folder/Folders/Files", "Folder/Folders/Folders/Files", "Folder/Folders/Folders/Folders/Files"
+        "Folder", "Folder/Files",
+        "Folder/Folders/Files",
+        "Folder/Folders/Folders/Files",
+        "Folder/Folders/Folders/Folders/Files"
     ]
 }).execute((items) => {
     // Parse the items
