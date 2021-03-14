@@ -21,7 +21,7 @@ We will query a document set library with the following information:
 
 The folders/files included in this item are:
 
-| Name | Type | Path |
+| **Name** | **Type** | **Path** |
 | Document.aspx | File | /Document.aspx |
 | Folder | Folder | /Folder |
 | Document.aspx | File | /Folder/Document.aspx |
