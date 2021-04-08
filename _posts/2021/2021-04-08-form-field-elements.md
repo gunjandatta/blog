@@ -4,10 +4,10 @@ title: "Finding List Form Field Elements"
 date: "2021-04-08"
 description: "Example on how to get the list form field elements."
 feature_image: ""
-tags: ["field", "list"]
+tags: ["calendar", "field", "list"]
 ---
 
-This post will go over how to get the list field elements in a classic form. This can be useful for minor customizations to a form.
+This post will go over how to get the list field elements in a classic form. This can be useful for minor customizations to a form, or trying to customize a Calendar (Event) item form where the JSLink option is not available.
 
 <!--more-->
 
