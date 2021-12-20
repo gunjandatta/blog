@@ -66,7 +66,7 @@ var list = new $REST.List("[Name of the List]");
 // Remove the event receiver
 list.EventReceivers("[Guid]").delete().execute(
     // Success
-    function(er) {
+    function() {
         // The event receiver was removed successfully
     },
 
