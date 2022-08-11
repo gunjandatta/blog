@@ -50,6 +50,7 @@ Content-Type: "application/json;odata=verbose"
 X-HTTP-Method: "POST"
 X-RequestDigest: [Request Digest Id]
 url: "https://[tenant].sharepoint.com/sites/[current site]/_api/SP.OAuth.Token/Acquire"
+data: { resource: "[cloud environment]" }
 ```
 
 #### Cloud Environment
