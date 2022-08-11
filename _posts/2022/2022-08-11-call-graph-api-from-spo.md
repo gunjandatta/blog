@@ -7,13 +7,13 @@ feature_image: ""
 tags: ["graph"]
 ---
 
-This post will go over a new libray for executing graph api requests from a SharePoint site, running under the context of the current user.
+This post will go over a new libray component for executing graph api requests from a SharePoint site, running under the context of the current user.
 
 <!--more-->
 
 ### Graph API Token
 
-The first step is to request a token in order to execute the Graph API request. This token is requried in order to make a GET/POST request.
+The first step is to request a token in order to execute the Graph API request. This token is required in order to make a GET/POST request.
 
 ```ts
 import { Graph } from "gd-sprest";
