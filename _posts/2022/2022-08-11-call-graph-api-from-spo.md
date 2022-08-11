@@ -99,6 +99,45 @@ Graph.getAccessToken(SPTypes.CloudEnvironment.USL5).execute(token => {
 });
 ```
 
+**Get Current User's Group Information**
+```ts
+import { Graph } from "gd-sprest";
+
+// Get the access token
+Graph.getAccessToken().execute(token => {
+  // Access Token - Required for the Graph API requests
+  token.access_token;
+
+  // Get the member's groups
+  Graph({
+    accessToken: token.access_token,
+    url: "me/getMemberGroups"
+  }).execute(userInfo => {
+    // Code goes here
+  });
+});
+```
+
+**Get Current User's Group Information (US IL-5)**
+```ts
+import { Graph, SPTypes } from "gd-sprest";
+
+// Get the access token
+Graph.getAccessToken(SPTypes.CloudEnvironment.USL5).execute(token => {
+  // Access Token - Required for the Graph API requests
+  token.access_token;
+
+  // Get the member's groups
+  Graph({
+    accessToken: token.access_token,
+    cloud: SPTypes.CloudEnvironment.USL5,
+    url: "me/getMemberGroups"
+  }).execute(userInfo => {
+    // Code goes here
+  });
+});
+```
+
 **Get Root Site**
 ```ts
 import { Graph } from "gd-sprest";
@@ -119,7 +158,7 @@ Graph.getAccessToken().execute(token => {
 });
 ```
 
-**Get Current User Information (US IL-5)**
+**Get Root Site (US IL-5)**
 ```ts
 import { Graph, SPTypes } from "gd-sprest";
 
