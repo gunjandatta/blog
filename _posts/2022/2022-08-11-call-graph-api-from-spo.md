@@ -40,6 +40,18 @@ Graph.getAccessToken().execute(token => {
 });
 ```
 
+#### Requestion Information
+
+The getAccessToken method will take an optional parameter to specify the cloud type. You can utilize the `SPTypes.CloudEnvironment` enumerator to help with this. The HTTP request will look like the following:
+
+```
+Accept: "application/json;odata=verbose"
+Content-Type: "application/json;odata=verbose"
+X-HTTP-Method: "POST"
+X-RequestDigest: [Request Digest Id]
+url: "https://[tenant].sharepoint.com/sites/[current site]/_api/SP.OAuth.Token/Acquire"
+```
+
 #### Cloud Environment
 
 The available [cloud environments](https://docs.microsoft.com/en-us/graph/deployments) are listed in the microsoft docs. An enumerator can be used to specify which environment to use. The default is the commercial endpoint `https://graph.microsoft.com`.
@@ -99,6 +111,18 @@ Graph.getAccessToken(SPTypes.CloudEnvironment.USL5).execute(token => {
 });
 ```
 
+#### Requestion Information
+The HTTP request information for the above will be:
+
+```
+Accept: "application/json;"
+Authorization: "Bearer [Access Token]"
+Content-Type: "application/json;"
+X-HTTP-Method: "GET"
+url: "https://[Graph Cloud Endpoint]/[Version]/me"
+data: { securityEnabledOnly: true }
+```
+
 **Get Current User's Group Information**
 ```ts
 import { Graph } from "gd-sprest";
@@ -111,6 +135,7 @@ Graph.getAccessToken().execute(token => {
   // Get the member's groups
   Graph({
     accessToken: token.access_token,
+    requestType: "POST",
     url: "me/getMemberGroups"
   }).execute(userInfo => {
     // Code goes here
@@ -131,11 +156,24 @@ Graph.getAccessToken(SPTypes.CloudEnvironment.USL5).execute(token => {
   Graph({
     accessToken: token.access_token,
     cloud: SPTypes.CloudEnvironment.USL5,
+    requestType: "POST",
     url: "me/getMemberGroups"
   }).execute(userInfo => {
     // Code goes here
   });
 });
+```
+
+#### Requestion Information
+The HTTP request information for the above will be:
+
+```
+Accept: "application/json;"
+Authorization: "Bearer [Access Token]"
+Content-Type: "application/json;"
+X-HTTP-Method: "POST"
+url: "https://[Graph Cloud Endpoint]/[Version]/me/getMemberGroups"
+data: { securityEnabledOnly: true }
 ```
 
 **Get Root Site**
@@ -175,6 +213,18 @@ Graph.getAccessToken(SPTypes.CloudEnvironment.USL5).execute(token => {
     url: "sites/root"
   })
 });
+```
+
+#### Requestion Information
+The HTTP request information for the above will be:
+
+```
+Accept: "application/json;"
+Authorization: "Bearer [Access Token]"
+Content-Type: "application/json;"
+X-HTTP-Method: "POST"
+url: "https://[Graph Cloud Endpoint]/[Version]/sites/root"
+data: { securityEnabledOnly: true }
 ```
 
 ### Summary
