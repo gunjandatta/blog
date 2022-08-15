@@ -59,7 +59,7 @@ The available [cloud environments](https://docs.microsoft.com/en-us/graph/deploy
 
 #### Security
 
-The request will run under the context of the user logged into SharePoint. The library will automatically set the property `securityEnabledOnly: true` which is passed in the body of the request.
+The request will run under the context of the user logged into SharePoint.
 
 ### Graph Requests
 
