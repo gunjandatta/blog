@@ -121,7 +121,6 @@ Authorization: "Bearer [Access Token]"
 Content-Type: "application/json;"
 X-HTTP-Method: "GET"
 url: "https://[Graph Cloud Endpoint]/[Version]/me"
-data: { securityEnabledOnly: true }
 ```
 
 **Get Current User's Group Information**
@@ -225,7 +224,6 @@ Authorization: "Bearer [Access Token]"
 Content-Type: "application/json;"
 X-HTTP-Method: "POST"
 url: "https://[Graph Cloud Endpoint]/[Version]/sites/root"
-data: { securityEnabledOnly: true }
 ```
 
 ### Summary
