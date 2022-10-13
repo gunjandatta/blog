@@ -26,6 +26,7 @@ The work-around I came up with, is to create an empty SharePoint 2019 solution u
 #### Step 1 - Deploy SPFx Extension
 
 1) Develop your SPFx extension for 2019. [Code Example](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/build-a-hello-world-extension)
+
 2) Deploy the solution to the app catalog
 
 At this point, we have an app in the catalog that is deployed. When the app is deployed, this will add the SPFx solution assets to the `Client Side Assets` hidden library.
@@ -33,13 +34,21 @@ At this point, we have an app in the catalog that is deployed. When the app is d
 #### Step 2 - Create WSP Solution
 
 1) Create a new Visual Studio project
+
 2) Select the option to `Deploy as a farm solution`
+
 3) Add a new item to the project
+
 4) Select `Empty Element` as the item type
+
 5) Copy the "Elements.xml" from the SPFx solution (sharepoint/assets/elements.xml) CustomAction element to this new elements file
+
 6) Open the `Features` and ensure the element is included in the feature
+
 7) Set the scope of the feature to be `WebApplication`
+
 8) Save and package the wsp
+
 9) Install the wsp
 
 ```powershell
@@ -51,13 +60,17 @@ Install-SPSolution -Identity {Solution GUID} -GACDeployment
 #### Validation
 
 1) Access Cental Administration and click on `System Settings`
+
 2) Click on `Manage farm solutions`
+
 3) Validate the solution has a status of `Deployed`
 
 If the solution hasn't been deployed, click on the feature and click on `Deploy` to deploy it.
 
 4) Access a site in the web application
+
 5) From a modern page, press `Ctrl+F12` to access the developer dashboard, assuming you have used the built-in logging
+
 6) From a modern page, access the developer tools and validate that the solution is being loaded
 
 ### Summary
