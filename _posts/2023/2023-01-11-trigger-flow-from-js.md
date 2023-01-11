@@ -73,7 +73,7 @@ From the browser console, reference the library.
 
 ![Reference Library](images/CallFlowFromJS/reference-library.png)
 
-Create a test item for the flow.
+Create a test item for the flow and note the item id of it. We will send this item id in a later step.
 
 ![Create Item](images/CallFlowFromJS/create-item.png)
 
