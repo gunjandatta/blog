@@ -13,23 +13,25 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 ### Flow & SharePoint Development
 
-Splitting out the buisness logic and utilizing Flow to run dynamically or by code has always been on my TODO list. This approach will help customers/clients maintain the solution by easily through Flow.
+Splitting out the buisness logic and utilizing Flow to run dynamically or by code has always been on my TODO list. This approach will help customers/clients maintain solutions easily through Flow, instead of relying on a developer for code updates.
 
-This code walkthrough will create a flow for a list to send a notification to the user in the item's value. Next we will demonstrate how to trigger this flow against the item using JavaScript.
+This code walkthrough will create a flow for a list to send a notification to the user in the item's value. Next we will demonstrate how to trigger this flow against the item using JavaScript from SharePoint.
 
 ### Create the Flow
 
-The first step is to create a list and add a flow to it.
+The section will create a list and create/configure a flow.
+
+_Note - This approach will work against a list or library._
 
 #### Step 1 - Create the List
 
-![Create List](images/CallFlowFromJS/create-list.png)
-
 Create a list to execute this flow against.
 
-![Add User Field](images/CallFlowFromJS/add-user-field.png)
+![Create List](images/CallFlowFromJS/create-list.png)
 
 Next, add a user field that we will reference in the notification.
+
+![Add User Field](images/CallFlowFromJS/add-user-field.png)
 
 #### Step 2 - Create Flow
 
@@ -55,9 +57,11 @@ The last step is to add the step for sending an email. This is just an example, 
 
 ![Send Email](images/CallFlowFromJS/send-email.png)
 
+_Note - Don't forget to save your flow._
+
 ### Create the JavaScript
 
-This section will go over the code to execute the flow. I will trigger this from the browser console, but will provide the code to complete this at the end.
+This section will go over the code to execute the flow. I will trigger this from the browser console, but will provide the typescript code example at the end of this post.
 
 #### Step 1 - Reference the [gd-sprest](https://dattabase.com) Library
 
@@ -75,7 +79,7 @@ Create a test item for the flow.
 
 #### Step 2 - Get the Flow Token
 
-Next, we will need to authenticate with Power Automate in order to run the flow.
+Next, we will need to authenticate with Power Automate in order to run the flow. We will utilize the `getAccessToken` method from the `Graph` component to authenticate with Flow. I recently updated the `SPTypes` enumerator with this new value.
 
 `var auth = $REST.Graph.getAccessToken($REST.SPTypes.CloudEnvironment.Flow).executeAndWait();`
 
