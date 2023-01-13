@@ -11,9 +11,11 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 <!--more-->
 
+**_Note - This code example works in the commercial tenant. I plan to update the Cloud Environment enumerator with the other authorization urls, once I figure them out._**
+
 ### Flow & SharePoint Development
 
-Splitting out the buisness logic and utilizing Flow to run dynamically or by code has always been on my TODO list. This approach will help customers/clients maintain solutions easily through Flow, instead of relying on a developer for code updates.
+Splitting out the business logic and utilizing Flow to run dynamically or by code has always been on my TODO list. This approach will help customers/clients maintain solutions easily through Flow, instead of relying on a developer for code updates.
 
 This code walkthrough will create a flow for a list to send a notification to the user in the item's value. Next we will demonstrate how to trigger this flow against the item using JavaScript from SharePoint.
 
