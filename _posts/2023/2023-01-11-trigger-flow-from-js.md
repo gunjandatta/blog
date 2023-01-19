@@ -11,7 +11,7 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 <!--more-->
 
-**_Note - This code example works in the commercial tenant. I plan to update the Cloud Environment enumerator with the other authorization urls, once I figure them out._**
+**_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work._**
 
 ### Flow & SharePoint Development
 
