@@ -213,7 +213,7 @@ These are the test steps taken for each example.
 
 ##### Test Single-Line Issue
 
-**Test 1 - Plain Text - Pass**
+**[Pass] Test 1 - Plain Text**
 
 ```html
 This is a test.
@@ -221,7 +221,7 @@ This is a test.
 
 ![Single Test 1](images/SPFxWebPartPropBug/test-single-1.png)
 
-**Test 2 - Use of [[ ]] - Pass**
+**[Pass] Test 2 - Use of [[ ]]**
 
 ```html
 This is a [[test]].
@@ -229,7 +229,7 @@ This is a [[test]].
 
 ![Single Test 2](images/SPFxWebPartPropBug/test-single-2.png)
 
-**Test 3 - Use of [[ ]] within HTML - Fail**
+**[Fail] Test 3 - Use of [[ ]] within HTML**
 
 ```html
 <p>This is a [[test]].</p>
@@ -243,7 +243,7 @@ When you edit the page, you will see the following error:
 
 ##### Test Multi-Line Issue
 
-**Test 1 - Use of [[ ]] - Pass**
+**[Pass] Test 1 - Use of [[ ]]**
 
 ```json
 This is a test for storing [[values]] with a bracket around it.
@@ -251,7 +251,7 @@ This is a test for storing [[values]] with a bracket around it.
 
 ![Multi Test 1](images/SPFxWebPartPropBug/test-multi-1.png)
 
-**Test 2 - Use of [[ ]] within Quotes - Pass**
+**[Pass] Test 2 - Use of [[ ]] within Quotes**
 
 ```json
 "This is a test for storing [[values]] with a bracket around it."
@@ -259,7 +259,7 @@ This is a test for storing [[values]] with a bracket around it.
 
 ![Multi Test 2](images/SPFxWebPartPropBug/test-multi-2.png)
 
-**Test 3 - Use of [[ ]] within JSON Pass**
+**[Pass] Test 3 - Use of [[ ]] within JSON**
 
 ```json
 {
@@ -269,7 +269,7 @@ This is a test for storing [[values]] with a bracket around it.
 
 ![Multi Test 3](images/SPFxWebPartPropBug/test-multi-3.png)
 
-**Test 4 - Use of [[ ]] within HTML and JSON - Fail**
+**[Fail] Test 4 - Use of [[ ]] within HTML and JSON**
 
 ```json
 {
@@ -283,7 +283,7 @@ When you edit the page, you will see the following error:
 
 ![Error Message](images/SPFxWebPartPropBug/error-message.png)
 
-**Test 5 - Use of [ ] within HTML and JSON - Pass**
+**[Pass] Test 5 - Use of [ ] within HTML and JSON**
 
 ```json
 {
