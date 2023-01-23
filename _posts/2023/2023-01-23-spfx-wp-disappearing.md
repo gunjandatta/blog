@@ -21,7 +21,7 @@ You cannot edit this page
 We're sorry, we encountered an unexpected error. Please refresh the page and try again.
 ```
 
-I've tried to search on this issue, but was unable to find anything. Further testing pointed my issue to my SPFx webpart properties, so I thought it was my code. It was actually the value I was putting in there. This post will go over the issue by recreating it in a basic "Hello World" solution.
+I've tried to search on this issue, but was unable to find anything. Further testing pointed my issue to my SPFx webpart properties, so I thought it was my code. It was actually the value I was putting in there. This post will go over this issue by recreating it in a basic "Hello World" solution.
 
 #### Overview of Solution
 
@@ -86,7 +86,7 @@ declare module 'TestPropertyBugWebPartStrings' {
 
 ##### Update WebPart Code
 
-In the main webpart code, we will make the following udpates.
+In the main webpart code, we will make the following updates.
 
 **Interface**
 
@@ -278,6 +278,10 @@ This is a test for storing [[values]] with a bracket around it.
 ```
 
 ![Multi Test 4](images/SPFxWebPartPropBug/test-multi-4.png)
+
+When you edit the page, you will see the following error:
+
+![Error Message](images/SPFxWebPartPropBug/error-message.png)
 
 **Test 5 - Use of [ ] within HTML and JSON - Pass**
 
