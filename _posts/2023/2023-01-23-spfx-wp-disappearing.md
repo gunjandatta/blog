@@ -15,11 +15,7 @@ This post will go over an odd "bug" where SPFx webparts may be removed from the 
 
 When adding a webpart to a page and setting its properties, I noticed that it would disappear after refreshing the page. My webpart property was storing a JSON configuration in a multi-line text field property. I was able to save the page, which seemed like the webpart page saved correctly; but after refreshing the page it was removed. When you edit the page, you will see a very helpful message:
 
-```
-You cannot edit this page
-
-We're sorry, we encountered an unexpected error. Please refresh the page and try again.
-```
+![We're sorry, we encountered an unexpected error. Please refresh the page and try again.](images/SPFxWebPartPropBug/error-message.png)
 
 I've tried to search on this issue, but was unable to find anything. Further testing pointed my issue to my SPFx webpart properties, so I thought it was my code. It was actually the value I was putting in there. This post will go over this issue by recreating it in a basic "Hello World" solution.
 
