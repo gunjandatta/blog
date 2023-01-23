@@ -25,7 +25,7 @@ I've tried to search on this issue, but was unable to find anything. Further tes
 
 #### Overview of Solution
 
-For those who don't want to read the entire post. You can't mix html and the `[[ ]]` brackets in a text webpart property value.
+For those who don't want to read the entire post. You can't use the double brackets (`[[ ]]`) within `HTML` for a text webpart property value.
 
 ### Create Solution
 
