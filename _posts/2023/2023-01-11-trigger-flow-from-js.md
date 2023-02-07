@@ -11,7 +11,7 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 <!--more-->
 
-**_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work._**
+**_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work. The correct Flow endpoint must be used for authentication, based on the cloud enviornment._**
 
 ### Flow & SharePoint Development
 
