@@ -13,6 +13,8 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 **_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work. The correct Flow endpoint must be used for authentication, based on the cloud enviornment._**
 
+**_Update - This blog post has been updated to address possible errors. This maybe due to the authorization endpoint url, or the api-version being used to trigger the flow._**
+
 ### Flow & SharePoint Development
 
 Splitting out the business logic and utilizing Flow to run dynamically or by code has always been on my TODO list. This approach will help customers/clients maintain solutions easily through Flow, instead of relying on a developer for code updates.
@@ -132,13 +134,30 @@ var body = JSON.stringify({
 });
 ```
 
-**Trigger Flow**
+**Trigger Flow (Commercial)**
 
 We will send a POST request to trigger the flow.
 
 `fetch(flowInfo.properties.flowTriggerUri, { method: "POST", headers: headers, body: body});`
 
 ![Run Flow](images/CallFlowFromJS/run-flow.png)
+
+**Possible Errors**
+
+`Error from token exchange: Bad authorization token. The access token is from wrong audience or resource.`
+
+If you receive this error, then you may need to use a different endpoint for authorization. Another possibility is the api-version. The flow trigger uri will use `?api-version=2016-06-01`. Try to update it to `?api-version=2016-11-01`, and see if that works.
+
+I have tested this in other cloud environments, and changing the api-version worked. I tested this in commercial, and both api-versions seem to work.
+
+**Trigger Flow (Other Cloud Environments)**
+
+We will update the api-version and send a POST request to trigger the flow.
+
+```js
+var flowUrl = flowInfo.properties.flowTriggerUri.split('?')[0] + "?api-version=2016-11-01";
+fetch(flowUrl, { method: "POST", headers: headers, body: body});
+```
 
 #### Step 5 - Validate the Run
 
