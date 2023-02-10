@@ -152,7 +152,7 @@ I have tested this in other cloud environments, and changing the api-version wor
 
 **Trigger Flow (Other Cloud Environments)**
 
-We will update the api-version and send a POST request to trigger the flow.
+We will update the api-version and send a POST request to trigger the flow. Since this works in both commercial and other cloud environments, I recommend that you update the api-version to be safe.
 
 ```js
 var flowUrl = flowInfo.properties.flowTriggerUri.split('?')[0] + "?api-version=2016-11-01";
