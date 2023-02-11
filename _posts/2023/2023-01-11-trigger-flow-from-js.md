@@ -13,7 +13,7 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 **_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work. The correct Flow endpoint must be used for authentication, based on the cloud enviornment._**
 
-**_Update - This blog post has been updated to address possible errors. This maybe due to the authorization endpoint url, or the api-version being used to trigger the flow._**
+**_Update - This blog post has been updated to address possible errors due to the auth token._**
 
 ### Flow & SharePoint Development
 
@@ -73,7 +73,7 @@ We will use the [gd-sprest](https://dattabase.com/getting-started/) library to i
 
 From the browser console, reference the library.
 
-`var s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/gd-sprest/7.3.6/gd-sprest.min.js"; document.head.appendChild(s);`
+`var s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/gd-sprest/7.4.1/gd-sprest.min.js"; document.head.appendChild(s);`
 
 ![Reference Library](images/CallFlowFromJS/reference-library.png)
 
@@ -84,6 +84,8 @@ Create a test item for the flow and note the item id of it. We will send this it
 #### Step 2 - Get the Flow Token
 
 Next, we will need to authenticate with Power Automate in order to run the flow. We will utilize the `getAccessToken` method from the `Graph` component to authenticate with Flow. I recently updated the `SPTypes` enumerator with this new value.
+
+_Note - You must use the correct cloud environment, or you will get an authroization error when triggering the flow._
 
 `var auth = $REST.Graph.getAccessToken($REST.SPTypes.CloudEnvironment.Flow).executeAndWait();`
 
@@ -134,7 +136,7 @@ var body = JSON.stringify({
 });
 ```
 
-**Trigger Flow (Commercial)**
+**Trigger Flow**
 
 We will send a POST request to trigger the flow.
 
@@ -142,21 +144,46 @@ We will send a POST request to trigger the flow.
 
 ![Run Flow](images/CallFlowFromJS/run-flow.png)
 
-**Possible Errors**
+#### Possible Errors
+
+I've seen issues in other cloud environments. The error displayed is shown below, related to the token.
 
 `Error from token exchange: Bad authorization token. The access token is from wrong audience or resource.`
 
-If you receive this error, then you may need to use a different endpoint for authorization. Another possibility is the api-version. The flow trigger uri will use `?api-version=2016-06-01`. Try to update it to `?api-version=2016-11-01`, and see if that works.
+If you receive this error, then you will need to make another request to get the token for the user.
 
-I'm continuing to test in other cloud environment and will update this post afterwards.
+**Get Token (onBehlafOfTokenBundle)**
 
-**Trigger Flow (Other Cloud Environments)**
+Digging through the network logs, I found this request being made that matched the correct token to use. This method is not needed for commercial, but was required for other cloud environment types.
 
-We will update the api-version and send a POST request to trigger the flow. Since this works in both commercial and other cloud environments, I recommend that you update the api-version to be safe.
+I have updated the gd-sprest library to include new Cloud Environment enums, so you will need to get the latest past 7.4.1 for this to work.
+
+For this example, we will target the `GCC-High` environment.
 
 ```js
-var flowUrl = flowInfo.properties.flowTriggerUri.split('?')[0] + "?api-version=2016-11-01";
-fetch(flowUrl, { method: "POST", headers: headers, body: body});
+var flowAuthUrl = $REST.SPTypes.CloudEnvironment.FlowHighAPI + flowInfo.properties.environment.id + "/users/me/onBehlafOfTokenBundle?app-version=2016-11-01";
+fetch(flowAuthUrl, { method: "POST", headers: headers }).then(r => r.json()).then(r => {
+    // Get the token, and fallback on the default one if it doesn't exist
+    // I'm adding the default one back for commercial if you wanted a single generic method
+    var flowToken = r.audienceToTokens["https://" + flowInfo.properties.connectionReferences.shared_sharepointonline.swagger.host] || auth.access_token;
+
+    // Set the headers
+    var headers = new Headers();
+    headers.append("Accept", "application/json");
+    headers.append("Content-Type", "application/json");
+    headers.append("authorization", "Bearer " + flowToken);
+
+    // Set the body
+    var body = JSON.stringify({
+        rows: [{
+            entity: {
+                ID: 1
+            }
+        }]
+    });
+
+    fetch(flowInfo.properties.flowTriggerUri, { method: "POST", headers: headers, body: body});
+});
 ```
 
 #### Step 5 - Validate the Run
