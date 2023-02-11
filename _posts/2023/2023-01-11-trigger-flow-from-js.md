@@ -11,9 +11,9 @@ This post will give an overview of how to trigger a flow from JavaScript.
 
 <!--more-->
 
-**_Note - This code example has been tested in various cloud environments. The user MUST be licensed for Flow in order for the authentication to work. The correct Flow endpoint must be used for authentication, based on the cloud enviornment._**
+**_Note - This code example has been tested in various cloud environments. The user MUST be licensed which maybe an issue for external users. The correct Flow endpoint must be used for authentication, based on the cloud enviornment. An additional request to retrieve the flow authentication token maybe necessary for other cloud environments._**
 
-**_Update - This blog post has been updated to address possible errors due to the auth token._**
+**_Update - This blog post has been updated to address possible errors due to the auth token. The code example at the end of the post has been updated to address this issue._**
 
 ### Flow & SharePoint Development
 
@@ -208,15 +208,18 @@ export class RunFlow() {
             this.getAccessToken().then(access_token => {
                 // Get the flow information
                 this.getFlow(listName, flowId, webUrl).then(flowInfo => {
-                    // Trigger the flow
-                    this.triggerFlow(itemId, access_token, flowInfo).then(resolve, reject);
+                    // Get the flow token
+                    this.getFlowToken(access_token, flowInfo).then(flow_token => {
+                        // Trigger the flow
+                        this.triggerFlow(itemId, flow_token, flowInfo).then(resolve, reject);
+                    });
                 }, reject);
             }, reject);
         });
     }
 
     // Gets the access token
-    private static getAccessToken():PromiseLike<string> {
+    private static getAccessToken(): PromiseLike<string> {
         // Return a promise
         return new Promise((resolve, reject) => {
             // Execute a request to flow
@@ -227,8 +230,44 @@ export class RunFlow() {
         });
     }
 
+    // Gets the flow token
+    private static getFlowToken(access_token: string, flowInfo: any):PromiseLike<string> {
+        // Return a promise
+        return new Promise((resolve, reject) => {
+            // Create the xml http request
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", SPTypes.CloudEnvironment.FlowAPI + flowInfo.properties.environment.id + "/users/me/onBehalfOfTokenBundle?api-version=2016-11-01", true);
+
+            // Set the headers
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.setRequestHeader("authorization", "Bearer " + access_token);
+
+            // Set the state change event
+            xhr.onreadystatechange = () => {
+                // See if the request has finished
+                if (xhr.readyState == 4) {
+                    // Ensure it was valid
+                    if(xhr.status >=200 && xhr.status < 300) {
+                        // Get the token information
+                        let tokenInfo = JSON.parse(xhr.response);
+
+                        // Resolve the request
+                        resolve(tokenInfo.audienceToToken["https://" + flowInfo.properties.connectionReferences.shared_sharepointonline.swagger.host] || access_token);
+                    } else {
+                        // Reject the request
+                        reject();
+                    }
+                }
+            }
+
+            // Execute the request
+            xhr.send();
+        });
+    }
+
     // Gets the flow
-    private static getFlow(listName:string, flowId: string, webUrl?:string):PromiseLike<any> {
+    private static getFlow(listName: string, flowId: string, webUrl?: string):PromiseLike<any> {
         // Return a promise
         return new Promise((resolve, reject) => {
             // Get the flow for the list
@@ -240,7 +279,7 @@ export class RunFlow() {
     }
 
     // Trigger the flow
-    private static triggerFlow(itemId: number, access_token: string, flowInfo: any) {
+    private static triggerFlow(itemId: number, flow_token: string, flowInfo: any) {
         // Create the xml http request
         let xhr = new XMLHttpRequest();
         xhr.open("POST", flowInfo.properties.flowTriggerUri, true);
@@ -248,7 +287,7 @@ export class RunFlow() {
         // Set the headers
         xhr.setRequestHeader("Accept", "application/json");
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("authorization", "Bearer " + access_token);
+        xhr.setRequestHeader("authorization", "Bearer " + flow_token);
 
         // Set the body
         let body = JSON.stringify({
@@ -262,9 +301,15 @@ export class RunFlow() {
         // Set the state change event
         xhr.onreadystatechange = () => {
             // See if the request has finished
-            if (this.xhr.readyState == 4) {
-                // Resolve the request
-                resolve();
+            if (xhr.readyState == 4) {
+                // Ensure it was valid
+                if(xhr.status >=200 && xhr.status < 300) {
+                    // Resolve the request
+                    resolve();
+                } else {
+                    // Reject the request
+                    reject();
+                }
             }
         }
 
