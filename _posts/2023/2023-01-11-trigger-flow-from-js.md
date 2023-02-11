@@ -148,7 +148,7 @@ We will send a POST request to trigger the flow.
 
 If you receive this error, then you may need to use a different endpoint for authorization. Another possibility is the api-version. The flow trigger uri will use `?api-version=2016-06-01`. Try to update it to `?api-version=2016-11-01`, and see if that works.
 
-I have tested this in other cloud environments, and changing the api-version worked. I tested this in commercial, and both api-versions seem to work.
+I'm continuing to test in other cloud environment and will update this post afterwards.
 
 **Trigger Flow (Other Cloud Environments)**
 
