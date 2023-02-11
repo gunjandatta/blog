@@ -156,7 +156,7 @@ If you receive this error, then you will need to make another request to get the
 
 Digging through the network logs, I found this request being made that matched the correct token to use. This method is not needed for commercial, but was required for other cloud environment types.
 
-I have updated the gd-sprest library to include new Cloud Environment enums, so you will need to get the latest past 7.4.1 for this to work.
+I have updated the gd-sprest library to include new Cloud Environment enums, so you will need to get the latest past 7.4.0 for this to work.
 
 For this example, we will target the `GCC-High` environment.
 
