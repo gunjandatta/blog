@@ -73,7 +73,7 @@ We will use the [gd-sprest](https://dattabase.com/getting-started/) library to i
 
 From the browser console, reference the library.
 
-`var s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/gd-sprest/7.4.1/gd-sprest.min.js"; document.head.appendChild(s);`
+`var s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/gd-sprest/7.4.0/gd-sprest.min.js"; document.head.appendChild(s);`
 
 ![Reference Library](images/CallFlowFromJS/reference-library.png)
 
@@ -165,7 +165,7 @@ var flowAuthUrl = $REST.SPTypes.CloudEnvironment.FlowHighAPI + flowInfo.properti
 fetch(flowAuthUrl, { method: "POST", headers: headers }).then(r => r.json()).then(r => {
     // Get the token, and fallback on the default one if it doesn't exist
     // I'm adding the default one back for commercial if you wanted a single generic method
-    var flowToken = r.audienceToTokens["https://" + flowInfo.properties.connectionReferences.shared_sharepointonline.swagger.host] || auth.access_token;
+    var flowToken = r.audienceToToken["https://" + flowInfo.properties.connectionReferences.shared_sharepointonline.swagger.host] || auth.access_token;
 
     // Set the headers
     var headers = new Headers();
