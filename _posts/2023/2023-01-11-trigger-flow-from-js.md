@@ -161,7 +161,7 @@ I have updated the gd-sprest library to include new Cloud Environment enums, so 
 For this example, we will target the `GCC-High` environment.
 
 ```js
-var flowAuthUrl = $REST.SPTypes.CloudEnvironment.FlowHighAPI + flowInfo.properties.environment.id + "/users/me/onBehlafOfTokenBundle?app-version=2016-11-01";
+var flowAuthUrl = $REST.SPTypes.CloudEnvironment.FlowHighAPI + flowInfo.properties.environment.id + "/users/me/onBehalfOfTokenBundle?app-version=2016-11-01";
 fetch(flowAuthUrl, { method: "POST", headers: headers }).then(r => r.json()).then(r => {
     // Get the token, and fallback on the default one if it doesn't exist
     // I'm adding the default one back for commercial if you wanted a single generic method
