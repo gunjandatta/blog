@@ -168,7 +168,7 @@ export function searchAllSites():PromiseLike<Array<ISiteInfo>> {
         let totalPages = Math.ceil(results.postquery.PrimaryQueryResult.RelevantResults.TotalRows / 500);
 
         // Parse the # of required requests
-        for(let i=0; i<totalPages; i++) {
+        for(let i=1; i<totalPages; i++) {
           // Create the batch request
           search.postquery({
             Querytext: "contentclass=sts_site",
