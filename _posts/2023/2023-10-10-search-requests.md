@@ -25,7 +25,7 @@ This code example will give an example of getting all of the site collections th
 
 #### Code Example (Helper Method)
 
-This code example will use a new method for the `Search` library in the `gd-sprest` library. The helper method will default to the max results (500) and to use batch requests by default. These values can be customized through the properties.
+This code example will use a new method for the `Search` module in the `gd-sprest` library. The helper method will default to the max results (500) and to use batch requests by default. These values can be customized through the properties.
 
 ```ts
 import { Search, Types } from "gd-sprest";
@@ -60,10 +60,10 @@ function processResults(sites: Array<ISiteInfo>, results: Types.Microsoft.Office
           siteInfo.Id = cell.Value;
           break;
       }
-
-      // Append the site
-      sites.push(siteInfo);
     }
+
+    // Append the site
+    sites.push(siteInfo);
   }
 }
 
@@ -74,16 +74,16 @@ export function searchAllSites():PromiseLike<Array<ISiteInfo>> {
     let sites:Array<ISiteInfo> = [];
 
     // Search for site collections
-    Search.postquery({
+    Search.postQuery({
       // The search query (Row limit will be defaulted to 500)
       query: {
         Querytext: "contentclass=sts_site",
         TrimDuplicates: true,
-        SelectProperties: [
-          results: {
+        SelectProperties: {
+          results: [
             "Title", "SPSiteUrl", "WebId"
-          }
-        ]
+          ]
+        }
       },
       // We will process each request as they are completed
       onQueryCompleted: results => {
@@ -135,61 +135,67 @@ function processResults(sites: Array<ISiteInfo>, results: Types.Microsoft.Office
           siteInfo.Id = cell.Value;
           break;
       }
-
-      // Append the site
-      sites.push(siteInfo);
     }
+
+    // Append the site
+    sites.push(siteInfo);
   }
 }
 
 // Get all of the sites the user has access to
 export function searchAllSites():PromiseLike<Array<ISiteInfo>> {
-  // Search for site collections
-  Search().postquery({
-    Querytext: "contentclass=sts_site",
-    RowLimit: 500,
-    TrimDuplicates: true,
-    SelectProperties: [
-      results: {
-        "Title", "SPSiteUrl", "WebId"
+  // Return a promise
+  return new Promise((resolve, reject) => {
+    // Search for site collections
+    Search().postquery({
+      Querytext: "contentclass=sts_site",
+      RowLimit: 500,
+      TrimDuplicates: true,
+      SelectProperties: {
+        results: [
+          "Title", "SPSiteUrl", "WebId"
+        ]
       }
-    ]
-  }).execute(results => {
-    let sites:Array<ISiteInfo> = [];
+    }).execute(results => {
+      let sites:Array<ISiteInfo> = [];
 
-    // Process the results
-    processResults(sites, results.postquery);
+      // Process the results
+      processResults(sites, results.postquery);
 
-    // See if more items exist
-    if(results.postquery.PrimaryQueryResult.RelevantResults.TotalRows > sites.length) {
-      let search = Search();
-      let totalPages = Math.ceil(results.postquery.PrimaryQueryResult.RelevantResults.TotalRows / 500);
+      // See if more items exist
+      if(results.postquery.PrimaryQueryResult.RelevantResults.TotalRows > sites.length) {
+        let search = Search();
+        let totalPages = Math.ceil(results.postquery.PrimaryQueryResult.RelevantResults.TotalRows / 500);
 
-      // Parse the # of required requests
-      for(let i=0; i<totalPages; i++) {
-        // Create the batch request
-        search.postquery({
-          Querytext: "contentclass=sts_site",
-          RowLimit: 500,
-          StartRow: i*500,
-          TrimDuplicates: true,
-          SelectProperties: [
-            results: {
-              "Title", "SPSiteUrl", "WebId"
+        // Parse the # of required requests
+        for(let i=0; i<totalPages; i++) {
+          // Create the batch request
+          search.postquery({
+            Querytext: "contentclass=sts_site",
+            RowLimit: 500,
+            StartRow: i*500,
+            TrimDuplicates: true,
+            SelectProperties: {
+              results: [
+                "Title", "SPSiteUrl", "WebId"
+              ]
             }
-          ]
-        }).batch(results => {
-          // Process the results
-          processResults(sites, results.postquery);
-        }, i%100); // Limit the # of requests to 100 per batch
-      }
+          }).batch(results => {
+            // Process the results
+            processResults(sites, results.postquery);
+          }, i%100); // Limit the # of requests to 100 per batch
+        }
 
-      // Execute the requests
-      search.execute(() => {
+        // Execute the requests
+        search.execute(() => {
+          // Resolve the request
+          resolve(sites);
+        });
+      } else {
         // Resolve the request
         resolve(sites);
-      });
-    }
+      }
+    });
   });
 }
 ```
