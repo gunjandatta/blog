@@ -71,10 +71,10 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 
 #### Test the Function App
 
-![Test Function App](images/SPFxFunctionApp/test-function-app.png)
-
 1. Click on `Test/Run` to test out the function app and ensure it returns data
 2. Click on `Get Function URL` and copy the default url for the SPFx solution
+
+![Test Function App](images/SPFxFunctionApp/test-function-app.png)
 
 #### Create SPFx Solution
 
@@ -177,28 +177,30 @@ The linting rules will require us to clean up the code of unused methods and var
 
 #### Fix the CORS Error
 
-`workbench.aspx:1  Access to fetch at 'https://[FunctionAppURI]' from origin 'https://[tenant].sharepoint.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
+The solution will have an error message displayed. Further investigation from the develper console will show a CORS error.
 
-![Fix CORS](images/SPFxFunctionApp/fix-cors.png)
+`workbench.aspx:1  Access to fetch at 'https://[FunctionAppURI]' from origin 'https://[tenant].sharepoint.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
 
 1. Access the `Function App`
 2. Select `CORS` under the `API` menu
 3. Add your tenant url to the `Allowed Origins`
 4. Click on `Save`
 
+![Fix CORS](images/SPFxFunctionApp/fix-cors.png)
+
 _Note - This may take a minute or two, but refresh the SPFx test page and you should see the sample test data._
 
-![Test Solution](images/SPFxFunctionApp/test-workbench.png)
+##### Refresh Workbench
 
-5. Refresh the workbench and view the test data
+Refreshing the workbench page, you will see the test data displayed.
+
+![Test Solution](images/SPFxFunctionApp/test-workbench.png)
 
 ### Securing the API
 
 Now that we have the SPFx solution getting data from the Function App, we can now work to securely call it without the secret key being exposed.
 
 #### Configure Authentication
-
-![Add Identity Provider](images/SPFxFunctionApp/add-identity-provider.png)
 
 1. Access the `Function App`
 2. Select `Authentication` under the `Settings` menu
@@ -208,19 +210,21 @@ Now that we have the SPFx solution getting data from the Function App, we can no
 6. Update the `Unautenticated requests` property to `HTTP 401 Unauthorized recommended for APIs`
 7. Select `Add` to create the application registration
 
+![Add Identity Provider](images/SPFxFunctionApp/add-identity-provider.png)
+
 _Note - The default name of the application registration will be the same as the function app name._
 
 #### View App Registration
 
-![View App Registration](images/SPFxFunctionApp/view-app-registration.png)
-
 Once the identity provider is created, click on the link to take you to the Entra App Registration it created. Select `Expose an api` under the `Manage` menu and note the `Application ID URI` and `Scopes`. A scope was created for `user_impersonation`, which will use the context of the current user to authenticate with Entra. We will need to update the SPFx solution to register this API.
+
+![View App Registration](images/SPFxFunctionApp/view-app-registration.png)
 
 #### Update SPFx Solution
 
 Currently, we are passing the secret key in the query string of the uri to authenticate the request. This isn't recommended, since it's not secured and not supposed to be exposed. We want to use Entra to authenticate the SharePoint user and use their context to call the api.
 
-##### Update confist/package-solution.json
+##### Update config/package-solution.json
 
 We will use the identity provider's application registration to authenticate with Entra AD. Select the `config/package-solution.json` file and add the following under the `solution` property:
 
@@ -333,18 +337,18 @@ When creating `Web API Permission Requests`, the tenant admin will need to be ap
 
 ##### Approve the API Request
 
-![View App Registration](images/SPFxFunctionApp/approve-api-request.png)
+The solution will display an error. Further inspection from the development console, you will notice an error stating that the api hasn't been approved.
 
 1. Access the SharePoint admin center
 2. Select `API access` under the `Advanced` menu
 3. Select your api for your SPFx solution and click on `Approve`
 4. Refresh the test page
 
+![View App Registration](images/SPFxFunctionApp/approve-api-request.png)
+
 _Note - Approving the request will add the api permission to the `SharePoint Online Web Client Extensibility` application registration. This will allow the `getClient` method to work from the `onInit` SPFx event._
 
 ##### Fix 403 Forbidden Error
-
-![Fix 403 Error](images/SPFxFunctionApp/fix-403-error.png)
 
 The solution will display an error message. Further inspection from the development console, you will notice a `403 Forbidden` error when calling the function app. SharePoint has a default application that is used for the web api requests. We will need to update the function app to allow requests from the `SharePoint Online Web Client Extensibility` application registration. Complete the following:
 
@@ -356,9 +360,9 @@ The solution will display an error message. Further inspection from the developm
 6. Add the Guid for the `SharePoint Online Web Client Extensibility` application registration: `08e18876-6177-487e-b8b5-cf950c1e598c`
 7. Refresh the test page
 
-##### Fix 401 Unauthorized Error
+![Fix 403 Error](images/SPFxFunctionApp/fix-403-error.png)
 
-![Fix 401 Error](images/SPFxFunctionApp/fix-401-error.png)
+##### Fix 401 Unauthorized Error
 
 The solution will display the same error message still. Further inspection from the development console, you will now notice a `401 Unauthorized` error. Now that the API is configured to get a token from Entra and pass it to the azure function, we need to modify the function app's authorization level.
 
@@ -367,7 +371,10 @@ The solution will display the same error message still. Further inspection from 
 3. Select the `Integration` tab
 4. Click on the `HTTP (Request)` link under `Trigger and inputs`
 5. Update the `Authorization level` to `Anonymous`
-6. Refresh the test page
+
+![Fix 401 Error](images/SPFxFunctionApp/fix-401-error.png)
+
+Refreshing the test page will display the solution.
 
 ![View Solution](images/SPFxFunctionApp/view-solution.png)
 
