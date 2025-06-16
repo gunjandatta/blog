@@ -374,6 +374,8 @@ The solution will display the same error message still. Further inspection from 
 
 ![Fix 401 Error](images/SPFxFunctionApp/fix-401-error.png)
 
+_Note - We are already authenticated by Entra, so we don't need an additional layer of authentication._
+
 Refreshing the test page will display the solution.
 
 ![View Solution](images/SPFxFunctionApp/view-solution.png)
