@@ -84,10 +84,10 @@ Next we will create the SPFx solution and have it call the function app. Once we
 
 Run `yo @microsoft/sharepoint` and set the following properties
 
-   **Solution Name:** spfx-fa-demo
-   **Component:** WebPart
-   **WebPart Name:** HelloFunctionApp
-   **Template:** No framework
+* **Solution Name:** spfx-fa-demo
+* **Component:** WebPart
+* **WebPart Name:** HelloFunctionApp
+* **Template:** No framework
 
 ##### Update package.json
 
