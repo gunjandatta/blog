@@ -277,6 +277,6 @@ _**Order Matters** - The value field must be created before the managed metadata
 ### User (Multi)
 
 ```
-<Field ID="{GUID}" Name="User" StaticName="User" DisplayName="User" Type="User" UserSelectionMode="0" UserSelectionScope="0" Mult="TRUE" />
+<Field ID="{GUID}" Name="User" StaticName="User" DisplayName="User" Type="UserMulti" UserSelectionMode="0" UserSelectionScope="0" Mult="TRUE" />
 
 ```
